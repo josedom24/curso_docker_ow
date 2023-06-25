@@ -3,12 +3,12 @@
 1. Introducción a Docker
 	* Introducción a los contenedores
     * Introducción a Docker
-    * Instalación de docker engine en Linux
+    * Instalación de Docker Engine en Linux
     * Instalación de Docker Desktop en Linux
     * Instalación de Docker Desktop en Windows
     
 2. Primeros pasos con Docker
-    * El "Hola Mundo" de docker 
+    * El "Hola Mundo" de Docker 
     * Ejecución simple de contenedores
     * Ejecutando un contenedor interactivo
     * Creando un contenedor demonio
@@ -24,17 +24,17 @@
 
 4. Almacenamiento en Docker
     * Los contenedores son efímeros
-    * Volúmenes docker y bind mount
-    * Asociando almacenamiento a los contenedores: volúmenes docker
+    * Volúmenes Docker y bind mount
+    * Asociando almacenamiento a los contenedores: volúmenes Docker
     * Asociando almacenamiento a los contenedores: bind mount
     * Ejemplo 1: Contenedor nextcloud con almacenamiento persistente
     * Ejemplo 2: Contenedor mariadb con almacenamiento persistente
     * Otros usos del almacenamiento 
 
 5. Redes en Docker
-    * Introducción a las redes en docker
-    * Tipos de redes en docker
-    * Gestionando las redes en docker
+    * Introducción a las redes en Docker
+    * Tipos de redes en Docker
+    * Gestionando las redes en Docker
     * Uso de la red bridge por defecto
     * Uso de las redes bridge definidas por el usuario
     * Convertir el uso de la red bridge por defecto por una definida por el usuario
@@ -69,4 +69,3 @@
     * Conectar Docker Desktop a la cuenta de Docker Hub
     * Gestión de imágenes
     * Gestión de contenedores
-    
