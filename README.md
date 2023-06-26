@@ -3,7 +3,8 @@
 1. Introducción a Docker
 	* Introducción a los contenedores
     * Introducción a Docker
-    * Instalación de Docker Engine en Linux
+    * [Instalación de la versión de la comunidad de docker Moby en Linux](contenido/modulo1/instalacion_moby_linux.md)
+    * [Instalación de Docker Engine en Linux](contenido/modulo1/instalacion_linux.md)
     * Instalación de Docker Desktop en Linux
     * Instalación de Docker Desktop en Windows
     
@@ -43,17 +44,17 @@
     * Ejemplo 3: Despliegue de Wordpress + mariadb
     * Ejemplo 4: Despliegue de tomcat + nginx 
 
-6. Creando escenarios multicontenedor con docker-compose
-    * Instalación de docker-compose
+6. Creando escenarios multicontenedor con Docker Compose
+    * Instalación de Docker Compose
     * El fichero docker-compose.yml
     * El comando docker-compose
-    * Almacenamiento con docker-compose
-    * Redes con docker-compose
+    * Almacenamiento con Docker Compose
+    * Redes con Docker Compose
     * Ejemplo 1: Despliegue de la aplicación guestbook
     * Ejemplo 2: Despliegue de la aplicación Temperaturas
     * Ejemplo 3: Despliegue de WordPress + Mariadb
     * Ejemplo 4: Despliegue de tomcat + nginx
-    * Ejemplos reales de despliegues usando docker-compose 
+    * Ejemplos reales de despliegues usando Docker Compose 
 
 7. Creación de imágenes en Docker 
     * Creación de imágenes a partir de un contenedor
