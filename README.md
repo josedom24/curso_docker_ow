@@ -21,7 +21,7 @@
     * Gestión de imágenes
     * ¿Cómo se organizan las imágenes?
     * Creación de contenedores desde imágenes
-    * Ejemplo: Desplegando la aplicación mediawiki 
+    * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
 
 4. Almacenamiento en Docker
     * Los contenedores son efímeros
