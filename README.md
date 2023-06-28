@@ -17,7 +17,7 @@
     * Configuración de contenedores con variables de entorno 
 
 3. Gestión de imágenes en Docker
-    * Registros de imágenes: Docker Hub
+    * Registro de imágenes: Docker Hub
     * Gestión de imágenes
     * ¿Cómo se organizan las imágenes?
     * Creación de contenedores desde imágenes
