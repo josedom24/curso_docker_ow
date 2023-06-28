@@ -9,7 +9,7 @@
     * Instalación de Docker Desktop en Windows
     
 2. Primeros pasos con Docker
-    * El "Hola Mundo" de Docker 
+    * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
     * Ejecución simple de contenedores
     * Ejecutando un contenedor interactivo
     * Creando un contenedor demonio
