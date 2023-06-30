@@ -1,16 +1,4 @@
-# Configuración de contenedores con variables de entorno
-
-Más adelante veremos que al crear un contenedor que necesita alguna configuración específica, lo que vamos a hacer es crear variables de entorno en el contenedor, para que el proceso que inicializa el contenedor pueda realizar dicha configuración.
-
-Para crear una variable de entorno al crear un contenedor usamos el flag `-e` o `--env`:
-
-```bash
-$ docker run -it --name prueba -e USUARIO=prueba ubuntu bash
-root@91e81200c633:/# echo $USUARIO
-prueba
-```
-
-## Configuración de un contenedor con la imagen mariadb
+# Ejemplo: Configuración de un contenedor con la imagen mariadb
 
 En ocasiones es obligatorio el inicializar alguna variable de entorno para que el contenedor pueda ser ejecutado. Si miramos la [documentación](https://hub.docker.com/_/mariadb) en Docker Hub de la imagen **mariadb**, observamos que podemos definir algunas variables de entorno para la creación y configuración del contenedor (por ejemplo: `MARIADB_DATABASE`,`MARIADB_USER`, `MARIADB_PASSWORD`,...). Pero hay una que la tenemos que indicar de forma obligatoria, la contraseña del usuario `root` (`MARIADB_ROOT_PASSWORD`), por lo tanto:
 
@@ -48,7 +36,7 @@ Enter password:
 MariaDB [(none)]> 
 ```
 
-### Accediendo a servidor de base de datos desde el exterior
+## Accediendo a servidor de base de datos desde el exterior
 
 En el ejemplo anterior hemos accedido a la base de datos de dos formas: 
 
