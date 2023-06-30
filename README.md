@@ -14,7 +14,7 @@
     * [Ejecutando un contenedor interactivo](contenido/modulo2/interactivo.md)
     * [Creando un contenedor demonio](contenido/modulo2/demonio.md)
     * [Creando un contenedor con un servidor web](contenido/modulo2/web.md)
-    * Configuración de contenedores con variables de entorno 
+    * [Configuración de contenedores con variables de entorno](contenido/modulo2/configuracion.md)
 
 3. Gestión de imágenes en Docker
     * Registro de imágenes: Docker Hub
