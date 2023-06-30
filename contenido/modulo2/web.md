@@ -12,7 +12,7 @@ Para probarlo accede desde un navegador a **la ip del servidor con docker (en mi
 
 ![web](img/web.png)
 
-**Nota**: Si estamos accediendo desde el mismo equipo donde se está ejecutando docker podríamos usar para el acceso el nombre `localhost`.
+> **Nota**: Si estamos accediendo desde el mismo equipo donde se está ejecutando docker podríamos usar para el acceso el nombre `localhost`.
 
 Para acceder al log del contenedor podemos ejecutar:
 
