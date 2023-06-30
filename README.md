@@ -12,8 +12,8 @@
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
     * [Ejecución simple de contenedores](contenido/modulo2/contenedor.md) 
     * [Ejecutando un contenedor interactivo](contenido/modulo2/interactivo.md)
-    * Creando un contenedor demonio
-    * Creando un contenedor con un servidor web
+    * [Creando un contenedor demonio](contenido/modulo2/demonio.md)
+    * [Creando un contenedor con un servidor web](contenido/modulo2/web.md)
     * Configuración de contenedores con variables de entorno 
 
 3. Gestión de imágenes en Docker
