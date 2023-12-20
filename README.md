@@ -5,8 +5,7 @@
     * Introducción a Docker
     * [Instalación de la versión de la comunidad de docker Moby en Linux](contenido/modulo1/instalacion_moby_linux.md)
     * [Instalación de Docker Engine en Linux](contenido/modulo1/instalacion_linux.md)
-    * Instalación de Docker Desktop en Linux
-    * Instalación de Docker Desktop en Windows
+    * Instalación de Docker en Windows
     
 2. Ejecución de contenedores
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
@@ -50,7 +49,7 @@
 6. Creando escenarios multicontenedor con Docker Compose
     * Instalación de Docker Compose
     * El fichero docker-compose.yml
-    * El comando docker-compose
+    * El comando docker compose
     * Almacenamiento con Docker Compose
     * Redes con Docker Compose
     * Ejemplo 1: Despliegue de la aplicación guestbook
@@ -69,6 +68,8 @@
     * Ciclo de vida de las aplicaciones 
 
 8. Docker Desktop
+    * Instalación de Docker Desktop en Linux
+    * Instalación de Docker Desktop en Windows
     * Introducción a la interfaz de Docker Desktop
     * Conectar Docker Desktop a la cuenta de Docker Hub
     * Gestión de imágenes
