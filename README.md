@@ -14,8 +14,8 @@
     * [Creando un contenedor demonio](contenido/modulo2/demonio.md)
     * [Creando un contenedor con un servidor web](contenido/modulo2/web.md)
     * [Configuración de contenedores con variables de entorno](contenido/modulo2/entorno.md)
-    * Labels
-    * Límites
+    * Etiquetando los contenedores con Labels
+    * Limitando los recursos utilizados por un contenedor
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
 
 3. Gestión de imágenes en Docker
