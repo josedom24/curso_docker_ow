@@ -18,7 +18,7 @@
     * Limitando los recursos utilizados por un contenedor
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
 
-3. Gestión de imágenes en Docker
+3. Gestión de imágenes en Docker (https://docs.docker.com/docker-hub/)
     * Registro de imágenes: Docker Hub
     * Gestión de imágenes
     * ¿Cómo se organizan las imágenes?
@@ -58,7 +58,7 @@
     * Ejemplo 4: Despliegue de tomcat + nginx
     * Ejemplos reales de despliegues usando Docker Compose 
 
-7. Creación de imágenes en Docker (https://docs.docker.com/build/)
+7. Creación de imágenes en Docker (https://docs.docker.com/build/; https://docs.docker.com/build/guide/)
     * Creación de imágenes a partir de un contenedor
     * Creación de imágenes a partir de un Dockerfile
     * Distribución de imágenes
