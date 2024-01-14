@@ -3,10 +3,10 @@
 1. Introducción a Docker
 	* Introducción a los contenedores
     * Introducción a Docker
-    * [Instalación de la versión de la comunidad de docker Moby en Linux](contenido/modulo1/instalacion_moby_linux.md)
     * [Instalación de Docker Engine en Linux](contenido/modulo1/instalacion_linux.md)
         * Aquí se puede introducir docker info (https://docs.docker.com/engine/reference/commandline/info/)
-    * Instalación de Docker en Windows
+        * Aquí se puede hablar de [Instalación de la versión de la comunidad de docker Moby en Linux](contenido/modulo1/instalacion_moby_linux.md)
+    * Trabajando con Docker en Microsoft Windows
     
 2. Ejecución de contenedores (https://docs.docker.com/engine/reference/run/)
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
