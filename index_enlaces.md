@@ -5,6 +5,7 @@
     * Introducción a Docker
     * [Instalación de la versión de la comunidad de docker Moby en Linux](contenido/modulo1/instalacion_moby_linux.md)
     * [Instalación de Docker Engine en Linux](contenido/modulo1/instalacion_linux.md)
+        * Aquí se puede introducir docker info (https://docs.docker.com/engine/reference/commandline/info/)
     * Instalación de Docker en Windows
     
 2. Ejecución de contenedores (https://docs.docker.com/engine/reference/run/)
@@ -14,8 +15,8 @@
     * [Creando un contenedor demonio](contenido/modulo2/demonio.md)
     * [Creando un contenedor con un servidor web](contenido/modulo2/web.md)
     * [Configuración de contenedores con variables de entorno](contenido/modulo2/entorno.md)
-    * Etiquetando los contenedores con Labels
-    * Limitando los recursos utilizados por un contenedor
+    * Etiquetando los contenedores con Labels (https://docs.docker.com/config/labels-custom-metadata/)
+    * Limitando los recursos utilizados por un contenedor (https://docs.docker.com/config/containers/resource_constraints/)
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
 
 3. Gestión de imágenes en Docker (https://docs.docker.com/docker-hub/)
@@ -45,6 +46,7 @@
     * Ejemplo 2: Despliegue de la aplicación Temperaturas
     * Ejemplo 3: Despliegue de Wordpress + mariadb
     * Ejemplo 4: Despliegue de tomcat + nginx 
+    * Eliminar objetos Docker no utilizados (https://docs.docker.com/config/pruning/)
 
 6. Creando escenarios multicontenedor con Docker Compose (https://docs.docker.com/compose/)
     * Instalación de Docker Compose

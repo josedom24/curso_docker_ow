@@ -77,7 +77,7 @@ MariaDB [(none)]>
 También nos podemos conectar usando la dirección `127.0.0.1`:
 
 ```bash
-$ mysql -u root -p -h 127.0.0.1
+$ mariadb -u root -p -h 127.0.0.1
 Enter password: 
 ...
 MariaDB [(none)]> 

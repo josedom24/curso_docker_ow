@@ -45,6 +45,7 @@
     * Ejemplo 2: Despliegue de la aplicación Temperaturas
     * Ejemplo 3: Despliegue de Wordpress + mariadb
     * Ejemplo 4: Despliegue de tomcat + nginx 
+    * Eliminar objetos Docker no utilizados
 
 6. Creando escenarios multicontenedor con Docker Compose
     * Instalación de Docker Compose
