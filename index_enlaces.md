@@ -22,7 +22,7 @@
         * Aquí se puede introducir docker stats (https://docs.docker.com/engine/reference/commandline/stats/)
         * https://blog.codmind.com/establecer-quotas-o-maximos-de-uso-de-cpu-ram-y-disco-de-un-contenedor-docker/
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
-
+        * ¿Dónde meto docker container prune, para borrar todos los contenedores parados?
 3. Gestión de imágenes en Docker (https://docs.docker.com/docker-hub/)
     * Registro de imágenes: Docker Hub
     * Gestión de imágenes
