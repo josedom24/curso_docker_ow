@@ -10,6 +10,7 @@
     
 2. Ejecución de contenedores (https://docs.docker.com/engine/reference/run/)
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
+        * Aquí se puede introducir docker create (https://docs.docker.com/engine/reference/commandline/create/)
     * [Ejecución simple de contenedores](contenido/modulo2/contenedor.md) 
     * [Ejecutando un contenedor interactivo](contenido/modulo2/interactivo.md)
     * [Creando un contenedor demonio](contenido/modulo2/demonio.md)
