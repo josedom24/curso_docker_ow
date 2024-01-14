@@ -18,6 +18,8 @@
     * [Configuración de contenedores con variables de entorno](contenido/modulo2/entorno.md)
     * Etiquetando los contenedores con Labels (https://docs.docker.com/config/labels-custom-metadata/)
     * Limitando los recursos utilizados por un contenedor (https://docs.docker.com/config/containers/resource_constraints/)
+        * Aquí se puede introducir docker stats (https://docs.docker.com/engine/reference/commandline/stats/)
+        * https://blog.codmind.com/establecer-quotas-o-maximos-de-uso-de-cpu-ram-y-disco-de-un-contenedor-docker/
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
 
 3. Gestión de imágenes en Docker (https://docs.docker.com/docker-hub/)
