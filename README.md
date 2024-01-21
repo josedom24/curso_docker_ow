@@ -19,6 +19,7 @@
 
 3. Gestión de imágenes en Docker
     * Registro de imágenes: Docker Hub
+    * Imágenes de confianza en Docker Hub (https://docs.docker.com/trusted-content/official-images/)
     * Gestión de imágenes
     * ¿Cómo se organizan las imágenes?
     * Creación de contenedores desde imágenes
