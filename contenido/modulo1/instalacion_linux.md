@@ -8,7 +8,7 @@ En este apartado vamos a realizar la instalación binaria de Docker Engine sobre
 
 Para el sistema operativo Ubuntu puedes seguir las instrucciones y requerimientos en el siguiente [enlace](https://docs.docker.com/engine/install/ubuntu/). Suponemos que vamos a realizar la instalación en un sistema operativo que no tiene instalado versiones antiguas de Docker.
 
-Tenemos varios métodos de instalación disponible: instalando Docker Desktop, usando los repositorios oficiales de Docker, Descargando manualmente los ficheros `deb` o ejecutando un script de instalación.
+Tenemos varios métodos de instalación disponible: instalando Docker Desktop, usando los repositorios oficiales de Docker, descargando manualmente los ficheros `deb` o ejecutando un script de instalación.
 
 En nuestro caso usaremos los repositorios apt de de Docker, para ello:
 

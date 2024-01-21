@@ -4,7 +4,7 @@
 	* [Introducción a los contenedores](contenido/modulo1/contenedores.md)
     * [Introducción a Docker](contenido/modulo1/docker.md)
     * [Instalación de Docker Engine en Linux](contenido/modulo1/instalacion_linux.md)
-    * Trabajando con Docker en Microsoft Windows
+    * Instalación de Docker Desktop en Windows
     
 2. Ejecución de contenedores
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
@@ -65,6 +65,7 @@
     * Ejemplo 1: Construcción de imágenes con una página estática
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
+    * Análisis de imágenes con Docker Scout (https://docs.docker.com/scout/quickstart/)
     * Ciclo de vida de las aplicaciones 
 
 8. Docker Desktop
