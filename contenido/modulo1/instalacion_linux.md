@@ -47,3 +47,7 @@ Y finalmente, comprobamos la versión con la que vamos a trabajar:
 
     docker --version
     Docker version 25.0.0, build ...
+
+Si queremos más información de las versiones de los componentes con los que vamos a trabajar, ejecutamos:
+
+        docker version
