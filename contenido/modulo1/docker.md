@@ -38,7 +38,7 @@ Docker utiliza una arquitectura cliente-servidor. El **cliente Docker** se comun
 
 ## Arquitectura de Docker
 
-* **El demonio Docker**: Ofrece una API REST que utiliza el cliente Docker, y gestiona los objetos Docker.
+* **El demonio Docker (Docker Engine)**: Ofrece una API REST que utiliza el cliente Docker, y gestiona los objetos Docker.
 * **El cliente Docker**: Usando el comando `docker` nos comunicamos con el demonio Docker para gestionar los objetos Docker con los que trabajamos. El cliente y el demonio pueden estar en equipos distintos.
 * **Registros Docker**: Un registro Docker almacena imágenes Docker. Docker Hub es un registro público que cualquiera puede utilizar, y Docker busca imágenes en Docker Hub de forma predeterminada. Podemos crear registros privados.
 * **Docker Desktop**: Aplicación gráfica que permite la gestión sencilla de objetos Docker. Incluye el demonio y el cliente Docker.
