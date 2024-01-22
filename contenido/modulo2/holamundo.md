@@ -39,11 +39,19 @@ Pero, ¿qué es lo que está sucediendo al ejecutar esa orden?:
 3. Se crea el contenedor que ejecuta un comando que muestra el mensaje que hemos leído.
 4. El mensaje se envía al cliente Docker que nos lo muestra en el terminal.
 
+**NOTA**: En realidad todas los comandos del cleinte Docker que trabajan con contenedores son subcomandos de `docker container`, pero se puede abreviar omitiendo el comando `container`, es decir estos dos comandos son iguales:
+
+```bash
+$ docker container run ...
+$ docker run...
+```
+
 Si listamos los contenedores que se están ejecutando (`docker ps`):
 
 ```bash
 $ docker ps
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+
 ```
 Comprobamos que este contenedor no se está ejecutando. **Un contenedor ejecuta un proceso y cuando termina la ejecución, el contenedor se para.**
 
@@ -51,8 +59,8 @@ Para ver los contenedores que no se están ejecutando (observa que se ha asignad
 
 ```bash
 $ docker ps -a
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
-372ca4634d53        hello-world         "/hello"            8 minutes ago       Exited (0) 8 minutes ago                       elastic_johnson
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+e5ea0c675f71   hello-world   "/hello"   31 seconds ago   Exited (0) 29 seconds ago             quirky_hellman
 ```
 
 Como podemos observar el script que ha ejecutado el contenedor se llama `/hello`.
@@ -60,13 +68,13 @@ Como podemos observar el script que ha ejecutado el contenedor se llama `/hello`
 Para eliminar el contenedor podemos identificarlo con su `id`:
 
 ```bash
-$ docker rm 372ca4634d53
+$ docker rm e5ea0c675f71
 ```
 
 o con su nombre:
 
 ```bash
-$ docker rm elastic_johnson
+$ docker rm quirky_hellman
 ```
 
 ## Creación de contenedores sin ejecutarlos
@@ -82,10 +90,15 @@ Podemos ver que el contenedor está creado pero no en ejecución:
 
 ```bash
 $ docker ps -a
+CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS    PORTS     NAMES
+590ac3f01de5   hello-world   "/hello"   6 seconds ago   Created             focused_morse
 ```
 
-Podemos inicar la ejecución de este contenedor usando `docker start -i`. La opción `-a` nos permite conectar a la salida estándar del contenedor y poder ver en nuestro terminal la salida.
+Podemos iniciar la ejecución de este contenedor usando `docker start -i`. La opción `-a` nos permite conectar a la salida estándar del contenedor y poder ver en nuestro terminal la salida.
 
 ```bash
-$ docker start -a ...
+$ docker start -a focused_morse
+
+Hello from Docker!
+...
 ```

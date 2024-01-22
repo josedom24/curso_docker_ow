@@ -88,7 +88,7 @@
 * docker build
 * docker commit
 * docker cp
-* docker create
+* docker create (2.1)
 * docker diff
 * docker events
 * docker exec
@@ -151,14 +151,14 @@
     * docker plugin set
     * docker plugin upgrade
 * docker port
-* docker ps
-* docker pull
+* docker ps (2.1)
+* docker pull (2.2)
 * docker push
 * docker rename
 * docker restart
-* docker rm
+* docker rm (2.1)
 * docker rmi
-* docker run
+* docker run (2.1)
 * docker save
     * docker scout
     * docker scout cache
@@ -190,7 +190,7 @@
     * docker secret inspect
     * docker secret ls
     * docker secret rm
-* docker start
+* docker start (2.1)
     * docker service
     * docker service create
     * docker service inspect
