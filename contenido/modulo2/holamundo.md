@@ -1,6 +1,6 @@
 # El "Hola Mundo" de docker
 
-Vamos a crear nuestroo primer contenedor, para comprobar que todo está funcionando y vamos a explicar el proceso que se va a realizar para la creación del contenedor.  
+Vamos a crear nuestro primer contenedor, para comprobar que todo está funcionando y vamos a explicar el proceso que se va a realizar para la creación del contenedor.  
 
 ```bash
 $ docker run hello-world
@@ -34,8 +34,10 @@ For more examples and ideas, visit:
 
 Pero, ¿qué es lo que está sucediendo al ejecutar esa orden?:
 
-* Al ser la primera vez que ejecuto un contenedor basado en esa imagen (con el comando `run`), la imagen `hello-word` se descarga desde el repositorio que se encuentra en el registro que vayamos a utilizar, en nuestro caso DockerHub.
-* Muestra el mensaje de bienvenida que es la consecuencia de ejecutar un comando al crear y arrancar un contenedor basado en esa imagen.
+1. El cliente Docker se conecta al demonio Docker y le indica que debe crear un contenedor (`docker run`).
+2. Al ser la primera vez que ejecuto un contenedor basado en la imagen `hello-word`, se descarga del registro público llamado dockerHub y se guarda en nuestro registro local.
+3. Se crea el contenedor que ejecuta un comando que muestra el mensaje que hemos leído.
+4. El mensaje se envía al cliente Docker que nos lo muestra en el terminal.
 
 Si listamos los contenedores que se están ejecutando (`docker ps`):
 
@@ -45,7 +47,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ```
 Comprobamos que este contenedor no se está ejecutando. **Un contenedor ejecuta un proceso y cuando termina la ejecución, el contenedor se para.**
 
-Para ver los contenedores que no se están ejecutando:
+Para ver los contenedores que no se están ejecutando (observa que se ha asignado un nombre aleatorio al contenedor):
 
 ```bash
 $ docker ps -a
@@ -63,4 +65,25 @@ o con su nombre:
 
 ```bash
 $ docker rm elastic_johnson
+```
+
+## Creación de contenedores sin ejecutarlos
+
+De manera habitual vamos a usar `docker run` para crear y ejecutar un contenedor. Podríamos también crear un contenedor que no se jecute y posteriormente dar la orden de ejecución. Vamos a observar que la creación de este segundo contenedor será mucho más rápida ya que tenemos la imagen descargada en nuestro registro local. Para crear un contenedor y no iniciar su ejecución utilizaremos el comando `docker create`:
+
+```bash
+$ docker create hello-world
+```
+
+Podemos ver que el contenedor está creado pero no en ejecución:
+
+
+```bash
+$ docker ps -a
+```
+
+Podemos inicar la ejecución de este contenedor usando `docker start -i`. La opción `-a` nos permite conectar a la salida estándar del contenedor y poder ver en nuestro terminal la salida.
+
+```bash
+$ docker start -a ...
 ```
