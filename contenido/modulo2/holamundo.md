@@ -55,6 +55,8 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 372ca4634d53        hello-world         "/hello"            8 minutes ago       Exited (0) 8 minutes ago                       elastic_johnson
 ```
 
+Como podemos observar el script que ha ejecutado el contenedor se llama `/hello`.
+
 Para eliminar el contenedor podemos identificarlo con su `id`:
 
 ```bash
