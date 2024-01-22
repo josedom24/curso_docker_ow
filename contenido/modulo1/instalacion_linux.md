@@ -51,3 +51,7 @@ Y finalmente, comprobamos la versión con la que vamos a trabajar:
 Si queremos más información de las versiones de los componentes con los que vamos a trabajar, ejecutamos:
 
         docker version
+
+Para más información del sistema que hemos instalado podemos ejecutar:
+
+        docker info

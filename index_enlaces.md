@@ -108,7 +108,7 @@
     * docker image tag
 * docker images (2.1)
 * docker import
-* docker info
+* docker info (1.3)
 * docker init (Beta)
 * docker inspect
 * docker kill
@@ -237,7 +237,7 @@
     * docker trust signer remove
 * docker unpause
 * docker update
-* docker version
+* docker version (1.3)
     * docker volume create
     * docker volume inspect
     * docker volume ls
