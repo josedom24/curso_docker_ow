@@ -50,7 +50,32 @@ Con el comando `docker images` (también se puede usar `docker image ls`, `docke
 
 ```bash
 $ docker images
-REPOSITORY          TAG                 IMAGE ID           CREATED             SIZE
-ubuntu                     latest                  99284ca6cea0   3 weeks ago    77.8MB
-hello-world                latest                  9c7a54a9a43c   7 weeks ago    13.3kB
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+ubuntu        latest    e34e831650c1   11 days ago    77.9MB
+hello-world   latest    d2c94e258dcb   8 months ago   13.3kB
+```
+
+## ¿Qué ocurre cuando creamos un contenedor?
+
+Para terminar podemos ver las distintas etapas por las que pasa la creación de un contenedor ejecutando `docker events`. Para ello en una terminar ejecutamos el comando:
+
+```bash
+$ docker events
+```
+
+Y en otro terminal ejecutamos un contenedor:
+
+```bash
+$ docker run ubuntu echo 'Hello world' 
+```
+
+En el primer terminal veremos las operaciones que se han dio produciendo:
+
+```
+2024-01-22T21:08:37.947946863+01:00 container create 6167a0dbc036143fcd9d3b2783f6d507fbd72900622f8929a5424dee9264e9f5 (image=ubuntu, name=loving_jennings, org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=22.04)
+2024-01-22T21:08:37.953203114+01:00 container attach 6167a0dbc036143fcd9d3b2783f6d507fbd72900622f8929a5424dee9264e9f5 (image=ubuntu, name=loving_jennings, org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=22.04)
+2024-01-22T21:08:38.310303971+01:00 network connect 7e6404027e1ec38230c4dc35f40079c6f6366cd61d73a472517e39f598cebab1 (container=6167a0dbc036143fcd9d3b2783f6d507fbd72900622f8929a5424dee9264e9f5, name=bridge, type=bridge)
+2024-01-22T21:08:38.966836361+01:00 container start 6167a0dbc036143fcd9d3b2783f6d507fbd72900622f8929a5424dee9264e9f5 (image=ubuntu, name=loving_jennings, org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=22.04)
+2024-01-22T21:08:39.392255443+01:00 network disconnect 7e6404027e1ec38230c4dc35f40079c6f6366cd61d73a472517e39f598cebab1 (container=6167a0dbc036143fcd9d3b2783f6d507fbd72900622f8929a5424dee9264e9f5, name=bridge, type=bridge)
+2024-01-22T21:08:40.227050098+01:00 container die 6167a0dbc036143fcd9d3b2783f6d507fbd72900622f8929a5424dee9264e9f5 (execDuration=0, exitCode=0, image=ubuntu, name=loving_jennings, org.opencontainers.image.ref.name=ubuntu, org.opencontainers.image.version=22.04)
 ```

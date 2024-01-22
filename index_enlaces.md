@@ -83,14 +83,13 @@
     * Gestión de contenedores
 
 
-* docker (base command)
 * docker attach
 * docker build
 * docker commit
 * docker cp
 * docker create (2.1)
 * docker diff
-* docker events
+* docker events (2.2)
 * docker exec
 * docker export
 * docker history
@@ -107,7 +106,7 @@
     * docker image rm
     * docker image save
     * docker image tag
-* docker images
+* docker images (2.1)
 * docker import
 * docker info
 * docker init (Beta)
