@@ -10,7 +10,6 @@
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
     * [Ejecución simple de contenedores](contenido/modulo2/contenedor.md) 
     * [Más opciones en la ejecución de contenedores](contenido/modulo2/masopciones.md)
-    * [Ejecutando un contenedor demonio](contenido/modulo2/demonio.md)
     * [Creando un contenedor con un servidor web](contenido/modulo2/web.md)
     * [Configuración de contenedores con variables de entorno](contenido/modulo2/entorno.md)
     * Etiquetando los contenedores con Labels
