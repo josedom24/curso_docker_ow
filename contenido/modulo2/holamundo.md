@@ -35,11 +35,11 @@ For more examples and ideas, visit:
 Pero, ¿qué es lo que está sucediendo al ejecutar esa orden?:
 
 1. El cliente Docker se conecta al demonio Docker y le indica que debe crear un contenedor (`docker run`).
-2. Al ser la primera vez que ejecuto un contenedor basado en la imagen `hello-word`, se descarga del registro público llamado dockerHub y se guarda en nuestro registro local.
+2. Al ser la primera vez que ejecuto un contenedor basado en la imagen `hello-word`, se descarga del registro público llamado Docker Hub y se guarda en nuestro registro local.
 3. Se crea el contenedor que ejecuta un comando que muestra el mensaje que hemos leído.
 4. El mensaje se envía al cliente Docker que nos lo muestra en el terminal.
 
-**NOTA**: En realidad todas los comandos del cleinte Docker que trabajan con contenedores son subcomandos de `docker container`, pero se puede abreviar omitiendo el comando `container`, es decir estos dos comandos son iguales:
+**NOTA**: En realidad todas los comandos del cliente Docker que trabajan con contenedores son subcomandos de `docker container`, pero se puede abreviar omitiendo el comando `container`, es decir estos dos comandos son iguales:
 
 ```bash
 $ docker container run ...
@@ -50,7 +50,7 @@ Si listamos los contenedores que se están ejecutando (`docker ps`):
 
 ```bash
 $ docker ps
-CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS    PORTS     NAMES
 
 ```
 Comprobamos que este contenedor no se está ejecutando. **Un contenedor ejecuta un proceso y cuando termina la ejecución, el contenedor se para.**
@@ -59,8 +59,8 @@ Para ver los contenedores que no se están ejecutando (observa que se ha asignad
 
 ```bash
 $ docker ps -a
-CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
-e5ea0c675f71   hello-world   "/hello"   31 seconds ago   Exited (0) 29 seconds ago             quirky_hellman
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                    PORTS     NAMES
+e5ea0c675f71   hello-world   "/hello"   31 seconds ago   Exited (0) 29 seconds ago           quirky_hellman
 ```
 
 Como podemos observar el script que ha ejecutado el contenedor se llama `/hello`.
@@ -79,7 +79,7 @@ $ docker rm quirky_hellman
 
 ## Creación de contenedores sin ejecutarlos
 
-De manera habitual vamos a usar `docker run` para crear y ejecutar un contenedor. Podríamos también crear un contenedor que no se jecute y posteriormente dar la orden de ejecución. Vamos a observar que la creación de este segundo contenedor será mucho más rápida ya que tenemos la imagen descargada en nuestro registro local. Para crear un contenedor y no iniciar su ejecución utilizaremos el comando `docker create`:
+De manera habitual vamos a usar `docker run` para crear y ejecutar un contenedor. Podríamos también crear un contenedor que no se ejecute y posteriormente dar la orden de ejecución. Vamos a observar que la creación de este segundo contenedor será mucho más rápida ya que tenemos la imagen descargada en nuestro registro local. Para crear un contenedor y no iniciar su ejecución utilizaremos el comando `docker create`:
 
 ```bash
 $ docker create hello-world
