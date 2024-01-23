@@ -1,3 +1,25 @@
+# Gestión de contenedores Docker
+
+## Ciclo de vida de los contenedores
+
+start, stop, restart, pause, unpause
+
+## Ejecución de comandos en contenedores
+
+exec
+
+## Copiar ficheros en contenedores
+
+## Visualizar procesos que se ejecutan en un contenedor
+
+docker top
+
+## Obtener información de los contenedores
+
+inspect
+
+
+
 
 Si el contenedor se está ejecutando podemos ejecutar comandos en él con el subcomando `exec`:
 
@@ -7,7 +29,7 @@ contendor1
 $ docker exec contenedor1 ls -al
 ```
 
-Con la orden `docker restart` reiniciamos el contendor, lo paramos y lo iniciamos.
+Con la orden `docker restart` reiniciamos el contenedor, lo paramos y lo iniciamos.
 
 Para mostrar información de un contenedor ejecutamos `docker inspect`:
 

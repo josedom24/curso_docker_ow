@@ -10,10 +10,11 @@
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
     * [Ejecución simple de contenedores](contenido/modulo2/contenedor.md) 
     * [Más opciones en la ejecución de contenedores](contenido/modulo2/masopciones.md)
+    * [Gestión de contenedores Docker](contenido/modulo2/gestion.md)
     * [Creando un contenedor con un servidor web](contenido/modulo2/web.md)
     * [Configuración de contenedores con variables de entorno](contenido/modulo2/entorno.md)
     * Etiquetando los contenedores con Labels
-    * Limitando los recursos utilizados por un contenedor
+    * Limitando los recursos utilizados por un contenedor docker stats update
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
 
 3. Gestión de imágenes en Docker

@@ -86,11 +86,11 @@
 * docker attach (2.3)
 * docker build
 * docker commit
-* docker cp
+* docker cp (2.4)
 * docker create (2.1)
 * docker diff
 * docker events (2.2)
-* docker exec
+* docker exec (2.4)
 * docker export
 * docker history
     * docker image
@@ -110,7 +110,7 @@
 * docker import
 * docker info (1.3)
 * docker init (Beta)
-* docker inspect
+* docker inspect (2.4)
 * docker kill
 * docker load
 * docker login
@@ -138,7 +138,7 @@
     * docker node ps
     * docker node rm
     * docker node update
-* docker pause
+* docker pause (2.4)
     * docker plugin
     * docker plugin create
     * docker plugin disable
@@ -154,7 +154,7 @@
 * docker pull (2.2)
 * docker push
 * docker rename (2.2)
-* docker restart
+* docker restart (2.4)
 * docker rm (2.1)
 * docker rmi
 * docker run (2.1)
@@ -208,7 +208,7 @@
     * docker stack rm
     * docker stack services
 * docker stats
-* docker stop
+* docker stop (2.4)
     * docker swarm
     * docker swarm ca
     * docker swarm init
@@ -224,7 +224,7 @@
     * docker system info
     * docker system prune
 * docker tag
-* docker top
+* docker top (2.4)
     * docker trust
     * docker trust inspect
     * docker trust key
@@ -235,7 +235,7 @@
     * docker trust signer
     * docker trust signer add
     * docker trust signer remove
-* docker unpause
+* docker unpause (2.4)
 * docker update
 * docker version (1.3)
     * docker volume create
