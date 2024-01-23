@@ -20,8 +20,6 @@ Para acceder al log del contenedor podemos ejecutar:
 $ docker logs my-apache-app
 ```
 
-Con la opción `logs -f` seguimos visualizando los logs en tiempo real.
-
 ## Modificación del contenido servidor por el servidor web
 
 Si consultamos la documentación de la imagen [`httpd`](https://hub.docker.com/_/httpd) en el registro Docker Hub, podemos determinar que el servidor web que se ejecuta en el contenedor guardar sus ficheros (directorio *DocumentRoot*) en `/usr/local/apache2/htdocs/`. Vamos a crear un nuevo fichero `index.html` en ese directorio.

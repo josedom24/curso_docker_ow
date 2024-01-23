@@ -83,7 +83,7 @@
     * Gestión de contenedores
 
 
-* docker attach
+* docker attach (2.3)
 * docker build
 * docker commit
 * docker cp
@@ -115,7 +115,7 @@
 * docker load
 * docker login
 * docker logout
-* docker logs
+* docker logs (2.3)
     * docker manifest
     * docker manifest annotate
     * docker manifest create
@@ -153,7 +153,7 @@
 * docker ps (2.1)
 * docker pull (2.2)
 * docker push
-* docker rename
+* docker rename (2.2)
 * docker restart
 * docker rm (2.1)
 * docker rmi
