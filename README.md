@@ -14,7 +14,7 @@
     * [Gestión de contenedores Docker](contenido/modulo2/gestion.md)
     * [Ejemplo: Creando un contenedor con un servidor web](contenido/modulo2/web.md)
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
-    * Etiquetando los contenedores con Labels
+    * [Etiquetando los contenedores con Labels](contenido/modulo2/labels.md)
     * Limitando los recursos utilizados por un contenedor docker stats update
 
 3. Gestión de imágenes en Docker
