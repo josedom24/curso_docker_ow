@@ -9,10 +9,10 @@
 2. Ejecución de contenedores
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
     * [Ejecución simple de contenedores](contenido/modulo2/contenedor.md) 
-    * [Más opciones en la ejecución de contenedores](contenido/modulo2/masopciones.md)
+    * [Más opciones en la ejecución de contenedores (1ª parte)](contenido/modulo2/masopciones.md)
+    * [Más opciones en la ejecución de contenedores (2ª parte)](contenido/modulo2/masopciones2.md)
     * [Gestión de contenedores Docker](contenido/modulo2/gestion.md)
     * [Ejemplo: Creando un contenedor con un servidor web](contenido/modulo2/web.md)
-    * [Configuración de contenedores con variables de entorno](contenido/modulo2/entorno.md)
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
     * Etiquetando los contenedores con Labels
     * Limitando los recursos utilizados por un contenedor docker stats update
