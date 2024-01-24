@@ -46,7 +46,6 @@ Para terminar este apartado veamos un filtro que nos devuelve las etiqeutas usan
 
 ```bash
 $ docker inspect --format '{{range $key, $value := .Config.Labels}}{{$key}}: {{$value}}{{"\n"}}{{end}}' prueba_web
-$ docker inspect --format '{{range $key, $value := .Config.Labels}}{{$key}}: {{$value}}{{"\n"}}{{end}}' prueba_web
 aplicacion: apache
 entorno: desarrollo
 org.opencontainers.image.ref.name: ubuntu
