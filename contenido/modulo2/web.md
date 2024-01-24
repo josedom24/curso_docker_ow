@@ -1,17 +1,15 @@
 # Ejemplo: Creando un contenedor con un servidor web
 
-Tenemos muchas imágenes en el registro público **Docker Hub**, por ejemplo podemos crear un servidor web con apache 2.4:
+En este ejemplo vamos a crear un contenedor demonio que ejecuta un servidor web apache2, para ello vamos a usar la imagen `httpd:2.4` del registro **Docker Hub** (en este caso hemos indicado el nombre de la iamgen y su etiqueta `2.4` que en este caso nos indica la versión del servidor web que vamos a usar):
 
 ```bash
 $ docker run -d --name my-apache-app -p 8080:80 httpd:2.4
 ```
 
-Vemos que el contenedor se está ejecutando, además con la opción `-p` mapeamos un puerto del equipo donde tenemos instalado el docker, con un puerto del contenedor: Si accedemos a la ip del ordenador que tiene instalado docker al primer puerto indicado, se redigirá la petición a la ip del contenedor al segundo puerto indicado. **Nunca utilizamos directamente la ip del contenedor para acceder a él**. 
-
-
+Hay que tener en cuenta que los contenedores que estamos creando se conectan a una red virtual privada y que toman direccionamiento dinámico. No solemos usar la dirección ip del contenedor para acceder al servicio que nos ofrece. Con la opción `-p` mapeamos un puerto del equipo donde tenemos instalado el docker, con el puerto del servicio ofrecido por el contenedor: Si accedemos a la ip del ordenador que tiene instalado docker al primer puerto indicado, se redigirá la petición a la ip del contenedor al segundo puerto indicado. **Nunca utilizamos directamente la ip del contenedor para acceder a él**. 
 
 docker port
-
+docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}}  {{(index $conf 0).HostPort}} -> {{$p}} {{end}}' my-apache-app
 
 Para probarlo accede desde un navegador a **la ip del servidor con docker (en mi caso: 192.168.121.54) y al puerto 8080**:
 
