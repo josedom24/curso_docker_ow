@@ -26,7 +26,7 @@
 3. Gestión de imágenes en Docker (https://docs.docker.com/docker-hub/)
     * Registro de imágenes: Docker Hub
     * Gestión de imágenes
-    * ¿Cómo se organizan las imágenes?
+    * ¿Cómo se organizan las imágenes? https://docs.docker.com/storage/storagedriver/
     * Creación de contenedores desde imágenes
     * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
  
