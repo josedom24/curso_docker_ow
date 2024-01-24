@@ -17,7 +17,7 @@ CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS                  
 6b5742b82a07   ubuntu    "/bin/bash"   7 seconds ago    Exited (0) 5 seconds ago              bd
 30d6f1a83749   ubuntu    "/bin/bash"   19 seconds ago   Exited (0) 17 seconds ago             web
 3d2ebb7ecfde   ubuntu    "/bin/bash"   39 seconds ago   Exited (0) 36 seconds ago             prueba_bd
-553675a1457e   ubuntu    "/bin/bash"   2 minutes ago    Exited (0) 50 seconds ago             prueba_web
+553675a1457e   ubuntu    "/bin/bash"   52 seconds ago   Exited (0) 50 seconds ago             prueba_web
 ```
 
 Hay que tener en cuenta que estos contenedores tendrán además de las etiquetas indicadas en su creación, las etiquetas que estén definidas en la imagen que hemos utilizado para su creación.
