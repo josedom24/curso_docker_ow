@@ -45,6 +45,8 @@ Lo podemos hacer de varias formas:
     $ docker exec my-apache-app bash -c 'echo "<h1>Curso Docker</h1>" > /usr/local/apache2/htdocs/index.html'
     ```
 
+* Usando el comando `docker cp`:...
+
 Independientemente de cómo hayamos creado el fichero, podemos volver a acceder al servidor web y comprobar que efectivamente hemos cambiado el contenido del `index.html`:
 
 ![web](img/web2.png)
