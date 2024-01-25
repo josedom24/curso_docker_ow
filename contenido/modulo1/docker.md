@@ -34,7 +34,7 @@
 
 Docker utiliza una arquitectura cliente-servidor. El **cliente Docker** se comunica (usando una API REST) con el **demonio Docker**, encargado de gestionar las imágenes, contenedores, volúmenes, redes,...
 
-![ ](img/arquitectura_Docker.png)
+![ ](img/arquitectura_docker.png)
 
 ## Arquitectura de Docker
 
