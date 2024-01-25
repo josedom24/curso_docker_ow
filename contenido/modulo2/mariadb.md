@@ -4,9 +4,9 @@ En ocasiones es obligatorio el inicializar alguna variable de entorno para que e
 
 ```bash
 $ docker run -d --name some-mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw mariadb
-$ docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED                STATUS              PORTS               NAMES
-9c3effd891e3        mariadb             "docker-entrypoint.s…"   8 seconds ago       Up 7   seconds        3306/tcp            some-mariadb
+$ $ docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS         PORTS             NAMES
+09425481aee6   mariadb     "docker-entrypoint.s…"   22 seconds ago   Up 1 second    3306/tcp          some-mariadb
 ```
 
 Podemos ver que se ha creado una variable de entorno:
@@ -61,11 +61,11 @@ Comprobamos que los puertos se han mapeado y que el contenedor está ejecutándo
 
 ```bash
 $ docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
-816ea7df5c41        mariadb             "docker-entrypoint.s…"   3 seconds ago       Up 2 seconds        0.0.0.0:3306->3306/tcp   some-mariadb
+CONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+8d1857ff1d2f   mariadb     "docker-entrypoint.s…"   14 seconds ago   Up 11 seconds   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp   some-mariadb
 ```
 
-Ahora desde nuestro equipo (donde hemos instalado un cliente de mariadb (`sudo apt install mariadb-client`)) nos conectamos  que tiene la ip `192.168.121.54` vamos a conectarnos a la base de datos (hay que tener instalado el cliente de mariadb):
+Ahora desde nuestro equipo (donde hemos instalado un cliente de mariadb (`sudo apt install mariadb-client`)) nos conectamos al host (que en mi caso tiene la dirección IP `192.168.121.54`:
 
 ```bash
 $ mariadb -u root -p -h 192.168.121.54
