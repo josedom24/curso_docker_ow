@@ -53,7 +53,6 @@ $ docker stats servidor_web
 CONTAINER ID   NAME           CPU %     MEM USAGE / LIMIT   MEM %     NET I/O       BLOCK I/O    PIDS
 fd2ee83e755a   servidor_web   0.01%     6MiB / 512MiB       1.17%     4.25kB / 0B   0B / 4.1kB   82
 ```
-```
 
 También podemos usar `docker inspect` para ver el límite de memoria que hemos configurado en un contenedor:
 
