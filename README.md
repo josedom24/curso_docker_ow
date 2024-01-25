@@ -18,18 +18,11 @@
     * [Limitando los recursos utilizados por un contenedor Docker](contenido/modulo2/limite.md)
 
 3. Gestión de imágenes en Docker
-    * Imágenes docker
+    * Imágenes Docker
+    * Registro de imágenes: Docker Hub
+    * Gestión de Imágenes
     * ¿Cómo se organizan las imágenes? https://docs.docker.com/storage/storagedriver/
-    * Registro de imágenes: Docker Hub
-
-
-
-
-    * Registro de imágenes: Docker Hub
-    * Imágenes de confianza en Docker Hub (https://docs.docker.com/trusted-content/official-images/)
-    * Gestión de imágenes
-    * ¿Cómo se organizan las imágenes?
-    * Creación de contenedores desde imágenes
+    * Demostración: Almacenamiento de imágenes y contenedores
     * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
 
 4. Almacenamiento en Docker
