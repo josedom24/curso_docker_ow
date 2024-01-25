@@ -15,9 +15,16 @@
     * [Ejemplo: Creando un contenedor con un servidor web](contenido/modulo2/web.md)
     * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
     * [Etiquetando los contenedores con Labels](contenido/modulo2/labels.md)
-    * Limitando los recursos utilizados por un contenedor docker stats update
+    * Limitando los recursos utilizados por un contenedor docker
 
 3. Gestión de imágenes en Docker
+    * Imágenes docker
+    * ¿Cómo se organizan las imágenes? https://docs.docker.com/storage/storagedriver/
+    * Registro de imágenes: Docker Hub
+
+
+
+
     * Registro de imágenes: Docker Hub
     * Imágenes de confianza en Docker Hub (https://docs.docker.com/trusted-content/official-images/)
     * Gestión de imágenes
