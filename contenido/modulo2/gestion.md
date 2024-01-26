@@ -101,13 +101,13 @@ $ docker inspect --format='{{.Config.Image}}' hora-container2
 El valor de las variables de entorno definidas en el contenedor:
 
 ```bash
-$ docker container inspect -f '{{range .Config.Env}}{{.}}{{end}}' hora-container2
+$ docker container inspect -f '{{range .Config.Env}}{{println .}}{{end}}' hora-container2
 ```
 
 El comando que hemos ejecutado en el contenedor:
 
 ```bash
-$ docker inspect --format='{{range .Config.Cmd}}{{.}}{{end}}' hora-container2
+$ docker inspect --format='{{range .Config.Cmd}}{{println .}}{{end}}' hora-container2
 ```
 
 La dirección IP que tiene el contenedor:

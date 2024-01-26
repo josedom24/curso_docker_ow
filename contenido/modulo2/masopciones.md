@@ -31,9 +31,9 @@ root@cont1:/#
 El contenedor se para cuando salimos de él. Para volver a conectarnos a él:
 
 ```bash
-$ docker start contendor2
+$ docker start contenedor2
 contendor1
-$ docker attach contendor2
+$ docker attach contenedor2
 root@cont1:/#
 ```
 
