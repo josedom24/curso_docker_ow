@@ -26,8 +26,8 @@
     * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
 
 4. Almacenamiento en Docker
-    * Los contenedores son efímeros
-    * Volúmenes Docker y bind mount
+    * [Los contenedores son efímeros](contenido/modulo4/efimeros.md)
+    * [Almacenamiento en Docker](contenido/modulo4/almacenamiento.md)
     * Asociando almacenamiento a los contenedores: volúmenes Docker
     * Asociando almacenamiento a los contenedores: bind mount
     * Ejemplo 1: Contenedor nextcloud con almacenamiento persistente
