@@ -25,12 +25,4 @@ $ curl http://localhost:8080
 
 Vemos como al eliminar el contenedor, la información que habíamos guardado en el fichero `index.html` se pierde, y al crear un nuevo contenedor ese fichero tendrá el contenido original.
 
-## Los datos en los contenedores
-
-![docker](img/types-of-mounts.png)
-
-Ante la situación anteriormente descrita Docker nos proporciona varias soluciones para persistir los datos de los contenedores. En este curso nos vamos a centrar en las dos que considero que son más importantes:
-
-* Los **volúmenes docker**.
-* Los **bind mount**
-* Loa **tmpfs mounts**: Almacenan en memoria la información. (No lo vamos a ver en este curso)
+Docker nos ofrece diferentes mecanismos para hacer persistentes los contenedores y no perder los datos de nuestros contenedores.
