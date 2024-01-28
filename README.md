@@ -22,7 +22,7 @@
     * [Registro de imágenes: Docker Hub](contenido/modulo3/dockerhub.md)
     * [Gestión de Imágenes](contenido/modulo3/gestion.md)
     * [¿Cómo se organizan las imágenes?](contenido/modulo3/organizacion.md)
-    * Demostración: Almacenamiento de imágenes y contenedores
+    * [Demostración: Almacenamiento de imágenes y contenedores](contenido/modulo3/almacenamiento.md)
     * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
 
 4. Almacenamiento en Docker
