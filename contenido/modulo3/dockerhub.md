@@ -40,3 +40,30 @@ Podemos encontrar con varios tipos de imágenes,s egún lo que nos ofrece:
 ![ ](img/sponsored-badge-iso.png)
 
 * **Imágenes de código abierto patrocinadas por Docker**: Estás imágenes son publicadas y mantenidas por proyectos de código abierto patrocinados por Docker.
+
+## Introducción a la interfaz web de Docker Hub
+
+Podemos acceder al registro público de imágenes Docker **Docker Hub** en el enlace: [https://hub.docker.com](https://hub.docker.com).
+
+![ ](img/dockerhub.png)
+
+Podemos observar varios elementos:
+
+1. Un formulario de búsqueda que nos permite buscar imágenes por palabras.
+2. Si tenemos muchos resultados tenemos la opción de filtrar la búsqueda por tipo de producto, contenido de confianza, sistema operativo y arquitectura.
+3. Al hacer la búsqueda obtenemos una lista de **repositorios**. Cada repositorio puede almacenar distintas versiones de una misma imagen.
+4. Podemos darnos de alta en docker Hub, para gestionar nuestras propias imágenes. 
+
+Si accedemos a un repositorio, visualizaremos la documentación de la imagen (pestaña **Overview**). Iremos estudiando detenidamente la documentación de varias imágenes, pero los apartados más comunes que nos encontramos son los siguientes:
+
+* Descripción de la aplicación o servicio ofrecida por la imagen.
+* Etiquetas con las que podemos trabajar en esta imagen.
+* Ejemplos de cómo crear contenedores a partir de esta imagen.
+* Variables de entorno que puedo crear en la creación para configurar el servicio o la aplicación.
+* Directorios que debo almacenar para hacer el contenedor persistente.
+* Ejemplos de ficheros `docker-compose.yaml` para suar Docker Compose para gestiona el ciclo de vida de la aplicación.
+
+En la pestaña **Tags** obtenemos una lista de todas las versiones de la imagen para cada uno de los sistemas operativos y arquitecturas.
+
+![ ](img/dockerhub2.png)
+
