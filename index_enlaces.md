@@ -99,11 +99,11 @@
     * docker image import
     * docker image inspect
     * docker image load
-    * docker image ls
+    * docker image ls (modulo3)
     * docker image prune
-    * docker image pull
+    * docker image pull (modulo3)
     * docker image push
-    * docker image rm
+    * docker image rm (modulo3)
     * docker image save
     * docker image tag
 * docker images (2.1)
@@ -151,12 +151,12 @@
     * docker plugin upgrade
 * docker port
 * docker ps (2.1)
-* docker pull (2.2)
+* docker pull (2.2) (modulo3)
 * docker push
 * docker rename (2.2)
 * docker restart (2.4)
 * docker rm (2.1)
-* docker rmi
+* docker rmi (modulo3)
 * docker run (2.1)
 * docker save
     * docker scout
@@ -183,8 +183,8 @@
     * docker scout stream
     * docker scout version
     * docker scout watch
-* docker search
-    * docker secret
+* docker search (modulo3)
+    * docker secet
     * docker secret create
     * docker secret inspect
     * docker secret ls
