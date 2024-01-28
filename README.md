@@ -21,7 +21,7 @@
     * [Imágenes Docker](contenido/modulo3/imagenes.md)
     * [Registro de imágenes: Docker Hub](contenido/modulo3/dockerhub.md)
     * [Gestión de Imágenes](contenido/modulo3/gestion.md)
-    * ¿Cómo se organizan las imágenes? https://docs.docker.com/storage/storagedriver/
+    * [¿Cómo se organizan las imágenes?](contenido/modulo3/organizacion.md)
     * Demostración: Almacenamiento de imágenes y contenedores
     * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
 
