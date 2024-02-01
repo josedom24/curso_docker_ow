@@ -29,7 +29,7 @@
     * [Los contenedores son efímeros](contenido/modulo4/efimeros.md)
     * [Almacenamiento en Docker](contenido/modulo4/almacenamiento.md)
     * [Asociando almacenamiento a los contenedores: volúmenes Docker](contenido/modulo4/volumen.md)
-    * Asociando almacenamiento a los contenedores: bind mount
+    * [Asociando almacenamiento a los contenedores: bind mount](contenido/modulo4/bindmount.md)
     * Ejemplo 1: Contenedor nextcloud con almacenamiento persistente
     * Ejemplo 2: Contenedor mariadb con almacenamiento persistente
     * Otros usos del almacenamiento 
