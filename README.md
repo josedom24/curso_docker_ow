@@ -30,8 +30,8 @@
     * [Almacenamiento en Docker](contenido/modulo4/almacenamiento.md)
     * [Asociando almacenamiento a los contenedores: volúmenes Docker](contenido/modulo4/volumen.md)
     * [Asociando almacenamiento a los contenedores: bind mount](contenido/modulo4/bindmount.md)
-    * Ejemplo 1: Contenedor nextcloud con almacenamiento persistente
-    * Ejemplo 2: Contenedor mariadb con almacenamiento persistente
+    * [Ejemplo 1: Contenedor NextCloud con almacenamiento persistente](contenido/modulo4/nextcloud.md)
+    * Ejemplo 2: Contenedor MariaDB con almacenamiento persistente
     * Otros usos del almacenamiento 
 
 5. Redes en Docker
