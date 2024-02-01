@@ -52,6 +52,7 @@
     * Ejemplo 4: Despliegue de tomcat + nginx 
     * Eliminar objetos Docker no utilizados (https://docs.docker.com/config/pruning/)
         * docker system prune
+        * docker image prune (Tiene que ver con las imágenes <none>)
 
 6. Creando escenarios multicontenedor con Docker Compose (https://docs.docker.com/compose/)
     * Instalación de Docker Compose
@@ -73,6 +74,18 @@
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
     * Ciclo de vida de las aplicaciones 
+
+    Hay que mete las imágenes <none>:
+
+    Una imagen colgante es una imagen que no tiene ni nombre de repositorio ni etiqueta. Aparece en los listados de imágenes de Docker como <none>:<none>.
+
+Nota: En <none>:<none>, el primer <none> se refiere al nombre del repositorio de la imagen, y el segundo <none> se refiere a la etiqueta de la imagen.
+
+He aquí un ejemplo para ayudarle a entender por qué y cómo una imagen Docker se convierte en una imagen colgante.
+
+Digamos que construyes una imagen de aplicación y la etiquetas como my-image:v1. Luego, haces algunas actualizaciones a la imagen y construyes una nueva imagen, pero con la misma etiqueta. Docker eliminará la etiqueta de la imagen anterior y la asignará a la nueva imagen. Como resultado, la imagen anterior que perdió su etiqueta se convierte en una imagen colgante. Todavía está presente en el repositorio local de imágenes de Docker, pero ya no está etiquetada con ningún nombre de repositorio o versión específica, y por lo tanto aparece como <none>:<none> en los listados de imágenes de Docker.
+
+
 
 8. Docker Desktop (https://docs.docker.com/desktop/)
     * Instalación de Docker Desktop en Linux
