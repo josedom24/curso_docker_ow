@@ -54,5 +54,25 @@ Ante la situación anteriormente descrita Docker nos proporciona varias solucion
 * Del mismo modo, si inicias un contenedor y especificas un volumen que aún no existe, se creará un volumen vacío para ti. 
 * Si montas un bind mount o un volumen no vacío en un directorio del contenedor en el que existen algunos archivos o directorios, estos archivos o directorios quedan ocultos por el montaje.
 
+## Uso de almacenamiento en contenedores
+
+En la creación de contenedores con `docker run` puedo indicar que vamos a usar volúmenes Docker para guardar la información de ciertos directorios. Tanto en el caso de uso de volúmenes como en el caso del uso de bind mount podemos indicar el uso de almacenamiento en la creación de un contenedor con las siguientes parámetros del comando `docker run`:
+
+* El parámetro `--volume` o `-v`
+* El parámetro `--mount`
+
+En general, `--mount` es más explícito y detallado. La mayor diferencia es que la sintaxis `-v` combina todas las opciones en un solo campo, mientras que la sintaxis `--mount` las separa.
+
+* Si usamos `-v` se debe indicar tras campos separados por dos puntos:
+    * El primer campo es el nombre del volumen, y es único en una determinada máquina. Para volúmenes anónimos, el primer campo se omite.
+    * El segundo campo es la ruta donde se montan el archivo o directorio en el contenedor.
+    * El tercer campo es opcional, y es una lista de opciones separadas por comas. Por ejemplo podemos indicar `ro` para configurar el montaje sólo de lectura.
+* Si usamos `--mount` hay que indicar un conjunto de datos de la forma `clave=valor`, separados por coma.
+    * Clave `type`: Indica el tipo de montaje. Los valores pueden ser `bind`, `volume` o `tmpfs`.
+    * Clave `source` o `src`: La fuente del montaje. Se indica el volumen o el directorio que se va montar con bind mount.
+    * Clave `dst` o `target`: Será la ruta donde está montado el fichero o directorio en el contenedor. 
+    * La opción `readonly` o `ro` es optativa, e indica que el montaje es de sólo lectura.
+    * La clave `volume-opt` para indicar opciones más específicas del montaje.
+
 
 
