@@ -46,12 +46,14 @@ Otro utilidad que le podemos dar al almacenamiento, en este caso a los bind moun
 
 Veamos un ejemplo en PHP: imaginemos que tenemos un código que es compatible y funciona bien en PHP5 y queremos comprobar como se comporta en la versión PHP7. 
 
-Siguiendo la documentación [Migración de PHP 5.6.x a PHP 7.0.x](https://www.php.net/manual/es/migration70.php), he escogido la función [list](https://www.php.net/manual/es/function.list.php) que se comporta de manera distinta en PHP5 que en PHP7.
+Siguiendo la documentación [Migración de PHP 5.6.x a PHP 7.0.x](https://www.php.net/manual/es/migration70.php), he escogido la función [list](https://www.php.net/manual/es/function.list.php) que se comporta de manera distinta en PHP5 que en PHP7: en PHP5, `list()` asigna los valores empezando desde el parámetro más a la derecha y en PHP7, empieza desde el parámetro más a la izquierda. 
 
 Imaginemos que tenemos un directorio `/opt/codigo` con nuestra aplicación `index.php`:
 
 ```php
 <?php
+echo 'Versión actual de PHP: ' . phpversion(). "<br/>";
+
 // Funciona bien en php5 ya que list hace la asignación desde el último al primero
 $info = array('cafeína','marrón', 'café');
 
