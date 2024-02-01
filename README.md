@@ -32,7 +32,7 @@
     * [Asociando almacenamiento a los contenedores: bind mount](contenido/modulo4/bindmount.md)
     * [Ejemplo 1: Contenedor NextCloud con almacenamiento persistente](contenido/modulo4/nextcloud.md)
     * [Ejemplo 2: Contenedor MariaDB con almacenamiento persistente](contenido/modulo4/mariadb.md)
-    * Otros usos del almacenamiento 
+    * [Otros usos del almacenamiento en Docker](contenido/modulo4/otrosusos.md)
 
 5. Redes en Docker
     * Introducción a las redes en Docker
