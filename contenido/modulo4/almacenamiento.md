@@ -75,4 +75,13 @@ En general, `--mount` es más explícito y detallado. La mayor diferencia es que
     * La clave `volume-opt` para indicar opciones más específicas del montaje.
 
 
+## ¿Qué información tenemos que guardar?
+
+¿Qué debemos guardar de forma persistente en un contenedor?
+
+* Los datos de la aplicación.
+* Los logs del servicio.
+* La configuración del servicio: En este caso podemos añadirla a la imagen, pero será necesaria la creación de una nueva imagen si cambiamos la configuración. Si la guardamos en un volumen hay que tener en cuanta que ese fichero lo tenemos que tener en el entorno de producción (puede ser bueno, porque las configuraciones de los distintos entornos puede variar).
+
+
 
