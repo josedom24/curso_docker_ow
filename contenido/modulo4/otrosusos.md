@@ -64,8 +64,8 @@ echo "El $datos[0] es $datos[1] y la $datos[2] lo hace especial.\n";
 A continuación vamos a crear dos contenedores que sirva este código usando imágenes distintas , para cada versión de PHP y usando puertos distintos para acceder a cada versión de la aplicación:
 
 ```bash
-$ docker run -d -p 8082:80 --name php56 -v opt/codigo:/var/www/html:ro php:5.6-apache
-$ docker run -d -p 8083:80 --name php74 -v opt/codigo:/var/www/html:ro php:7.4-apache
+$ docker run -d -p 8082:80 --name php56 -v /opt/codigo:/var/www/html:ro php:5.6-apache
+$ docker run -d -p 8083:80 --name php74 -v /opt/codigo:/var/www/html:ro php:7.4-apache
 ```
 
 Y ya podemos acceder a los dos puertos de nuestro anfitrión y comprobar cómo se comporta en PHP5 y en PHP7.
