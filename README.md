@@ -13,7 +13,7 @@
     * [Más opciones en la ejecución de contenedores (2ª parte)](contenido/modulo2/masopciones2.md)
     * [Gestión de contenedores Docker](contenido/modulo2/gestion.md)
     * [Ejemplo: Creando un contenedor con un servidor web](contenido/modulo2/web.md)
-    * [Ejemplo: Configuración de un contenedor con la imagen mariadb](contenido/modulo2/mariadb.md)
+    * [Ejemplo: Configuración de un contenedor con la imagen MariaDB](contenido/modulo2/mariadb.md)
     * [Etiquetando los contenedores con Labels](contenido/modulo2/labels.md)
     * [Limitando los recursos utilizados por un contenedor Docker](contenido/modulo2/limite.md)
 
@@ -31,7 +31,7 @@
     * [Asociando almacenamiento a los contenedores: volúmenes Docker](contenido/modulo4/volumen.md)
     * [Asociando almacenamiento a los contenedores: bind mount](contenido/modulo4/bindmount.md)
     * [Ejemplo 1: Contenedor NextCloud con almacenamiento persistente](contenido/modulo4/nextcloud.md)
-    * Ejemplo 2: Contenedor MariaDB con almacenamiento persistente
+    * [Ejemplo 2: Contenedor MariaDB con almacenamiento persistente](contenido/modulo4/mariadb.md)
     * Otros usos del almacenamiento 
 
 5. Redes en Docker
