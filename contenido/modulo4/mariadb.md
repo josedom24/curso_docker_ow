@@ -36,3 +36,11 @@ MariaDB [(none)]> show databases;
 4 rows in set (0.003 sec)
 ```
 
+Para terminar indicar que aunque este ejercicio lo hemos realizado usando bind mount, también podríamos usar volúmenes Docker. En este caso la instrucción de creación del contenedor sería la siguiente:
+
+```bash
+$ docker run --name some-mariadb --mount type=volume,src=vol_mariadb,dst=/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.5
+```
+
+Recuerda que con el parámetro `--mount` se crea el volumen indicado si no estaba creado, sin embargo nos da un error si al usar bind mount no existe el directorio que indicamos en el parámetro `src`.
+
