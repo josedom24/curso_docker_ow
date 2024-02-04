@@ -36,7 +36,7 @@
 
 5. Redes en Docker
     * [Introducción a las redes en Docker](contenido/modulo5/redes.md)
-    * Uso de la red host en Docker
+    * [Uso de la red host en Docker](contenido/modulo5/host.md)
     * Uso de la red bridge por defecto
     * Uso de las redes bridge definidas por el usuario
     * Convertir el uso de la red bridge por defecto por una definida por el usuario
