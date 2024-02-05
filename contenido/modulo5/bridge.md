@@ -96,6 +96,6 @@ Para terminar este punto, vamos a ver distintas opciones para mapear los puertos
 
 * `-p 8080:80`: Mapea el puerto 8080 en el host Docker al puerto 80/tcp en el contenedor.
 * `-p 192.168.1.100:8080:80`: Asigna el puerto 8080 en el host Docker accediendo a la IP `192.168.1.100` al puerto TCP 80 en el contenedor.
-`-p 8080:80/udp`: Asigna el puerto 8080 del host Docker al puerto 80/udp del contenedor.
-`-p 8080:80/tcp -p 8080:80/udp: Mapea el puerto 8080/tcp en el host Docker al puerto 80/tcp en el contenedor, y mapea el puerto 8080/udp en el host Docker al puerto 80/udp en el contenedor.
+* `-p 8080:80/udp`: Asigna el puerto 8080 del host Docker al puerto 80/udp del contenedor.
+* `-p 8080:80/tcp -p 8080:80/udp``: Mapea el puerto 8080/tcp en el host Docker al puerto 80/tcp en el contenedor, y mapea el puerto 8080/udp en el host Docker al puerto 80/udp en el contenedor.
 
