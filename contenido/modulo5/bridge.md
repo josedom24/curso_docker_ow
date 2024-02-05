@@ -99,3 +99,8 @@ Para terminar este punto, vamos a ver distintas opciones para mapear los puertos
 * `-p 8080:80/udp`: Asigna el puerto 8080 del host Docker al puerto 80/udp del contenedor.
 * `-p 8080:80/tcp -p 8080:80/udp`: Mapea el puerto 8080/tcp en el host Docker al puerto 80/tcp en el contenedor, y mapea el puerto 8080/udp en el host Docker al puerto 80/udp en el contenedor.
 
+Por ejemplo este contenedor sólo sería accesible desde el host Docker:
+
+```bash
+$ docker run -d -p 127.0.0.1:8081:80 nginx
+```
