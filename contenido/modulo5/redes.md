@@ -51,3 +51,10 @@ Como hemos indicado tenemos que realizar una diferencia entre:
 * Los contenedores dentro de la red **bridge** por defecto comparten todos ciertas variables de entorno lo que puede provocar ciertos conflictos.
 * Es importante que nuestro contenedores en producción se estén ejecutando sobre una red definida por el usuario.
 
+## Red bridge por defecto
+
+![ ](img/bridge1.png)
+
+## Red bridge definida por el usuario
+
+![ ](img/bridge2.png)
