@@ -38,8 +38,8 @@
     * [Introducción a las redes en Docker](contenido/modulo5/redes.md)
     * [Uso de la red host en Docker](contenido/modulo5/host.md)
     * [Uso de la red bridge por defecto](contenido/modulo5/bridge.md)
-    * Gestión de las redes bridge definidas por el usuario
-    * 
+    * [Redes bridge definidas por el usuario](contenido/modulo5/usuario.md)
+    * [Uso de la red bridge definidas por el usuario](contenido/modulo5/usuario2.md)
     * Ejemplo 1: Despliegue de la aplicación Guestbook
     * Ejemplo 2: Despliegue de la aplicación Temperaturas
     * Ejemplo 3: Despliegue de Wordpress + mariadb
