@@ -11,7 +11,7 @@ Hasta ahora todos los contenedores lo hemos conectado a la red **bridge** por de
 Vamos a crear un contenedor conectado a la red **bridge** por defecto a partir de la imagen `alpine`, aunque no ofrece un servidor web vamos a mapear el puerto 80 para comprobar su funcionamiento:
 
 ```bash
-docker run -it -p 8080:80 --name cont1 alpine ash
+docker run -it -p 8080:80 --name contenedor1 alpine ash
 ```
 
 ### Configuración de red del contenedor
@@ -102,5 +102,31 @@ Para terminar este punto, vamos a ver distintas opciones para mapear los puertos
 Por ejemplo este contenedor sólo sería accesible desde el host Docker:
 
 ```bash
-$ docker run -d -p 127.0.0.1:8081:80 nginx
+$ docker run -d -p 127.0.0.1:8081:80 --name contenedor2 nginx
 ```
+
+## Conectividad entre los contenedores conectados a la red por defecto
+
+Evidentemente los contenedores a esta red podrán conectarse usando su dirección IP, sin embargo esta red no ofrece ningún mecanismo de DNS para que podamos conectarnos a otro contenedor usando su nombre. Veamos un ejemplo con loos contenedores creados en este apartado:
+
+En primer lugar vamos a averiguar que dirección IP ha tomado el `contenedor2`:
+
+```bash
+$ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' contenedor2
+172.17.0.3
+```
+
+A continuación desde el `contenedor1`intentamos conectamos al segundo contenedor:
+
+``bash
+$ docker attach contenedor1
+/ # ping 172.17.0.3
+PING 172.17.0.3 (172.17.0.3): 56 data bytes
+...
+
+/ # ping contenedor2
+ping: bad address 'contenedor2'
+```
+
+Como podemos observar tenemos conectividad desde el primer contenedor al segundo, pero sólo usando la dirección IP, no tengo un DNS que me permita conectarme al segundo contenedor utilizando su nombre.
+
