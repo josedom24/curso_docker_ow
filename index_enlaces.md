@@ -50,10 +50,7 @@
     * Ejemplo 2: Despliegue de la aplicación Temperaturas
     * Ejemplo 3: Despliegue de Wordpress + mariadb
     * Ejemplo 4: Despliegue de tomcat + nginx 
-    * Eliminar objetos Docker no utilizados (https://docs.docker.com/config/pruning/)
-        * docker system prune
-        * docker image prune (Tiene que ver con las imágenes <none>)
-
+    
 6. Creando escenarios multicontenedor con Docker Compose (https://docs.docker.com/compose/)
     * Instalación de Docker Compose
     * El fichero docker-compose.yml
@@ -74,6 +71,10 @@
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
     * Ciclo de vida de las aplicaciones 
+    * Eliminar objetos Docker no utilizados (https://docs.docker.com/config/pruning/)
+        * docker system prune
+        * docker image prune (Tiene que ver con las imágenes <none>)
+
 
     Hay que mete las imágenes <none>:
 

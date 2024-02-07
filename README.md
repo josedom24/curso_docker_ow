@@ -50,7 +50,6 @@
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo5/ejemplo2.md)
     * [Ejemplo 3: Despliegue de Wordpress + mariadb](contenido/modulo5/ejemplo3.md)
     * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo5/ejemplo4.md) 
-    * Eliminar objetos Docker no utilizados
 
 6. Creando escenarios multicontenedor con Docker Compose
     * Instalación de Docker Compose
@@ -73,6 +72,7 @@
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
     * Análisis de imágenes con Docker Scout (https://docs.docker.com/scout/quickstart/)
     * Ciclo de vida de las aplicaciones 
+    * Eliminar objetos Docker no utilizados
 
 8. Docker Desktop
     * Instalación de Docker Desktop en Linux
