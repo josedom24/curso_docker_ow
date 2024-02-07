@@ -12,7 +12,7 @@ En primer lugar vamos a instalar la última versión:
 docker run -d -p 8080:80 --name mediawiki1 mediawiki
 ```
 
-Si accedemos a la ip de nuestro ordenador, al puerto 8080, podemos observar que hemos instalado la versión 1.41.0:
+Si accedemos a la dirección IP de nuestro ordenador, al puerto 8080, podemos observar que hemos instalado la versión 1.41.0:
 
 ![mediawiki](img/mediawiki141.png)
 
@@ -22,7 +22,7 @@ A continuación vamos a instalar otra versión de la mediawiki, la 1.40.2, cream
 docker run -d -p 8081:80 --name mediawiki2 mediawiki:1.40.2
 ```
 
-Si accedemos a la ip de nuestro ordenador, al puerto 8081, podemos observar que hemos instalado la versión 1.40.2:
+Si accedemos a la dirección IP de nuestro ordenador, al puerto 8081, podemos observar que hemos instalado la versión 1.40.2:
 
 ![mediawiki](img/mediawiki1402.png)
 
@@ -32,7 +32,7 @@ Y finalmente vamos a instalar otra versión en otro contenedor:
 docker run -d -p 8082:80 --name mediawiki3 mediawiki:1.39.6
 ```
 
-Si accedemos a la ip de nuestro ordenador, al puerto 8082, podemos observar que hemos instalado la versión 1.39.6:
+Si accedemos a la dirección IP de nuestro ordenador, al puerto 8082, podemos observar que hemos instalado la versión 1.39.6:
 
 ![mediawiki](img/mediawiki1396.png)
 

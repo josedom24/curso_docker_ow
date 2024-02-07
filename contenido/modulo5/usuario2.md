@@ -5,7 +5,7 @@ En primer lugar vamos a crear dos contenedores conectados a la primera red, para
 
 ```bash
 $ docker run -d --name servidorweb --network red1 nginx
-$ docker run -it --name cliente --network red1 alpine ash
+$ docker run -it --name cliente --network red1 alpine
 ```
 
 Lo primero que vamos a comprobar es la resolución DNS desde el contenedor `cliente`:
@@ -43,10 +43,10 @@ PING servidorweb (172.18.0.2): 56 data bytes
 A continuación creamos un contenedor conectado la segunda red (`red2`) y comprobamos que no hay conectividad con los dos anteriores:
 
 ```bash
-$ docker run -it --name cliente2 --network red2 alpine ash
+$ docker run -it --name cliente2 --network red2 alpine
 ```
 
-Comprobamos su dirección ip e intentamos acceder a uno de los contenedores creados anteriormente:
+Comprobamos su dirección IP y su puerta de enlace, e intentamos acceder a uno de los contenedores creados anteriormente:
 
 
 ```bash
@@ -55,7 +55,10 @@ Comprobamos su dirección ip e intentamos acceder a uno de los contenedores crea
     inet 192.168.0.1/24 brd 192.168.0.255 scope global eth0
 ...
 
+# ip r
+default via 192.168.0.100 dev eth0 
 ...
+
 # ping servidorweb
 ping: bad address 'servidorweb'
 ```
@@ -100,7 +103,7 @@ $ docker network disconnect red1 cliente2
 Tanto al crear un contenedor con el parámetro `--network` para conectarlo a una red, como con la instrucción `docker network connect`, podemos usar algunos otros parámetros:
 
 * `--dns``: Para establecer unos servidores DNS predeterminados.
-* `--ip``: Para establecer una ip fija en el contenedor.
+* `--ip``: Para establecer una dirección IP fija en el contenedor.
 * `--ip6`: para establecer la dirección de red ipv6.
 * `--hostname o -h: Para establecer el nombre de host del contenedor. Si no lo establezco será el ID del mismo.
 * `--add-host`: Para añadir entradas de nuevos hosts en el fichero `/etc/hosts` (resolución estática).
@@ -124,7 +127,7 @@ Como hemos comentado anteriormente estos parámetros también lo podemos usar al
     # cat /etc/hostname 
     servidor1
     ```
-* `--ip 192.168.0.10`: Nos permite poner una ip fija en el contenedor. Vamos a comprobarlo:
+* `--ip 192.168.0.10`: Nos permite poner una dirección IP fija en el contenedor. Vamos a comprobarlo:
 
     ```bash
     # ip a

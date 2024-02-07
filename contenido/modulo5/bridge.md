@@ -14,6 +14,8 @@ Vamos a crear un contenedor conectado a la red **bridge** por defecto a partir d
 docker run -it -p 8080:80 --name contenedor1 alpine ash
 ```
 
+**Nota**: `ash` es la shell de la distribución Alpine. En realidad no habría que indicarlo, ya que el contenedor va a ejecutar ese comando por defecto.
+
 ### Configuración de red del contenedor
 
 Accedemos al contenedor y comprobamos su configuración de red:
