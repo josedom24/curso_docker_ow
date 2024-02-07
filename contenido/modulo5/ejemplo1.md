@@ -16,7 +16,7 @@ $ docker network create red_guestbook
 Para ejecutar los contenedores:
 
 ```bash
-$ docker run -d --name redis --network red_guestbook redis
+$ docker run -d --name redis --network red_guestbook -v /opt/redis:/data redis redis-server --appendonly yes
 
 $ docker run -d -p 80:5000 --name guestbook --network red_guestbook iesgn/guestbook
 ```
@@ -25,6 +25,11 @@ Algunas observaciones:
 
 * No es necesario mapear el puerto del contenedor de la base de datos redis, ya que no vamos a acceder desde el exterior. Sin embargo la aplicación `guestbook` va a poder acceder a la base de datos porque están conectado a la misma red.
 * Al nombrar al contenedor de la base de datos con `redis` se crea una entrada en el DNS que resuelve ese nombre con la IP del contenedor. Como hemos indicado, por defecto, la aplicación `guestbook` usa ese nombre para acceder.
+* Para conseguir la persistencia de datos en el contenedor de la base de datos redis, montamos un bind mount (también podríamos haber usado un volumen docker) en el directorio `/data` del contenedor. Además ejecutamos el comando `redis-server --appendonly yes` para que se guarden los datos de la base de datos en el directorio `/data`.
+
+Suponiendo que la dirección IP del host Docker es la `192.168.121.54` podríamos acceder a la aplicación mediante un navegado web:
+
+![ ](img/guestbook.png)
 
 ## Configuración de la aplicación guestbook
 
@@ -33,7 +38,7 @@ Como hemos indicado anteriormente, en la creación de la imagen `iesgn/guestbook
 Si creamos un contenedor redis con otro nombre, por ejemplo:
 
 ```bash
-$ docker run -d --name contenedor_redis --network red_guestbook 
+$ docker run -d --name contenedor_redis --network red_guestbook -v /opt/redis:/data redis redis-server --appendonly yes
 ```
 
 Tendremos que configurar la aplicación `guestbook` parea que acceda a la base de datos redis usando como nombre `contenedor_redis`, por lo tanto en la creación tendremos que definir la variable de entorno `REDIS_SERVER`, para ello ejecutamos:
