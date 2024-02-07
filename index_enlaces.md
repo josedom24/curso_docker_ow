@@ -53,7 +53,7 @@
     
 6. Creando escenarios multicontenedor con Docker Compose (https://docs.docker.com/compose/)
     * Instalación de Docker Compose
-    * El fichero docker-compose.yml
+    * El fichero docker-compose.yaml
     * El comando docker compose
     * Almacenamiento con Docker Compose
     * Redes con Docker Compose

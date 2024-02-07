@@ -52,8 +52,8 @@
     * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo5/ejemplo4.md) 
 
 6. Creando escenarios multicontenedor con Docker Compose
-    * Instalación de Docker Compose
-    * El fichero docker-compose.yml
+    * [Creando escenarios multicontenedor con Docker Compose](contenido/modulo6/compose.md) 
+    * El fichero docker-compose.yaml
     * El comando docker compose
     * Almacenamiento con Docker Compose
     * Redes con Docker Compose
