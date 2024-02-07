@@ -1,5 +1,11 @@
 # Curso Docker 2024
 
+## Ejemplos
+
+* [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow)
+
+## Contenido
+
 1. Introducción a Docker
 	* [Introducción a los contenedores](contenido/modulo1/contenedores.md)
     * [Introducción a Docker](contenido/modulo1/docker.md)
@@ -42,8 +48,8 @@
     * [Uso de la red bridge definidas por el usuario](contenido/modulo5/usuario2.md)
     * [Ejemplo 1: Despliegue de la aplicación Guestbook](contenido/modulo5/ejemplo1.md)
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo5/ejemplo2.md)
-    * Ejemplo 3: Despliegue de Wordpress + mariadb
-    * Ejemplo 4: Despliegue de tomcat + nginx 
+    * [Ejemplo 3: Despliegue de Wordpress + mariadb](contenido/modulo5/ejemplo3.md)
+    * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo5/ejemplo4.md) 
     * Eliminar objetos Docker no utilizados
 
 6. Creando escenarios multicontenedor con Docker Compose
