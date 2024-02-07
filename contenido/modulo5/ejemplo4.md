@@ -59,6 +59,6 @@ $ docker run -d --name proxy \
                 nginx
 ```
 
-Y al acceder la ip de nuestro host:
+Y al acceder la dirección IP de nuestro host:
 
 ![tomcat](img/tomcat.png)
