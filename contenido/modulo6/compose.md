@@ -22,6 +22,8 @@ Hay algunas diferencias entre las dos versiones, pero se ha mantenido en un alto
 ## Ventajas de usar Docker Compose
 
 * Hacer todo de manera **declarativa** para que no tenga que repetir todo el proceso cada vez que construyo el escenario.
+* Los archivos de declaración de Docker Compose se pueden **distribuir** de manera sencilla, aumentando la colaboración entre los equipos de desarrollo.
 * Poner en funcionamiento todos los contenedores que necesita mi aplicación de una sola vez y debidamente configurados.
 * Garantizar que los contenedores **se arrancan en el orden adecuado**. Por ejemplo: mi aplicación no podrá funcionar debidamente hasta que no esté el servidor de bases de datos funcionando en marcha.
 * Asegurarnos de que hay **comunicación** entre los contenedores que pertenecen a la aplicación.
+* **Portabilidad entre entornos**: Compose admite variables en el archivo de declaración. Puede utilizar estas variables para personalizar su composición para diferentes entornos o diferentes usuarios.
