@@ -72,7 +72,6 @@
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
     * Creación de imágenes con Docker Compose
-    * Análisis de imágenes con Docker Scout (https://docs.docker.com/scout/quickstart/)
     * Ciclo de vida de las aplicaciones 
     * Eliminar objetos Docker no utilizados
 
