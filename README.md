@@ -55,8 +55,8 @@
     * [Creando escenarios multicontenedor con Docker Compose](contenido/modulo6/compose.md) 
     * [El fichero compose.yaml](contenido/modulo6/docker_compose.md) 
     * [El comando docker compose](contenido/modulo6/comando.md) 
-    * Almacenamiento con Docker Compose
-    * Redes con Docker Compose
+    * [Almacenamiento con Docker Compose](contenido/modulo6/almacenamiento.md)
+    * [Redes con Docker Compose](contenido/modulo6/redes.md)
     * Ejemplo 1: Despliegue de la aplicación guestbook
     * Ejemplo 2: Despliegue de la aplicación Temperaturas
     * Ejemplo 3: Despliegue de WordPress + Mariadb
