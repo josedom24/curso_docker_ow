@@ -54,7 +54,7 @@ $ docker inspect -f '{{json .Mounts}}' contenedor_mariadb
 Recuerda que si necesitas iniciar el escenario desde 0, debes eliminar el volumen:
 
 ```bash
-$ $ docker compose down -v
+$ docker compose down -v
 [+] Running 3/3
  ✔ Container contenedor_mariadb  Removed                                          0.8s 
  ✔ Volume mariadb_mariadb_data   Removed                                          0.1s 

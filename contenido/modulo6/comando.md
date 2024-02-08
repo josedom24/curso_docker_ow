@@ -44,7 +44,7 @@ Veamos más comandos que podemos ejecutar con Docker Compose:
 * `docker compose restart`: Reinicia los contenedores. Orden ideal para reiniciar servicios con nuevas configuraciones.
 * `docker compose logs`: Muestra los logs de todos los servicios del escenario. Con el parámetro `-f`podremos ir viendo los logs en "vivo".
 * `docker compose logs servicio1`: Muestra los logs del servicio llamado `servicio1` que estaba descrito en el `compose.yaml`.
-* `docker compose exec servicio1 /bin/bash`: Ejecuta una orden, en este caso `/bin/bash` en un contenedor llamado `servicio1` que estaba descrito en el `compose.yaml`
+* `docker compose exec servicio1 /bin/bash`: Ejecuta una orden, en este caso `/bin/bash` en el servicio `servicio1` que estaba descrito en el `compose.yaml`
 * `docker compose top`: Muestra  los procesos que están ejecutándose en cada uno de los contenedores de los servicios.
 
 
