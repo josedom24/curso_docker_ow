@@ -54,7 +54,7 @@
 6. Creando escenarios multicontenedor con Docker Compose
     * [Creando escenarios multicontenedor con Docker Compose](contenido/modulo6/compose.md) 
     * [El fichero compose.yaml](contenido/modulo6/docker_compose.md) 
-    * El comando docker compose
+    * [El comando docker compose](contenido/modulo6/comando.md) 
     * Almacenamiento con Docker Compose
     * Redes con Docker Compose
     * Ejemplo 1: Despliegue de la aplicación guestbook
