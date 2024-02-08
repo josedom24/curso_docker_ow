@@ -4,7 +4,7 @@
 
 Además de definir los servicios (parámetro `services`) en el fichero `compose.yaml`, podemos definir los volúmenes que vamos a necesitar en nuestra infraestructura. Además, como hemos visto, podremos indicar que volumen va a utilizar cada contenedor.
 
-Veamos un ejemplo:
+Veamos un ejemplo, puedes encontrar el fichero en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow):
 
 ```yaml
 version: '3.1'
