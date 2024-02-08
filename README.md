@@ -59,8 +59,8 @@
     * [Redes con Docker Compose](contenido/modulo6/redes.md)
     * [Ejemplo 1: Despliegue de la aplicación guestbook](contenido/modulo6/ejemplo1.md)
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo6/ejemplo2.md)
-    * Ejemplo 3: Despliegue de WordPress + MariaDB
-    * Ejemplo 4: Despliegue de tomcat + nginx
+    * [Ejemplo 3: Despliegue de WordPress + MariaDB](contenido/modulo6/ejemplo3.md)
+    * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo6/ejemplo4.md)
     * Uso de variables de entorno con Docker Compose
     * Ejemplos reales de despliegues usando Docker Compose 
 
