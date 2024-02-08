@@ -61,6 +61,7 @@
     * Ejemplo 2: Despliegue de la aplicación Temperaturas
     * Ejemplo 3: Despliegue de WordPress + Mariadb
     * Ejemplo 4: Despliegue de tomcat + nginx
+    * Uso de variables de entorno con Docker Compose
     * Ejemplos reales de despliegues usando Docker Compose 
 
 7. Creación de imágenes en Docker 

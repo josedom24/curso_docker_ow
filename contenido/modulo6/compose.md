@@ -7,7 +7,9 @@ Como visto hasta ahora en muchas ocasiones necesitamos correr varios contenedore
 
 Cuando trabajamos con escenarios donde necesitamos correr varios contenedores podemos utilizar [Docker Compose](https://docs.docker.com/compose/) para gestionarlos.
 
-Vamos a definir el escenario en un fichero llamado `docker-compose.yaml` y vamos a gestionar el ciclo de vida de la aplicación y de todos los contenedores que necesitamos con el comando `docker compose`.
+Vamos a definir el escenario en un fichero llamado `compose.yaml` y vamos a gestionar el ciclo de vida de la aplicación y de todos los contenedores que necesitamos con el comando `docker compose`.
+
+El fichero de definición del escenario también puede ser llamado `compose.yml`, y por contabilidad con versiones antiguas se puede llamar `docker-compose.yaml` o `docker-compse.yml`.
 
 ## Docker Compose V2
 
