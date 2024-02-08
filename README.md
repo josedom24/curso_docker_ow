@@ -53,7 +53,7 @@
 
 6. Creando escenarios multicontenedor con Docker Compose
     * [Creando escenarios multicontenedor con Docker Compose](contenido/modulo6/compose.md) 
-    * El fichero docker-compose.yaml
+    * [El fichero compose.yaml](contenido/modulo6/docker_compose.md) 
     * El comando docker compose
     * Almacenamiento con Docker Compose
     * Redes con Docker Compose
@@ -71,6 +71,7 @@
     * Ejemplo 1: Construcción de imágenes con una página estática
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
+    * Creación de imágenes con Docker Compose
     * Análisis de imágenes con Docker Scout (https://docs.docker.com/scout/quickstart/)
     * Ciclo de vida de las aplicaciones 
     * Eliminar objetos Docker no utilizados
