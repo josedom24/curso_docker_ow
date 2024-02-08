@@ -48,7 +48,7 @@
     * [Uso de la red bridge definidas por el usuario](contenido/modulo5/usuario2.md)
     * [Ejemplo 1: Despliegue de la aplicación Guestbook](contenido/modulo5/ejemplo1.md)
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo5/ejemplo2.md)
-    * [Ejemplo 3: Despliegue de Wordpress + mariadb](contenido/modulo5/ejemplo3.md)
+    * [Ejemplo 3: Despliegue de Wordpress + MariaDB](contenido/modulo5/ejemplo3.md)
     * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo5/ejemplo4.md) 
 
 6. Creando escenarios multicontenedor con Docker Compose
@@ -59,7 +59,7 @@
     * [Redes con Docker Compose](contenido/modulo6/redes.md)
     * [Ejemplo 1: Despliegue de la aplicación guestbook](contenido/modulo6/ejemplo1.md)
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo6/ejemplo2.md)
-    * Ejemplo 3: Despliegue de WordPress + Mariadb
+    * Ejemplo 3: Despliegue de WordPress + MariaDB
     * Ejemplo 4: Despliegue de tomcat + nginx
     * Uso de variables de entorno con Docker Compose
     * Ejemplos reales de despliegues usando Docker Compose 
