@@ -43,4 +43,4 @@ Tendremos que configurar la aplicación `frontend` parea que acceda al `backend`
 
 ```bash
 $ docker run -d -p 80:3000 --name temperaturas-frontend -e TEMP_SERVER=temperaturas-api:5000 --network red_temperaturas iesgn/temperaturas_frontend
-```
+``````
