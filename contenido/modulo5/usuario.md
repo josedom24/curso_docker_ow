@@ -32,7 +32,7 @@ $ docker network inspect red1
 ...
 ```
 
-Al crear la red no hemos indicado el direccionamiento, por lo que se asignado uno por defecto. Además en el host se ha creado un nuevo bridge donde se conectarán los contenedores que estén conectados a esta red:
+Al crear la red no hemos indicado el direccionamiento, por lo que se asignado uno por defecto. Además en el Host Docker se ha creado un nuevo bridge donde se conectarán los contenedores que estén conectados a esta red:
 
 ```bash
 $ ip a
@@ -42,7 +42,7 @@ $ ip a
 ...
 ```
 
-Como puedes la puerta de enlace que recibirán los contenedores conectados a esta red corresponde con la dirección IP del host en esta red.
+Como puedes la puerta de enlace que recibirán los contenedores conectados a esta red corresponde con la dirección IP del Host Docker en esta red.
 
 Por último, para borrar una red podemos ejecutar:
 
@@ -68,7 +68,7 @@ $ docker network inspect --format='{{range .IPAM.Config}}{{.Subnet}}{{end}}' red
 192.168.0.0/24
 ```
 
-Y que la dirección IP que hemos asignado a la puerta de enlace, se ha configurado en la interfaz del host correspondiente al nuevo bridge virtual que se ha creado:
+Y que la dirección IP que hemos asignado a la puerta de enlace, se ha configurado en la interfaz del Host Docker correspondiente al nuevo bridge virtual que se ha creado:
 
 ```bash
 $ ip a

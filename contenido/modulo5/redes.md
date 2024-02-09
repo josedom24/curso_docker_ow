@@ -6,7 +6,7 @@ Por lo tanto, los contenedores tienen la capacidad de conectarse a otros contene
 ## Tipos de redes
 
 * **Red bridge**: Por defecto los contenedores que creamos se conectan a la red de tipo bridge llamada **bridge**:
-    * Se crea en el host un *Linux Bridge* llamado **docker0**.
+    * Se crea en el Host Docker un *Linux Bridge* llamado **docker0**.
     * El direccionamiento de esta red es 172.17.0.0/16.
     * Usamos el parámetro `-p` en `docker run` para exponer algún puerto. Se crea una regla DNAT para tener acceso al puerto.
     * Los contenedores conectados a un red **bridge** tienen acceso a internet por medio de una regla SNAT.

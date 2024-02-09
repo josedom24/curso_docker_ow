@@ -65,7 +65,7 @@ CONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS     
 8d1857ff1d2f   mariadb     "docker-entrypoint.s…"   14 seconds ago   Up 11 seconds   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp   some-mariadb
 ```
 
-Ahora desde nuestro equipo (donde hemos instalado un cliente de mariadb (`sudo apt install mariadb-client`)) nos conectamos al host (que en mi caso tiene la dirección IP `192.168.121.54`:
+Ahora desde nuestro equipo (donde hemos instalado un cliente de mariadb (`sudo apt install mariadb-client`)) nos conectamos al Host Docker (que en mi caso tiene la dirección IP `192.168.121.54`):
 
 ```bash
 $ mysql -u root -p -h 192.168.121.54

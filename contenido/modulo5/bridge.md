@@ -1,7 +1,7 @@
 # Uso de la red bridge por defecto
 
-Hasta ahora todos los contenedores lo hemos conectado a la red **bridge** por defecto. Como ya hemos dicho las caracteristicas más importantes de este tipo de red son las siguientes:
-    * Se crea en el host un *Linux Bridge* llamado **docker0**.
+Hasta ahora todos los contenedores lo hemos conectado a la red **bridge** por defecto. Como ya hemos dicho las características más importantes de este tipo de red son las siguientes:
+    * Se crea en el Host Docker un *Linux Bridge* llamado **docker0**.
     * El direccionamiento de esta red es 172.17.0.0/16.
     * Usamos el parámetro `-p` en `docker run` para exponer algún puerto. Se crea una regla DNAT para tener acceso al puerto.
     * Los contenedores conectados a un red **bridge** tiene acceso a internet por medio de una regla SNAT.
@@ -32,13 +32,13 @@ default via 172.17.0.1 dev eth0
 ...
 ```
 
-Hemos visto que su dirección IP está en la red `172.17.0.0/16` y la puerta de enlace es la `172.17.0.1` que corresponde al host Docker. Además podemos ver que la configuración DNS que se guarda en el fichero `/etc/resolv.conf` es el mismo que el del host Docker.
+Hemos visto que su dirección IP está en la red `172.17.0.0/16` y la puerta de enlace es la `172.17.0.1` que corresponde al Host Docker. Además podemos ver que la configuración DNS que se guarda en el fichero `/etc/resolv.conf` es el mismo que el del Host Docker.
 
 ```bash
 # cat /etc/resolv.conf
 ```
 
-En el host Docker podemos comprobar que se ha creado un Linux Bridge al que esta conectado el host Docker y el contenedor, esta instrucción la podemos ejecutar en otra terminal:
+En el Host Docker podemos comprobar que se ha creado un Linux Bridge al que esta conectado el Host Docker y el contenedor, esta instrucción la podemos ejecutar en otra terminal:
 
 ```bash
 $ ip a
@@ -68,14 +68,14 @@ Además si instalamos un servidor web podemos acceder utilizando el puerto que h
 # httpd -D foreground
 ```
 
-Desde el host podemos probar el acceso:
+Desde el Host Docker podemos probar el acceso:
 
 ```bash
 $ curl http://localhost:8080
 <html><body><h1>It works!</h1></body></html>
 ```
 
-Vamos a comprobar la configuración que ha hecho Docker en el cortafuegos del host con iptables. Para permitir que los contenedores conectados a la red **bridge** por defecto tengan conectividad al exterior tenemos que hacer una regla NAT, más concretamente SNAT. Cuando hemos mapeado el puerto 8080 del host al puerto 80 del contenedor, se ha creado una regla NAT, en concreto DNAT, que hace que todas las peticiones al puerto 8080/tcp del host se redirijan al puerto 80/tcp del contenido. Veamos estas reglas iptables, en el host ejecutamos:
+Vamos a comprobar la configuración de cortafuegos que se ha configurado en el Host Docker. Para permitir que los contenedores conectados a la red **bridge** por defecto tengan conectividad al exterior tenemos que hacer una regla NAT, más concretamente SNAT. Cuando hemos mapeado el puerto 8080 del Host Docker al puerto 80 del contenedor, se ha creado una regla NAT, en concreto DNAT, que hace que todas las peticiones al puerto 8080/tcp del Host Docker se redirijan al puerto 80/tcp del contenido. Veamos estas reglas iptables, en el Host Docker ejecutamos:
 
 ```bash
 $ sudo iptables -L -n  -t nat
@@ -90,18 +90,18 @@ DNAT       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:8080 to:17
 ...
 ```
 
-La primera es la regla SNAT que permite a todos los contenedores de la red `172.17.0.0/16` tener acceso al exterior, y la segunda es la regla DNAT que permite la redirección de la petición al puerto 8080/tcp del host al puerto 80/tcp del contenedor que esta en la dirección `172.16.0.2`.
+La primera es la regla SNAT que permite a todos los contenedores de la red `172.17.0.0/16` tener acceso al exterior, y la segunda es la regla DNAT que permite la redirección de la petición al puerto 8080/tcp del Host Docker al puerto 80/tcp del contenedor que esta en la dirección `172.16.0.2`.
 
 ## Mapeo de puertos
 
 Para terminar este punto, vamos a ver distintas opciones para mapear los puertos en las creación de un contenedor. Como sabemos usamos el parámetro `-p` o `--publish` en el comando `docker run`, veamos algunos ejemplos de las configuraciones que podemos hacer:
 
-* `-p 8080:80`: Mapea el puerto 8080 en el host Docker al puerto 80/tcp en el contenedor.
-* `-p 192.168.1.100:8080:80`: Asigna el puerto 8080 en el host Docker accediendo a la IP `192.168.1.100` al puerto TCP 80 en el contenedor.
-* `-p 8080:80/udp`: Asigna el puerto 8080 del host Docker al puerto 80/udp del contenedor.
-* `-p 8080:80/tcp -p 8080:80/udp`: Mapea el puerto 8080/tcp en el host Docker al puerto 80/tcp en el contenedor, y mapea el puerto 8080/udp en el host Docker al puerto 80/udp en el contenedor.
+* `-p 8080:80`: Mapea el puerto 8080 en el Host Docker al puerto 80/tcp en el contenedor.
+* `-p 192.168.1.100:8080:80`: Asigna el puerto 8080 en el Host Docker accediendo a la IP `192.168.1.100` al puerto TCP 80 en el contenedor.
+* `-p 8080:80/udp`: Asigna el puerto 8080 del Host Docker al puerto 80/udp del contenedor.
+* `-p 8080:80/tcp -p 8080:80/udp`: Mapea el puerto 8080/tcp en el Host Docker al puerto 80/tcp en el contenedor, y mapea el puerto 8080/udp en el Host Docker al puerto 80/udp en el contenedor.
 
-Por ejemplo este contenedor sólo sería accesible desde el host Docker:
+Por ejemplo este contenedor sólo sería accesible desde el Host Docker:
 
 ```bash
 $ docker run -d -p 127.0.0.1:8081:80 --name contenedor2 nginx

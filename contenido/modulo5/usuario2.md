@@ -134,7 +134,7 @@ Como hemos comentado anteriormente estos parámetros también lo podemos usar al
     33: eth0@if34: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP 
     inet 192.168.0.10/24 brd 192.168.0.255 scope global eth0
     ```
-* `--add-host=testing.example.com:192.168.100.20`: Añadimos un nuevo host como resolución estática. Lo comprobamos:
+* `--add-host=testing.example.com:192.168.100.20`: Añadimos un nuevo nombre de como resolución estática. Lo comprobamos:
 
     ```bash
     # cat /etc/hosts

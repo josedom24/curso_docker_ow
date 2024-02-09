@@ -27,7 +27,7 @@ Algunas observaciones:
 * Al nombrar al contenedor de la base de datos con `redis` se crea una entrada en el DNS que resuelve ese nombre con la IP del contenedor. Como hemos indicado, por defecto, la aplicación `guestbook` usa ese nombre para acceder.
 * Para conseguir la persistencia de datos en el contenedor de la base de datos redis, montamos un bind mount (también podríamos haber usado un volumen docker) en el directorio `/data` del contenedor. Además ejecutamos el comando `redis-server --appendonly yes` para que se guarden los datos de la base de datos en el directorio `/data`.
 
-Suponiendo que la dirección IP del host Docker es la `192.168.121.54` podríamos acceder a la aplicación mediante un navegado web:
+Suponiendo que la dirección IP del Host Docker es la `192.168.121.54` podríamos acceder a la aplicación mediante un navegado web:
 
 ![ ](img/guestbook.png)
 

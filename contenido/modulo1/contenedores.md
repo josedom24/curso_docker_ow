@@ -36,7 +36,7 @@ Como desventajas podríamos señalar:
 
 ## Contenedores
 
-Un contenedor es un conjunto de procesos aislados, que se ejecutan en un servidor, y que acceden a un sistema de ficheros propio, tienen una configuración red propio y accede a los recursos del host (memoria y CPU). Utilizan para su funcionamiento el nucleo del host donde se ejecutan.
+Un contenedor es un conjunto de procesos aislados, que se ejecutan en un servidor, y que acceden a un sistema de ficheros propio, tienen una configuración red propio y accede a los recursos del host (memoria y CPU). Utilizan para su funcionamiento el núcleo del host donde se ejecutan.
 
 Podemos hacer la siguiente clasificación de contenedores:
 

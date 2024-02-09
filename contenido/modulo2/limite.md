@@ -1,6 +1,6 @@
 # Limitando los recursos utilizados por un contenedor Docker
 
-Cuando creamos un contenedor, los procesos que se ejecuten en él pueden usar todos los recursos del host en el que se está ejecutando. Puedes limitar los recursos de CPU y memoria al crear un contenedor en Docker utilizando las opciones `--cpus` y `--memory` respectivamente. 
+Cuando creamos un contenedor, los procesos que se ejecuten en él pueden usar todos los recursos del Host Docker en el que se está ejecutando. Puedes limitar los recursos de CPU y memoria al crear un contenedor en Docker utilizando las opciones `--cpus` y `--memory` respectivamente. 
 
 ## Limitando el uso de CPU
 
