@@ -44,7 +44,7 @@ Veamos como podemos automatizar la creación de imágenes Docker, usando un fich
 $ docker run -d -p 8080:80 --name servidor_web josedom24/myapache2:v2 
 ```            
 
-## Uso de la caché ne la construcción de imágenes Docker
+## Uso de la caché en la construcción de imágenes Docker
 
 Como hemos indicado anteriormente, durante la construcción de una imagen Docker, se van guardando en caché las capas intermedias que se van generando. Vamos a ver qué ocurrir si volvemos a construir la imagen después de alguna modificación:
 
