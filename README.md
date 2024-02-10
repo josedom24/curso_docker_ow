@@ -64,7 +64,8 @@
     * [Uso de variables de entorno con Docker Compose](contenido/modulo6/variables.md)
     * Ejemplos reales de despliegues usando Docker Compose 
 
-7. Creación de imágenes en Docker 
+7. Creación de imágenes en Docker
+    * [Introducción a la construcción y distribución de imágenes Docker](contenido/modulo7/introduccion.md)
     * Creación de imágenes a partir de un contenedor
     * Creación de imágenes a partir de un Dockerfile
     * Distribución de imágenes
