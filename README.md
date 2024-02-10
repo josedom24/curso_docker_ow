@@ -73,7 +73,7 @@
     * Ejemplo 1: Construcción de imágenes con una página estática
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
-    * Creación de imágenes con Docker Compose
+    * [Creación de imágenes con Docker Compose](https://docs.docker.com/compose/gettingstarted/)
     * [Uso de variables de entorno con Dockerfile](contenido/modulo7/variables.md)
     * Ciclo de vida de las aplicaciones 
     * Eliminar objetos Docker no utilizados
