@@ -54,7 +54,7 @@ Como hemos indicado anteriormente, durante la construcción de una imagen Docker
     $ docker build -t josedom24/myapache2:v2 .
     ...
     ```
-
+    
     La construcción será muy rápida, ya que las imágenes intermedias que se van generando no se vuelven a generar porque están guardadas en caché. Sólo se ejecuta la instrucción donde copiamos el fichero que hemos modificado.
 
 2. Si modificamos por ejemplo la instrucción donde se ejecuta la instalación del servidor web y ponemos por ejemplo:
