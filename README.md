@@ -69,12 +69,12 @@
     * [Creación de imágenes a partir de un contenedor](contenido/modulo7/contedor.md)
     * [El fichero Dockerfile](contenido/modulo7/dockerfile.md)
     * [Creación de imágenes a partir de un Dockerfile](contenido/modulo7/build.md)
-    * Uso de variables de entorno con Dockerfile
     * Distribución de imágenes
     * Ejemplo 1: Construcción de imágenes con una página estática
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
     * Creación de imágenes con Docker Compose
+    * [Uso de variables de entorno con Dockerfile](contenido/modulo7/variables.md)
     * Ciclo de vida de las aplicaciones 
     * Eliminar objetos Docker no utilizados
 
