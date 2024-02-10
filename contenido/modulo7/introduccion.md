@@ -10,8 +10,8 @@ Para crear un contenedor que sirva nuestra aplicación, tendremos que crear una 
 
 Tenemos dos mecanismos para construir nueva imágenes:
 
-* A partir de un contenedor que está en ejecución, podemos crea una nueva imagen usando el comando `docker commit`.
-* Automatizar la construcción de una imagen Docker declarando los comandos que hay que ejecutar en un fichero llamado `Dockerfile` y usar el comando `docker build` para realizar la construcción.
+* **A partir de un contenedor**, podemos crea una nueva imagen usando el comando `docker commit`.
+* **Automatizar la construcción** de una imagen Docker declarando los comandos que hay que ejecutar en un fichero llamado `Dockerfile` y usar el comando `docker build` para realizar la construcción.
 
 ## Inconvenientes de la construcción de imágenes a partir de contenedores
 
