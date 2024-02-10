@@ -50,8 +50,8 @@ Como hemos indicado anteriormente, durante la construcción de una imagen Docker
 
 1. Si modificamos el fichero `index.html` y volvemos a construir la imagen:
 
-    ``bash
-    $ docker build -t josedom24/myapache2:v2 .
+    ```bash
+    $ docker build -t josedom24/myapache2:v3 .
     ...
     ```
     
