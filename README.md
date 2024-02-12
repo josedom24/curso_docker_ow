@@ -69,7 +69,7 @@
     * [Creación de imágenes a partir de un contenedor](contenido/modulo7/contedor.md)
     * [El fichero Dockerfile](contenido/modulo7/dockerfile.md)
     * [Creación de imágenes a partir de un Dockerfile](contenido/modulo7/build.md)
-    * Distribución de imágenes
+    * [Distribución de imágenes](contenido/modulo7/distribucion.md)
     * Ejemplo 1: Construcción de imágenes con una página estática
     * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
     * Ejemplo 3: Construcción de imágenes con una una aplicación Python
