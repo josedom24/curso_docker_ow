@@ -71,8 +71,9 @@
     * [Creación de imágenes a partir de un Dockerfile](contenido/modulo7/build.md)
     * [Distribución de imágenes](contenido/modulo7/distribucion.md)
     * [Ejemplo 1: Construcción de imágenes con una página estática](contenido/modulo7/ejemplo1.md)
-    * Ejemplo 2: Construcción de imágenes con una una aplicación PHP
-    * Ejemplo 3: Construcción de imágenes con una una aplicación Python
+    * [Ejemplo 2: Construcción de imágenes con una una aplicación PHP](contenido/modulo7/ejemplo2.md)
+    * [Ejemplo 3: Construcción de imágenes con una una aplicación Python](contenido/modulo7/ejemplo3.md)
+    * [Ejemplo 4: Construcción de imágenes configurables con variables de entorno](contenido/modulo7/ejemplo4.md)
     * [Creación de imágenes con Docker Compose](https://docs.docker.com/compose/gettingstarted/)
     * [Uso de variables de entorno con Dockerfile](contenido/modulo7/variables.md)
     * Ciclo de vida de las aplicaciones 
