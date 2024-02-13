@@ -74,6 +74,7 @@
     * [Ejemplo 2: Construcción de imágenes con una una aplicación PHP](contenido/modulo7/ejemplo2.md)
     * [Ejemplo 3: Construcción de imágenes con una una aplicación Python](contenido/modulo7/ejemplo3.md)
     * [Ejemplo 4: Construcción de imágenes configurables con variables de entorno](contenido/modulo7/ejemplo4.md)
+    * [Ejemplo 5: Configuración de imágenes con una aplicación Java](contenido/modulo7/ejemplo5.md)
     * [Creación de imágenes con Docker Compose](https://docs.docker.com/compose/gettingstarted/)
     * [Uso de ficheros Dockerfile parametrizados](contenido/modulo7/variables.md)
     * Ciclo de vida de las aplicaciones 
