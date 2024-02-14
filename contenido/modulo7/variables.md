@@ -7,16 +7,16 @@ Veamos un ejemplo:
 ```Dockerfile
 # syntax=docker/dockerfile:1
 ARG PHP_VERSION=8.2-apache
-FROM php:$PHP_VERSION
+FROM php:${PHP_VERSION}
 ARG APP_VERSION=desarrollo
-ENV VERSION=$APP_VERSION
+ENV VERSION=${APP_VERSION}
 COPY app /var/www/html/
 EXPOSE 80
 ```
 
 Hemos creado dos parámetros en lla definición del fichero `Dockerfile`:
 
-* `PHP_VERSION`: Donde vamos a indicar la etiqueta de la imagen PHP que vamos a usar en la construcción. Su valor por defecto es `8.2-apache` y como vemos, para hacer referencia a ella usamos `$PHP_VERSION`.
+* `PHP_VERSION`: Donde vamos a indicar la etiqueta de la imagen PHP que vamos a usar en la construcción. Su valor por defecto es `8.2-apache` y como vemos, para hacer referencia a ella usamos `${PHP_VERSION}`.
 * `APP_VERSION`: Es un parámetro donde vamos a guardar la versión de la aplicación (`desarrollo`) y que posteriormente utilizaremos para darle valor a la variable de entorno `VERSION`.
 
 Si construimos la imagen si sobreescribir los valores de los parámetros se tomarán los valores por defecto:
