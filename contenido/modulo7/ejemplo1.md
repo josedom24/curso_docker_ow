@@ -43,6 +43,20 @@ REPOSITORY             TAG                 IMAGE ID            CREATED          
 josedom24/ejemplo1     v1                  8c3275799063        1 minute ago      226MB
 ```
 
+Podemos ver cómo se ha creado cualquier imagen, usando el comando `docker history`:
+
+```bash
+$ docker history josedom24/ejemplo1:v1 
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+c23cf3f2d251   11 seconds ago   CMD ["/bin/sh" "-c" "apache2ctl -D FOREGROUN…   0B        buildkit.dockerfile.v0
+<missing>      11 seconds ago   EXPOSE map[80/tcp:{}]                           0B        buildkit.dockerfile.v0
+<missing>      11 seconds ago   COPY public_html . # buildkit                   492kB     buildkit.dockerfile.v0
+<missing>      13 seconds ago   WORKDIR /var/www/html/                          0B        buildkit.dockerfile.v0
+<missing>      15 seconds ago   RUN /bin/sh -c apt-get update && apt-get ins…   112MB     buildkit.dockerfile.v0
+<missing>      41 hours ago     /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      41 hours ago     /bin/sh -c #(nop) ADD file:17e64d3a682fd256f…   74.8MB    
+```
+
 Y podemos crear un contenedor:
 
 ```bash
