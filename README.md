@@ -10,6 +10,7 @@
 	* [Introducción a los contenedores](contenido/modulo1/contenedores.md)
     * [Introducción a Docker](contenido/modulo1/docker.md)
     * [Instalación de Docker Engine en Linux](contenido/modulo1/instalacion_linux.md)
+    * Instalación de Docker Desktop en Linux
     * Instalación de Docker Desktop en Windows
     
 2. Ejecución de contenedores
@@ -81,8 +82,6 @@
     * [Eliminar objetos Docker no utilizados](contenido/modulo7/prune.md)
 
 8. Docker Desktop
-    * Instalación de Docker Desktop en Linux
-    * Instalación de Docker Desktop en Windows
     * Introducción a la interfaz de Docker Desktop
     * Conectar Docker Desktop a la cuenta de Docker Hub
     * Gestión de imágenes

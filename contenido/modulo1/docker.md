@@ -78,7 +78,7 @@ Otras empresas han desarrollado software de contenedores de aplicación:
 
 ## Orquestadores de contenedores
 
-* Un Orquestador de contendores es un programa que gestiona los contenedores que se ejecutan en un cluster de servidores. Nos ofrece muchas características:
+* Un Orquestador de contenedores es un programa que gestiona los contenedores que se ejecutan en un cluster de servidores. Nos ofrece muchas características:
     * actualizaciones automáticas, balanceo de carga, tolerancia a fallos, escalabilidad, . . .
 
 * Distintos proyectos de software libre:
