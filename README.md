@@ -87,4 +87,4 @@
     * Conectar Docker Desktop a la cuenta de Docker Hub
     * Gestión de imágenes
     * Gestión de contenedores
-    * Docker init????
+
