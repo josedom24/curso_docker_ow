@@ -1,4 +1,4 @@
-# Uso de variables de entorno con Docker Compose
+# Uso de parámetros con Docker Compose
 
 * Nuestro fichero `compose.yaml` se puede parametrizar. Determinados datos se pueden poner con una variable a la que le damos el valor correspondiente.
 * La ventaja de parametrizar el fichero `compose.yaml` es que nos permite con un mismo fichero desplegar nuestras aplicaciones en diferentes entornos. Por ejemplo, en despliegues en el entorno de desaroolo tendremos unos valores para las variables, y en le despliegue en el entorno de producción tendremos otro conjunto de valores.
