@@ -78,7 +78,7 @@
     * [Creación de imágenes con Docker Compose](https://docs.docker.com/compose/gettingstarted/)
     * [Uso de ficheros Dockerfile parametrizados](contenido/modulo7/variables.md)
     * [Ciclo de vida de las aplicaciones](contenido/modulo7/ciclodevida.md)
-    * Eliminar objetos Docker no utilizados
+    * [Eliminar objetos Docker no utilizados](contenido/modulo7/prune.md)
 
 8. Docker Desktop
     * Instalación de Docker Desktop en Linux
