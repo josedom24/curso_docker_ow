@@ -27,3 +27,5 @@ Después del reinicio tendremos un icono para ejecutar **Docker Desktop**, y si 
 Por último, si accedemos una terminar ejecutando PowerShell o cmd, podemos usar el cliente Docker:
 
 ![windows](img/windows3.png)
+
+Los usuarios de Mac puedes seguir estas [instrucciones](https://docs.docker.com/desktop/install/mac-install/) para instalar **Docker Desktop** en MacOS.
