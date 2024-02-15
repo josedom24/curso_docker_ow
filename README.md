@@ -83,7 +83,8 @@
 
 8. Docker Desktop
     * Introducción a la interfaz de Docker Desktop
-    * Conectar Docker Desktop a la cuenta de Docker Hub
-    * Gestión de imágenes
     * Gestión de contenedores
+    * Gestión de imágenes
+    * Gestión de volúmenes
+    * Gestión de creación de imágenes
 
