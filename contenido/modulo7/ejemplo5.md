@@ -33,7 +33,7 @@ Por último es muy sencillo crear una nueva imagen con nuestra aplicación despl
 ```Dockerfile
 # syntax=docker/dockerfile:1
 FROM bitnami/tomcat:9.0
-COPY SAMPLE.war /opt/bitnami/tomcat/webapps
+COPY sample.war /opt/bitnami/tomcat/webapps
 ```
 
 Creamos la nueva imagen, creamos un nuevo contenedor:
@@ -43,4 +43,4 @@ $ docker build -t josedom24/app_java:v1 .
 $ docker run -d -p 8081:8080 -e TOMCAT_PASSWORD=my-password --name app_java josedom24/app_java:v1
 ```
 
-Finalmente podemos acceder a la aplicación utilizando un navegador web:
+Finalmente podemos acceder a la aplicación utilizando un navegador web.
