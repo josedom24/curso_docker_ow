@@ -2,6 +2,8 @@
 
 En este último ejemplo vamos a construir una imagen de una aplicación PHP que necesita conectarse a una base de datos mariadb para guardar o leer información. Por lo tanto, vamos a construir la imagen para que podamos indicar variables de entorno para configurar las credenciales de acceso a la base de datos. 
 
+Puedes encontrar los ficheros necesarios en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
+
 ## Aplicación PHP
 
 Como ejemplo vamos a "dockerizar" una aplicación PHP simple que accede a una tabla de una base de datos. La aplicación la puedes encontrar en el directorio `build/app/index.php`.

@@ -1,6 +1,7 @@
 # Ejemplo 2: Construcción de imágenes con una una aplicación PHP
 
 En este ejemplo vamos a crear una imagen Docker con una página desarrollada con PHP. 
+Puedes encontrar los ficheros necesarios en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 ## Versión 1: Desde una imagen base
 

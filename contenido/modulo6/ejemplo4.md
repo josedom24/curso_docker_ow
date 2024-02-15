@@ -2,7 +2,7 @@
 
 En este ejemplo vamos a desplegar con Docker Compose la aplicación Java con Tomcat y nginx como proxy inverso que vimos en un módulo anterior.
 
-Puedes encontrar el fichero `compose.yaml` en en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar el fichero `compose.yaml` en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 El fichero `compose.yaml` sería:
 

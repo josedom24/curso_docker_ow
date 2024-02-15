@@ -2,7 +2,7 @@
 
 En este ejemplo vamos a desplegar con Docker Compose la aplicación WordPress + MariaDB, que estudiamos en un módulo anterior.
 
-Puedes encontrar los ficheros `compose.yaml` en en en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar los ficheros `compose.yaml` en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 
 ## Utilizando volúmenes docker

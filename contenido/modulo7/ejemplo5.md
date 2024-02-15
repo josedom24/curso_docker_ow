@@ -2,6 +2,8 @@
 
 En este ejemplo vamos a estudiar como podemos trabajar con el Servidor de Aplicaciones Apache Tomcat. Para hacer las pruebas vamos a usar la imagen Docker `bitnami/tomcat` cuya [documentación](https://hub.docker.com/r/bitnami/tomcatJava) puedes encontrar en Docker Hub.
 
+Puedes encontrar los ficheros necesarios en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
+
 En primer lugar vamos a crear un contenedor Docker desde la imagen `bitnami/tomcat` y vamos a hacer un despliegue de un fichero war de forma manual. Además vamos a configurar el contenedor para indicar el usuario y la contraseña que nos va a permitir acceder ala web de administración de Tomcat. Para ello ejecutamos:
 
 ```bash
