@@ -88,7 +88,7 @@ Otras empresas han desarrollado software de contenedores de aplicación:
     * Kubernetes
 
 * Hoy en día se acepta generalmente que el vencedor ha sido kubernetes. ¿Por qué?:
-    * Gran cantidad de empresas implicadas, iniciada por Google pero donada a la CNCF con una versión inicial muy madura, gran número de aplicaciones
+    * Gran cantidad de empresas implicadas en su desarrollo, iniciada por Google pero donada a la CNCF con una versión inicial muy madura, gran número de aplicaciones,...
 complementarias,. . . 
     * El resto de proyectos siguen activos, como alternativas más sencillas a k8s o en su propio nicho.
 
