@@ -63,7 +63,7 @@
     * [Ejemplo 3: Despliegue de WordPress + MariaDB](contenido/modulo6/ejemplo3.md)
     * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo6/ejemplo4.md)
     * [Uso de parámetros con Docker Compose](contenido/modulo6/variables.md)
-    * Ejemplos reales de despliegues usando Docker Compose 
+    * [Ejemplos reales de despliegues usando Docker Compose](contenido/modulo6/ejemplos.md) 
 
 7. Creación de imágenes en Docker
     * [Introducción a la construcción y distribución de imágenes Docker](contenido/modulo7/introduccion.md)
