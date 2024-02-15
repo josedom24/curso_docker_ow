@@ -53,3 +53,44 @@ Los requisitos mínimos necesarios son:
      Engine:
       Version:          25.0.3
       ...
+
+## Autentificación en Docker Hub desde Docker Desktop
+
+**Docker Hub** es el registro público de imágenes Docker. De este registro vamos a descargar las imágenes que necesitemos. Si queremos subir al registro nuestras propias imágenes tendremos que [registrarnos en este servicio](https://hub.docker.com/signup).
+
+Desde **Docker Desktop** podemos autentificarnos en **Docker Hub** con nuestra cuenta, de esta manera podremos gestionar nuestras imágenes en el registro.
+
+En distribuciones Linux vamos a usas claves gpg para cifrar las credenciales de acceso, y estas credenciales se van almacenar usando la utilidad `pass`.
+
+Lo primero que tenemos que hacer es inicializar un par de claves gpg (pública y privada), para ello:
+
+```bash
+$ gpg --generate-key
+...
+gpg: clave 09FFD80DB166C498 marcada como de confianza absoluta
+gpg: creado el directorio '/home/usuario/.gnupg/openpgp-revocs.d'
+gpg: certificado de revocación guardado como '/home/usuario/.gnupg/openpgp-revocs.d/B4901885C051839E8CBEA0E609FFD80DB166C498.rev'
+claves pública y secreta creadas y firmadas.
+
+pub   rsa3072 2024-02-15 [SC] [caduca: 2026-02-14]
+      B4901885C051839E8CBEA0E609FFD80DB166C498
+uid                      José Domingo Muñoz <josedom24@example.com>
+sub   rsa3072 2024-02-15 [E] [caduca: 2026-02-14]
+
+```
+
+Durante la generación nos pedirá nuestro nombre y apellidos, nuestro correo electrónico y nos pedria una "frase de paso" para asegurar el uso de la clave privada que estamos creando.
+
+A continuación inicializaremos la utilidad `pass` usando la clave pública que hemos creado, tenemos que indicar el campo `ID` de la clave pública:
+
+```bash
+$ pass init B4901885C051839E8CBEA0E609FFD80DB166C498
+mkdir: se ha creado el directorio '/home/usuario/.password-store/'
+Password store initialized for B4901885C051839E8CBEA0E609FFD80DB166C498
+```
+
+En el directorio `/home/usuario/.password-store/` se guardarán las credenciales cifradas de acceso a Docker Hub.
+
+Para finalizar, desde **Docker Desktop** podemos pulsar sobre el botón **Sign In** para loguearnos en **Docker Hub**. Y podremos compromer que estamos autentificados de forma correcta:
+
+![linux](img/linux3.png)
