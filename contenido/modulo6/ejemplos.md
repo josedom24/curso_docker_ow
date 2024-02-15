@@ -11,7 +11,7 @@ Podemos encontrar las instrucciones para desplegarlo con Docker en esta [página
 1. Descargamos los ficheros del repositorio, descomprimimos el fichero zip y accedemos al directorio:
 
     ```bash
-    $  wget $(curl -s https://api.github.com/repos/jitsi/docker-jitsi-meet/releases/latest | grep 'zip' | cut -d\" -f4) -o jitsi.zip
+    $ wget $(curl -s https://api.github.com/repos/jitsi/docker-jitsi-meet/releases/latest | grep 'zip' | cut -d\" -f4) -o jitsi.zip
     $ unzip stable-9258
     $ cd jitsi-docker-jitsi-meet-c92026a/
     ```
