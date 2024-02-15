@@ -55,6 +55,23 @@ Podemos obtener docker de varias formas:
         * Pro, Team, Business
         * [Más información](https://www.docker.com/pricing/)
 
+## Instalar Docker CE
+
+Dos opciones:
+
+* Instalar **Docker Engine**:
+    * Incluye el cliente y el demonio Docker.
+    * Sólo se puede instalar en distribuciones Linux: CentOs, Debian, Fedora, Ubuntu, ...
+* Instalar **Docker Desktop**:
+    * Incluye el cliente y el demonio Docker.
+    * El demonio docker se ejecuta en una máquina virtual.
+    * Nos ofrece una aplicación gráfica para gestionar los objetos Docker.
+    * Es necesario tener entorno gráfico.
+    * Incluye algunas otras funcionalidades,...
+    * Se puede instalar en Linux, Windows y Mac.
+
+
+
 ## Alternativas a Docker
 
 Otras empresas han desarrollado software de contenedores de aplicación:
