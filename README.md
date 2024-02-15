@@ -11,7 +11,7 @@
     * [Introducción a Docker](contenido/modulo1/docker.md)
     * [Instalación de Docker Engine en Linux](contenido/modulo1/instalacion_linux.md)
     * [Instalación de Docker Desktop en Linux](contenido/modulo1/desktop_linux.md)
-    * Instalación de Docker Desktop en Windows
+    * [Instalación de Docker Desktop en Windows](contenido/modulo1/desktop_windows.md)
     
 2. Ejecución de contenedores
     * [El "Hola Mundo" de Docker](contenido/modulo2/holamundo.md) 
