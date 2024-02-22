@@ -60,7 +60,7 @@ También podemos usar `docker inspect` para ver el límite de memoria que hemos 
 $ docker inspect --format '{{.HostConfig.Memory}}' servidor_web
 ```
 
-Este comando te dará el límite de memoria en bytes. Si deseas convertirlo a un formato más humano, puedes hacerlo utilizando las siguientes instrucciones en bash:
+Este comando te dará el límite de memoria en bytes. Si deseas convertirlo a un formato más legible, puedes hacerlo utilizando las siguientes instrucciones en bash:
 
 ```bash
 memory_limit=$(docker inspect --format '{{.HostConfig.Memory}}' servidor_web)
