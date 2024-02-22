@@ -75,7 +75,10 @@ $ curl http://localhost:8080
 <html><body><h1>It works!</h1></body></html>
 ```
 
-Vamos a comprobar la configuración de cortafuegos que se ha configurado en el Host Docker. Para permitir que los contenedores conectados a la red **bridge** por defecto tengan conectividad al exterior tenemos que hacer una regla NAT, más concretamente SNAT. Cuando hemos mapeado el puerto 8080 del Host Docker al puerto 80 del contenedor, se ha creado una regla NAT, en concreto DNAT, que hace que todas las peticiones al puerto 8080/tcp del Host Docker se redirijan al puerto 80/tcp del contenido. Veamos estas reglas iptables, en el Host Docker ejecutamos:
+Vamos a comprobar la configuración de cortafuegos que se ha configurado en el Host Docker. 
+
+* Para permitir que los contenedores conectados a la red **bridge** por defecto tengan conectividad al exterior tenemos que hacer una regla NAT, más concretamente SNAT. 
+* Cuando hemos mapeado el puerto 8080 del Host Docker al puerto 80 del contenedor, se ha creado una regla NAT, en concreto DNAT, que hace que todas las peticiones al puerto 8080/tcp del Host Docker se redirijan al puerto 80/tcp del contenedor. Veamos estas reglas iptables, en el Host Docker ejecutando:
 
 ```bash
 $ sudo iptables -L -n  -t nat
@@ -90,7 +93,7 @@ DNAT       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:8080 to:17
 ...
 ```
 
-La primera es la regla SNAT que permite a todos los contenedores de la red `172.17.0.0/16` tener acceso al exterior, y la segunda es la regla DNAT que permite la redirección de la petición al puerto 8080/tcp del Host Docker al puerto 80/tcp del contenedor que esta en la dirección `172.16.0.2`.
+La primera es la regla SNAT que permite a todos los contenedores de la red `172.17.0.0/16` tener acceso al exterior, y la segunda es la regla DNAT que permite la redirección de las peticiones al puerto 8080/tcp del Host Docker al puerto 80/tcp del contenedor que esta en la dirección `172.16.0.2`.
 
 ## Mapeo de puertos
 
@@ -109,7 +112,7 @@ $ docker run -d -p 127.0.0.1:8081:80 --name contenedor2 nginx
 
 ## Conectividad entre los contenedores conectados a la red por defecto
 
-Evidentemente los contenedores a esta red podrán conectarse usando su dirección IP, sin embargo esta red no ofrece ningún mecanismo de DNS para que podamos conectarnos a otro contenedor usando su nombre. Veamos un ejemplo con loos contenedores creados en este apartado:
+Evidentemente los contenedores conectados a la red pode defecto podrán comunicarse usando su dirección IP, sin embargo esta red no ofrece ningún mecanismo de DNS para que podamos conectarnos a otro contenedor usando su nombre. Veamos un ejemplo con los contenedores creados en este apartado:
 
 En primer lugar vamos a averiguar que dirección IP ha tomado el `contenedor2`:
 
@@ -132,3 +135,4 @@ ping: bad address 'contenedor2'
 
 Como podemos observar tenemos conectividad desde el primer contenedor al segundo, pero sólo usando la dirección IP, no tengo un DNS que me permita conectarme al segundo contenedor utilizando su nombre.
 
+Para terminar, indicar que existe una opción que ya se considera obsoleta ("deprectated") usando el parámetro `--link` para que los contenedores conectados a la red pode defecto se puedan comunicar usando sus nombres. Sin embargo con esta opción se utilizaría resolución estática, es decir se modificarían los ficheros `/etc/hosts` de los contenedores para que puedieran resolver los nombres de los otros contenedores.
