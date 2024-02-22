@@ -1,11 +1,10 @@
 # Ejemplo 2: Despliegue de la aplicación Temperaturas
 
-En este ejemplo vamos a desplegar con Docker Compose la aplicación *Temperaturas*, que estudiamos en un módulo anterior.
+En este ejemplo vamos a desplegar con Docker Compose la aplicación Temperaturas, que estudiamos en un módulo anterior.
 
 Puedes encontrar el fichero `compose.yaml` en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
-
-En este caso el fichero `compose.yaml` puede tener esta forma:
+En este caso el fichero `compose.yaml` puede tener este contenido:
 
 ```yaml
 version: '3.1'
@@ -26,7 +25,7 @@ services:
     restart: always
 ```
 
-Como hicimos en el ejemplo anterior, aunque no es necesario porque es el valor por defecto, declaramos la variable de entorno `TEMP_SERVER: temperaturas-backend:5000`. Como indicábamos también, podríamos uso del nombre del servicio, de esta manera quedaría como `TTEMP_SERVER: backend:5000`.
+Como hicimos en el ejemplo anterior, aunque no es necesario porque es el valor por defecto, declaramos la variable de entorno `TEMP_SERVER: temperaturas-backend:5000`. Como indicábamos también, podríamos usar el nombre del servicio, de esta manera quedaría como `TEMP_SERVER: backend:5000`.
 
 Para crear el escenario:
 
