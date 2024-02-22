@@ -1,4 +1,4 @@
-# # Ejemplo 3: Despliegue de WordPress + MariaDB
+# Ejemplo 3: Despliegue de WordPress + MariaDB
 
 Para la instalación de WordPress necesitamos dos contenedores: uno para ejecutar la base de datos MariaDB (imagen `mariadb`) y el servidor web con la aplicación (imagen `wordpress`). Los dos contenedores tienen que estar en la misma red y deben tener acceso por nombres (resolución DNS) ya que de principio no sabemos que dirección IP va a coger cada contenedor. Por lo tanto vamos a crear los contenedores en la misma red:
 
