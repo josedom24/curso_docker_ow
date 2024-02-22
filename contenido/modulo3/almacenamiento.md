@@ -1,6 +1,6 @@
 # Demostración: Almacenamiento de imágenes y contenedores
 
-## Demostración almacenamiento de imágenes
+## Ejemplo de almacenamiento de imágenes
 
 Se ha creado una imagen que hemos subido a **Docker Hub** llamada `josedom24/servidorweb`. Esta imagen ofrece un servidor web sobre un sistema operativo Debian Linux, con una sencilla página web.
 
@@ -8,9 +8,9 @@ Durante el proceso de generación de la imagen:
 
 * Se ha partido de la imagen `debian:stable-slim` (**Pimera capa**).
 * Se ha instalado el servidor web apache2 (**Segunda capa**).
-* La imagen tiene dos versiones. Las versiones está etiquetadas con las etiquetas **v1** y **v2**. Cada versión tiene un fichero `index.html` diferente. (**Tercera capa**).
+* La imagen tiene dos versiones. Las versiones están etiquetadas con las etiquetas **v1** y **v2**. Cada versión tiene un fichero `index.html` diferente. (**Tercera capa**).
 
-Vamos a descargar la primera versión de la imagen (suponemos que no tenemos descargada ninguna imagen en un nuestro registro local):
+Vamos a descargar la primera versión de la imagen (suponemos que no tenemos descargada ninguna imagen en nuestro registro local):
 
 ```bash
 $ docker pull josedom24/servidorweb:v1
@@ -22,7 +22,7 @@ Digest: sha256:5707a7005d440bf32619e27e37800419b2c52644205da3c6a9edb9d55b8c51de
 Status: Downloaded newer image for josedom24/servidorweb:v1
 docker.io/josedom24/servidorweb:v1
 ```
-Vemos como se ha descargado las 3 capas, y que finalmente tenemos una nueva imagen con un identificador en nuestro registro local:
+Vemos como se ha descargado las 3 capas, y que finalmente tenemos una nueva imagen en nuestro registro local:
 
 ```bash
 $ docker images
@@ -43,7 +43,7 @@ Status: Downloaded newer image for josedom24/servidorweb:v2
 docker.io/josedom24/servidorweb:v2
 ```
 
-Podemos observar que las dos primeras capas "ya existen", es decir, ya la tenemos almacenadas en nuestro registro, por que son iguales a las capas de la primera versión de la imagen.
+Podemos observar que las dos primeras capas "ya existen", es decir, ya la tenemos almacenadas en nuestro registro, porque son iguales a las capas de la primera versión de la imagen.
 
 Si visualizamos las imágenes:
 
@@ -54,7 +54,7 @@ josedom24/servidorweb   v2        f558b3613d2c   3 days ago   187MB
 josedom24/servidorweb   v1        d0d75af6b8ec   3 days ago   187MB
 ```
 
-Podemos pensar que se ha ocupado en el disco duro 187Mb + 187 Mb, pero en realidad el espacio ocupado por las dos primeras capas sólo se guarda en el disco una vez y se comparte entre las dos versiones de la imagen. esto lo podemos ver de manera más clara ejecutando el siguiente comando:
+Podemos pensar que se ha ocupado en el disco duro 187Mb + 187 Mb, pero en realidad el espacio ocupado por las dos primeras capas sólo se guarda en el disco una vez, esas capas se comparten entre las dos versiones de la imagen. Esto lo podemos ver de manera más clara ejecutando el siguiente comando:
 
 ```bash
 docker system df -v
@@ -68,9 +68,9 @@ josedom24/servidorweb   v1        d0d75af6b8ec   3 days ago   187MB     186.8MB 
 De los 187 MB que tienen de tamaño las imágenes, 186,8 MB están compartido (este es el tamaño de las dos primeras capas), por lo tanto el espacio ocupado por cada una de las imágenes corresponde a la tercera capa (el fichero `index.html`) que en este caso es 25B  y 22B.
 
 Por lo tanto ¿Cuánto han ocupado en total estas dos imágenes en el disco duro? Pues sería 186,8MB + 25B + 22B.
-El mecanismo de compartir capas entre imágenes hace que se ocupe el menos espacio posible en disco duro, el alamacenamiento es muy eficiente.
+El mecanismo de compartir capas entre imágenes hace que se ocupe el menos espacio posible en disco duro, el almacenamiento es muy eficiente.
 
-## Demostración almacenamiento de contenedores
+## Ejemplo de almacenamiento de contenedores
 
 Hemos descargado la imagen `ubuntu` y vemos su tamaño:
 
@@ -86,7 +86,7 @@ Si creamos un contenedor interactivo:
 $ docker run -it --name contenedor1 ubuntu
 ```
 
-Nos salimos, y a continuación visualizamos los contenedores con la opción `-s` (size):
+Nos salimos, y a continuación visualizamos el tamaño ocupado por los contenedores con la opción `-s` (size):
 
 ```bash
 $ docker ps -a -s
@@ -113,7 +113,7 @@ CONTAINER ID   IMAGE     COMMAND       CREATED         STATUS                   
 679822aff71a   ubuntu    "/bin/bash"   2 minutes ago   Exited (0) 5 seconds ago             contenedor1   62B (virtual 77.9MB)
 ```
 
-El tamaño del contenedor ha aumentado, en realizada la **Capa del Contenedor** de lectura y escritura ha aumentado ya que hemos creado un nuevo fichero.
+El tamaño del contenedor ha aumentado, en realidad la **Capa del Contenedor** de lectura y escritura ha aumentado ya que hemos creado un nuevo fichero.
 
 Por todo lo que hemos explicado, ahora se entiende  que **no podemos eliminar una imagen cuando tenemos contenedores creados a a partir de ella**.
 
