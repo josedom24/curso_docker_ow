@@ -2,7 +2,13 @@
 
 ## Ciclo de vida de los contenedores
 
-Tenemos distintos comandos que nos permiten controlar el ciclo de vida de un contenedor:
+Para ver un ejemplo de los comandos que gestionan el ciclo de vida de un contenedor vamos a ejecutar un contenedor demonio que va escribiendo la hora cada segundo, para ver la salida visualizamos sus logs:
+
+```bash
+$ docker run -d --name hora-container ubuntu bash -c 'while true; do echo $(date +"%T"); sleep 1; done'
+$ docker logs -f hora-container
+```
+En otra terminal vamos ejecutando los comandos que nos permiten controlar su ciclo de vida:
 
 * `docker start`: Inicia la ejecución de un contenedor que está parado.
 * `docker stop`: Detiene la ejecución de un contenedor en ejecución.
@@ -10,19 +16,10 @@ Tenemos distintos comandos que nos permiten controlar el ciclo de vida de un con
 * `docker pause`: Pausa la ejecución de un contenedor.
 * `docker unpause`: Continúa la ejecución de un contenedor que estaba pausado..
 
-Para ver un ejemplo de su uso, podemos abrir dos terminales. En la primera vamos a ejecutar un contenedor demosnio que va escribiendo la hora cada segundo, para ver la salida visuliazamos sus logs:
-
-```bash
-$ docker run -d --name hora-container ubuntu bash -c 'while true; do echo $(date +"%T"); sleep 1; done'
-$ docker logs -f hora-container
-```
-
-En otro terminal vamos ejecutando los comandos hemos estudiado y vemos como los efectos que tiene sobre el contenedor.
 
 ## Ejecución de comandos en contenedores
 
-Si tenemos un contenedor que se se está ejecutando podemos ejecutar comandos en él con el comando `docker exec`. En esta ocasión vamos a crear un contenedor parecido al anterior, pero en este caso caso guarda la hora en un fichero cada segundo:
-
+Si tenemos un contenedor que se se está iniciado, podemos ejecutar comandos en él con el comando `docker exec`. En esta ocasión vamos a crear un contenedor que hace algo parecido al anterior, pero en este caso guarda la hora en un fichero cada segundo:
 
 ```bash
 $ docker run -d --name hora-container2 ubuntu bash -c 'while true; do date +"%T" >> hora.txt; sleep 1; done'
@@ -35,7 +32,7 @@ $  docker exec hora-container2 cat hora.txt
 
 ## Copiar ficheros en contenedores
 
-Con el comando `docker cp` podemos copiar ficheros a o desde un contenedor. Por ejemplo si tengo un fichero en mi qeuipo lo puedo copiar al contenedor:
+Con el comando `docker cp` podemos copiar ficheros a o desde un contenedor. Por ejemplo, si tengo un fichero en mi equipo lo puedo copiar al contenedor:
 
 ```bash
 $ echo "Curso Docker">docker.txt
@@ -59,7 +56,7 @@ Successfully copied 5.63kB to /home/usuario/.
 
 ## Visualizar procesos que se ejecutan en un contenedor
 
-Podemos visualizar los procesos que se están ejecutando en un contenedor con el com,ando `docker top`:
+Podemos visualizar los procesos que se están ejecutando en un contenedor con el comando `docker top`:
 
 ```bash
 $ docker top hora-container2
@@ -73,7 +70,7 @@ Para obtener información de cualquier objeto Docker vamos a usar el subcomando 
 $ docker inspect hora-container2
 ```
 
-Nos muestra mucha información, está en formato JSON (JavaScript Object Notation) y nos da datos sobre aspectos como:
+Nos muestra mucha información en formato JSON (JavaScript Object Notation) y nos da datos sobre aspectos como:
 
 * El id del contenedor.
 * Los puertos abiertos y sus redirecciones.
@@ -84,7 +81,7 @@ Nos muestra mucha información, está en formato JSON (JavaScript Object Notatio
 * El valor de las variables de entorno.
 * Y muchas más cosas....
 
-Como nos devuelve mucha información podemos filtrar los campos que nos interesa, por ejemplo:
+Como nos devuelve mucha información podemos filtrar los campos que nos interesan, por ejemplo:
 
 El identificado del contenedor:
 
