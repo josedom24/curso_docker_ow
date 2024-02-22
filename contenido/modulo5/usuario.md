@@ -10,7 +10,7 @@ Para crear una red bridge definida por el usuario, ejecutamos la siguiente instr
 $ docker network create -d bridge red1
 ```
 
-La opción `-d bridge` es optativa, si no se se indica el drive por defecto se creará una red de tipo bridge. Podemos visualizar las redes que tenemos creada ejecutando:
+La opción `-d bridge` es optativa, si no se se indica el tipo por defecto, se creará una red de tipo bridge. Podemos visualizar las redes que tenemos creada ejecutando:
 
 ```bash
 $ docker network ls
@@ -42,7 +42,7 @@ $ ip a
 ...
 ```
 
-Como puedes la puerta de enlace que recibirán los contenedores conectados a esta red corresponde con la dirección IP del Host Docker en esta red.
+Vemos que la puerta de enlace que recibirán los contenedores conectados a esta red corresponde con la dirección IP del Host Docker en esta red.
 
 Por último, para borrar una red podemos ejecutar:
 
@@ -50,7 +50,7 @@ Por último, para borrar una red podemos ejecutar:
 $ docker network rm red1
 ```
 
-Teniendo en cuenta que no puedo borrar una red que tenga contenedores que la estén usando. deberé primero borrar los contenedores o desconectar la red.
+Teniendo en cuenta que no puedo borrar una red que tenga contenedores que la estén usando, deberé primero borrar los contenedores o desconectarlos de la red.
 
 ## Creación avanzada de redes bridge definidas por el usuario
 
