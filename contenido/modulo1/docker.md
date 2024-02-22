@@ -2,7 +2,7 @@
 
 ## Docker
 
-* Docker es una tecnología de virtualización “ligera” cuyo elemento básico es la utilización de contenedores en vez de máquinas virtuales y cuyo objetivo principal es el despliegue de aplicaciones encapsuladas en dichos contenedores.
+* Docker es una tecnología de virtualización "ligera" cuyo elemento básico es la utilización de contenedores en vez de máquinas virtuales y cuyo objetivo principal es el despliegue de aplicaciones encapsuladas en dichos contenedores.
 * Docker es una plataforma de código abierto diseñada para facilitar la creación, implementación y ejecución de aplicaciones en entornos contenerizados.
 
 ## Docker
@@ -10,7 +10,7 @@
 * "Docker": estibador.
 * Pertenece a los denominados contenedores de aplicaciones
 * Nuevo paradigma. Cambia completamente la forma de desplegar y distribuir una aplicación basado en el lema **build, ship and run**.
-* Lo desarrolla la empresa Docker, Inc, pero actualmente pes un proyecto perteneciente a la **Cloud Native Computing Foundation (CNCF)** con lo que se asegura el desarrollo de los estándares  que se utilizan.
+* Lo desarrolla la empresa **Docker, Inc**, pero actualmente es un proyecto perteneciente a la **Cloud Native Computing Foundation (CNCF)** con lo que se asegura el desarrollo de los estándares  que se utilizan.
 * Software libre.
 
 ## Objetos Docker
@@ -40,8 +40,10 @@ Docker utiliza una arquitectura cliente-servidor. El **cliente Docker** se comun
 
 * **El demonio Docker (Docker Engine)**: Ofrece una API REST que utiliza el cliente Docker, y gestiona los objetos Docker.
     * El ordenador donde está instalado el demonio Docker lo llamaremos **Host Docker**.
+    * De forma predeterminada el demonio Docker y los contenedores que gestionan se ejecutan por el usuario administrador del sistema.
+    * Podemos instalador Docker para ser usado por usuario sin privilegios (**modo rootless**), aunque tiene algunas limitaciones se consigue tener más seguridad.
 * **El cliente Docker**: Usando el comando `docker` nos comunicamos con el demonio Docker para gestionar los objetos Docker con los que trabajamos. El cliente y el demonio pueden estar en equipos distintos.
-* **Registros Docker**: Un registro Docker almacena imágenes Docker. Docker Hub es un registro público que cualquiera puede utilizar, y Docker busca imágenes en Docker Hub de forma predeterminada. Podemos crear registros privados.
+* **Registros Docker**: Un registro Docker almacena imágenes Docker. **Docker Hub** es un registro público que cualquiera puede utilizar, y Docker busca imágenes en Docker Hub de forma predeterminada. Podemos instalar en nuestros servidores  registros privados.
 * **Docker Desktop**: Aplicación gráfica que permite la gestión sencilla de objetos Docker. Incluye el demonio y el cliente Docker.
 * **Docker Swarm**: Es la solución de orquestación de contenedores ofrecida por Docker.
 
@@ -61,7 +63,7 @@ Dos opciones:
 
 * Instalar **Docker Engine**:
     * Incluye el cliente y el demonio Docker.
-    * Sólo se puede instalar en distribuciones Linux: CentOs, Debian, Fedora, Ubuntu, ...
+    * Sólo se puede instalar en distribuciones Linux: CentOS, Debian, Fedora, Ubuntu, ...
 * Instalar **Docker Desktop**:
     * Incluye el cliente y el demonio Docker.
     * El demonio docker se ejecuta en una máquina virtual.
@@ -84,7 +86,7 @@ Otras empresas han desarrollado software de contenedores de aplicación:
 ## El mundo de los contenedores en la actualidad
 
 * Docker ha revolucionado el uso de los contenedores, para el despliegue de aplicaciones web.
-* Pero docker tiene algunas limitaciones:
+* Pero Docker tiene algunas limitaciones:
     * El proceso de actualización de versiones en producción.
     * ¿Cómo se balancea la carga entre contenedores iguales?
     * ¿Cómo se conectan contenedores que se ejecutan en diferentes demonios de docker?
@@ -95,17 +97,16 @@ Otras empresas han desarrollado software de contenedores de aplicación:
 
 ## Orquestadores de contenedores
 
-* Un Orquestador de contenedores es un programa que gestiona los contenedores que se ejecutan en un cluster de servidores. Nos ofrece muchas características:
-    * actualizaciones automáticas, balanceo de carga, tolerancia a fallos, escalabilidad, . . .
+* Un Orquestador de contenedores es un programa que gestiona los contenedores que se ejecutan en un clúster de servidores. Nos ofrece muchas características:
+    * Actualizaciones automáticas, balanceo de carga, tolerancia a fallos, escalabilidad, . . .
 
-* Distintos proyectos de software libre:
+* Distintas alternativas:
     * Docker swarm
     * Apache Mesos
     * Hashicorp Nomad
     * Kubernetes
 
 * Hoy en día se acepta generalmente que el vencedor ha sido kubernetes. ¿Por qué?:
-    * Gran cantidad de empresas implicadas en su desarrollo, iniciada por Google pero donada a la CNCF con una versión inicial muy madura, gran número de aplicaciones,...
-complementarias,. . . 
+    * Gran cantidad de empresas implicadas en su desarrollo, iniciada por Google pero donada a la CNCF con una versión inicial muy madura, gran número de aplicaciones complementarias,. . . 
     * El resto de proyectos siguen activos, como alternativas más sencillas a k8s o en su propio nicho.
 
