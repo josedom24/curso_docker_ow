@@ -2,7 +2,7 @@
 
 En el fichero `compose.yaml` vamos a definir un escenario multicontenedor usando el formato YAML. **La instrucción `docker compose` se debe ejecutar en el directorio donde se encuentra ese fichero**. Por lo tanto tenderemos un directorio con un fichero `compose.yaml` para cada una las aplicaciones que queremos desplegar. 
 
-Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar los ficheros necesarios para este ejemplo en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 Veamos un fichero de ejemplo `compose.yaml` donde se define el escenario para desplegar la aplicación [Let's Chat](https://github.com/sdelements/lets-chat) que es un chat escrito en NodeJS, que guarda su información en una base de datos MongoDB:
 
@@ -43,7 +43,7 @@ Como hemos comentado con el parámetro `services` se define la lista de contened
 
 * Cada servicio tiene un nombre, en nuestro ejemplo se llaman `app` y `db`.
 * En la definición del contenedor indicamos un nombre (parámetro `container_name`), la imagen (con el parámetro `image`), las variables de entorno (parámetro `environment`), el mapeo de puertos (parámetro `ports`), los volúmenes (parámetro `volume`),... Iremos estudiando los distintos parámetros cuando veamos más ejemplos.
-* `restart: always`: Indicamos la política de reinicio del contenedor si por cualquier condición se para. [Más información](https://docs.docker.com/compose/compose-file/compose-file-v3/#restart).
+* `restart: always`: Indicamos la política de reinicio del contenedor si por cualquier circunstancia se para. [Más información](https://docs.docker.com/compose/compose-file/compose-file-v3/#restart).
 * `depend on`: Indica la dependencia entre contenedores. No se va a iniciar un contenedor hasta que otro este funcionando. [Más información](https://docs.docker.com/compose/compose-file/compose-file-v3/#depends_on).
 * Puedes encontrar todos los parámetros que podemos definir en la [documentación oficial](https://docs.docker.com/compose/compose-file/compose-file-v3/).
 
