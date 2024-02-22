@@ -67,7 +67,7 @@
 
 7. Creación de imágenes en Docker
     * [Introducción a la construcción y distribución de imágenes Docker](contenido/modulo7/introduccion.md)
-    * [Creación de imágenes a partir de un contenedor](contenido/modulo7/contedor.md)
+    * [Creación de imágenes a partir de un contenedor](contenido/modulo7/contenedor.md)
     * [El fichero Dockerfile](contenido/modulo7/docker-file.md)
     * [Creación de imágenes a partir de un Dockerfile](contenido/modulo7/build.md)
     * [Distribución de imágenes](contenido/modulo7/distribucion.md)

@@ -2,14 +2,13 @@
 
 Veamos como podemos automatizar la creación de imágenes Docker, usando un fichero `Dockerfile` y el comando `docker build`. Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
-1. Vamos a crear un directorio (a este directorio se le llama **contexto**) donde vamos a crear un `Dockerfile` y un fichero `index.html`:
+1. Vamos a crear un directorio (a este directorio se le llama **contexto**) donde vamos a crear un fichero `Dockerfile` y un fichero `index.html`:
 
     ```bash
     cd build
     ~/build$ ls
     Dockerfile  index.html
     ```
-
     El contenido de `Dockerfile` es:
 
     ```Dockerfile
@@ -27,10 +26,9 @@ Veamos como podemos automatizar la creación de imágenes Docker, usando un fich
     $ docker build -t josedom24/myapache2:v2 .
     ...
     ```
-    **Nota:** Pongo como directorio el `.` porque estoy ejecutando esta instrucción dentro del directorio donde está el `Dockerfile`.
+    **Nota:** Pongo como directorio el `.` porque estoy ejecutando esta instrucción dentro del directorio donde está el fichero `Dockerfile`.
 
-
-    Una vez terminado, podríamos ver que hemos generado una nueva imagen:
+    Una vez terminado, podremos comprobar que hemos generado una nueva imagen:
 
     ```bash
     $ docker images
@@ -38,13 +36,11 @@ Veamos como podemos automatizar la creación de imágenes Docker, usando un fich
     josedom24/myapache2       v2                  3bd28de7ae88        43 seconds ago      195MB
     ...
     ```
-3. En este caso al crear el contenedor a partir de esta imagen no hay que indicar el proceso que se va a ejecutar, porque ya se ha indicando en el fichero `Dockerfile`:
+3. En este caso al crear el contenedor a partir de esta imagen no hay que indicar el proceso que se va a ejecutar, porque ya se ha indicando en el fichero `Dockerfile`, con el parámetro `CMD`:
 
 ```bash
 $ docker run -d -p 8080:80 --name servidor_web josedom24/myapache2:v2 
 ```            
-
-
 
 
 docker image history
@@ -53,7 +49,7 @@ docker image history
 
 ## Uso de la caché en la construcción de imágenes Docker
 
-Como hemos indicado anteriormente, durante la construcción de una imagen Docker, se van guardando en caché las capas intermedias que se van generando. Vamos a ver qué ocurrir si volvemos a construir la imagen después de alguna modificación:
+Como hemos indicado anteriormente, durante la construcción de una imagen Docker, se van guardando en caché las capas intermedias que se van generando. Vamos a ver qué ocurre si volvemos a construir la imagen después de alguna modificación:
 
 1. Si modificamos el fichero `index.html` y volvemos a construir la imagen:
 
@@ -72,7 +68,7 @@ Como hemos indicado anteriormente, durante la construcción de una imagen Docker
     ...
     ```
 
-    Ahora esa primera instrucción ha cambiado, por lo que se generará una nueva cap, distnta a la guarda en caché y todas las demás instrucciones se tendrán que volver a ejecutar.
+    Ahora esa primera instrucción ha cambiado, por lo que se generará una nueva capa distinta a la guardada en caché y todas las demás instrucciones se tendrán que volver a ejecutar.
 
 Si usamos el parámetro `--no-cache` en `docker build` haríamos la construcción de una imagen sin usar las capas cacheadas generadas en construcciones anteriores.
 
