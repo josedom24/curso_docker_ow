@@ -7,7 +7,7 @@ Puedes encontrar los ficheros `compose.yaml` en el [repositorio github](https://
 
 ## Utilizando volúmenes docker
 
-Por ejemplo para la ejecución de wordpress persistente con volúmenes Docker podríamos tener un fichero `compose.yaml` con el siguiente contenido:
+Por ejemplo para la ejecución de WordPress persistente con volúmenes Docker podríamos tener un fichero `compose.yaml` con el siguiente contenido:
 
 ```yaml
 version: '3.1'
@@ -90,7 +90,7 @@ $ docker compose down -v
 
 ## Utilizando bind-mount
 
-Por ejemplo para la ejecución de wordpress persistente con bind mount podríamos tener un fichero `compose.yaml` con el siguiente contenido:
+Por ejemplo para la ejecución de WordPress persistente con bind mount podríamos tener un fichero `compose.yaml` con el siguiente contenido:
 
 ```yaml
 version: '3.1'
