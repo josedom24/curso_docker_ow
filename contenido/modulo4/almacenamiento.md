@@ -2,7 +2,7 @@
 
 ![docker](img/almacenamiento.png)
 
-Ante la situación anteriormente descrita Docker nos proporciona varias soluciones para persistir los datos de los contenedores. Las opciones que nos ofrece docker para gestionar el almacenamiento de los contenedores son:
+Ante la situación anteriormente descrita Docker nos proporciona varias soluciones para persistir los datos de los contenedores. Las opciones que nos ofrece Docker para gestionar el almacenamiento de los contenedores son:
 
 * Los **volúmenes docker**.
 * Los **bind mount**.
@@ -12,7 +12,7 @@ Ante la situación anteriormente descrita Docker nos proporciona varias solucion
 ## Volúmenes Docker
 
 * Los volúmenes son creados y gestionados por Docker.
-* Un volumen corresponde a un directorio en el host, por tanto, la información se almacena en una parte del sistema de ficheros que es gestionada por Docker.
+* Un volumen corresponde a un directorio en el Host Docker, por tanto, la información se almacena en una parte del sistema de ficheros que es gestionada por Docker.
 * Cuando se usa un volumen en un contenedor, el directorio correspondiente se monta en el sistema de archivo del contenedor.
 * En sistemas Linux, los volúmenes se crean en `/var/lib/docker/volumes/`.
 * Los procesos ajenos a Docker no deben modificar esta parte del sistema de archivos.
@@ -24,8 +24,8 @@ Ante la situación anteriormente descrita Docker nos proporciona varias solucion
 
 ## Bind Mount
 
-* Nos permite que un archivo o directorio de la máquina anfitriona se monte en un contenedor.
-* El archivo o directorio es referenciado por su ruta completa en la máquina anfitriona.
+* Nos permite que un archivo o directorio del Host Docker se monte en un contenedor.
+* El archivo o directorio es referenciado por su ruta completa en el Host Docker.
 * No es necesario que el archivo o directorio ya exista en el Host Docker. Se crea bajo demanda si aún no existe.
 * No puedes utilizar el cliente Docker para gestionarlos.
 * Al realizar cambios sobre los ficheros del bind mount en el anfitrión, se cambian directamente en el contenedor.
@@ -40,13 +40,13 @@ Ante la situación anteriormente descrita Docker nos proporciona varias solucion
 * Compartir datos entre múltiples contenedores en ejecución.
 * Cuando no se garantiza que el Host Docker tenga una determinada estructura de directorios o archivos. Los volúmenes te ayudan a desacoplar la configuración del Host Docker del tiempo de ejecución del contenedor.
 * Cuando desea almacenar los datos de su contenedor en un servidor remoto o en un proveedor de nube.
-* Cuando necesite hacer copias de seguridad, restaurar o migrar datos de un Host Docker a otro, los volúmenes son una mejor opción. Simplemente copiando el directorio `/var/lib/docker/volumes/<nombre-volumen>`.
+* Cuando necesites hacer copias de seguridad, restaurar o migrar datos de un Host Docker a otro, los volúmenes son una mejor opción, ya que simplemente debes copiar el directorio `/var/lib/docker/volumes/<nombre-volumen>`.
 
 ## Cuando usar bind mounts
 
 * Compartir archivos de configuración desde la máquina anfitriona a los contenedores.
 * Compartir código fuente o artefactos de construcción entre un entorno de desarrollo en el Host Docker y un contenedor.
-* Que otras aplicaciones que no sean docker tengan acceso a esos ficheros, ya sean código, ficheros etc...
+* Cuando hay necesidad de que otras aplicaciones que no sean Docker tengan acceso a esos ficheros, ya sean código, ficheros etc...
 
 ## Aspectos en el uso de volúmenes o bind mount
 
@@ -56,7 +56,7 @@ Ante la situación anteriormente descrita Docker nos proporciona varias solucion
 
 ## Uso de almacenamiento en contenedores
 
-En la creación de contenedores con `docker run` puedo indicar que vamos a usar volúmenes Docker para guardar la información de ciertos directorios. Tanto en el caso de uso de volúmenes como en el caso del uso de bind mount podemos indicar el uso de almacenamiento en la creación de un contenedor con las siguientes parámetros del comando `docker run`:
+En la creación de contenedores con `docker run` puedo indicar que vamos a usar almacenamiento para guardar la información de ciertos directorios. Tanto en el caso de uso de volúmenes como en el caso del uso de bind mount podemos indicar el uso de almacenamiento en la creación de un contenedor con las siguientes parámetros del comando `docker run`:
 
 * El parámetro `--volume` o `-v`
 * El parámetro `--mount`
@@ -64,7 +64,7 @@ En la creación de contenedores con `docker run` puedo indicar que vamos a usar 
 En general, `--mount` es más explícito y detallado. La mayor diferencia es que la sintaxis `-v` combina todas las opciones en un solo campo, mientras que la sintaxis `--mount` las separa.
 
 * Si usamos `-v` se debe indicar tras campos separados por dos puntos:
-    * El primer campo es el nombre del volumen, y es único en una determinada máquina. Para volúmenes anónimos, el primer campo se omite.
+    * El primer campo es el nombre del volumen, debe ser único en una determinada máquina. Para volúmenes anónimos, el primer campo se omite.
     * El segundo campo es la ruta donde se montan el archivo o directorio en el contenedor.
     * El tercer campo es opcional, y es una lista de opciones separadas por comas. Por ejemplo podemos indicar `ro` para configurar el montaje sólo de lectura.
 * Si usamos `--mount` hay que indicar un conjunto de datos de la forma `clave=valor`, separados por coma.
@@ -81,7 +81,7 @@ En general, `--mount` es más explícito y detallado. La mayor diferencia es que
 
 * Los datos de la aplicación.
 * Los logs del servicio.
-* La configuración del servicio: En este caso podemos añadirla a la imagen, pero será necesaria la creación de una nueva imagen si cambiamos la configuración. Si la guardamos en un volumen hay que tener en cuanta que ese fichero lo tenemos que tener en el entorno de producción (puede ser bueno, porque las configuraciones de los distintos entornos puede variar).
+* La configuración del servicio. En este caso podemos añadirla a la imagen, pero será necesaria la creación de una nueva imagen si cambiamos la configuración. Si la guardamos en un volumen hay que tener en cuanta que ese fichero lo tenemos que tener en el entorno de producción (puede ser bueno, porque las configuraciones de los distintos entornos puede variar).
 
 
 
