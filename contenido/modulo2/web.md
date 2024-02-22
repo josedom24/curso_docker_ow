@@ -1,12 +1,12 @@
 # Ejemplo: Creando un contenedor con un servidor web
 
-En este ejemplo vamos a crear un contenedor demonio que ejecuta un servidor web apache2, para ello vamos a usar la imagen `httpd:2.4` del registro **Docker Hub** (en este caso hemos indicado el nombre de la imagen y su etiqueta `2.4` que en este caso nos indica la versión del servidor web que vamos a usar):
+En este ejemplo vamos a crear un contenedor demonio que ejecuta un servidor web apache2, para ello vamos a usar la imagen `httpd:2.4` del registro **Docker Hub** (en este caso hemos indicado el nombre de la imagen y su etiqueta `2.4` que nos indica la versión del servidor web que vamos a usar):
 
 ```bash
 $ docker run -d --name my-apache-app -p 8080:80 httpd:2.4
 ```
 
-Hay que tener en cuenta que los contenedores que estamos creando se conectan a una red virtual privada y que toman direccionamiento dinámico. No solemos usar la dirección IP del contenedor para acceder al servicio que nos ofrece. Con la opción `-p` mapeamos un puerto del equipo donde tenemos instalado el docker, con el puerto del servicio ofrecido por el contenedor: Si accedemos a la dirección IP del ordenador que tiene instalado docker al primer puerto indicado, se redigirá la petición a la dirección IP del contenedor al segundo puerto indicado. **Nunca utilizamos directamente la dirección IP del contenedor para acceder a él**. 
+Hay que tener en cuenta que los contenedores que estamos creando se conectan a una red virtual privada y que toman direccionamiento dinámico. No solemos usar la dirección IP del contenedor para acceder al servicio que nos ofrece. Con la opción `-p` mapeamos un puerto del Host Docker, con el puerto del servicio ofrecido por el contenedor. Si accedemos a la dirección IP del ordenador que tiene instalado docker al primer puerto indicado, se redireccionará la petición a la dirección IP del contenedor al segundo puerto indicado. **Nunca utilizamos directamente la dirección IP del contenedor para acceder a él**. 
 
 Podemos ver los puertos que están mapeados en un contenedor de dos maneras distintas. Usando el comando `docker port`:
 
@@ -22,11 +22,12 @@ O utilizando el comando `docker inspect` con un filtro:
 docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}}  {{(index $conf 0).HostPort}} -> {{$p}} {{end}}' my-apache-app
 ```
 
-Para probarlo accedemos desde un navegador web a **la dirección IP del servidor con docker (en mi caso: 192.168.121.54) y al puerto 8080**:
+Para probarlo accedemos desde un navegador web:
+
+* Si estamos accediendo desde el Host Docker, accederemos a `http://localhost:8080`.
+* Si estamos accedeindo desde un ordenador remoto, accederemos a la dirección IP del Host Docker y al puerto, por ejemplo,si dirección IP del servidor con Docker es `192.168.121.54`, accederemos a `http://192.168.121.54:8080`:
 
 ![web](img/web.png)
-
-**Nota**: Si estamos accediendo desde el mismo equipo donde se está ejecutando docker podríamos usar para el acceso el nombre `localhost`.
 
 Para acceder al log del contenedor podemos ejecutar:
 
