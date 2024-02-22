@@ -2,7 +2,7 @@
 
 ## Creación de contenedores con bind mount
 
-En este caso vamos a crear un directorio en el sistema de archivos del host, donde vamos a crear un fichero `index.html`:
+En este caso vamos a crear un directorio en el sistema de archivos del Host Docker, donde vamos a crear un fichero `index.html`:
 
 ```bash
 $ mkdir web
@@ -42,7 +42,7 @@ $ curl http://localhost:8080
 <h1>Hola</h1>
 ```
 
-Además podemos comprobar que podemos modificar el contenido del fichero aunque este montado en el contenedor:
+Además, podemos comprobar que al modificar el contenido del fichero se modificará en el contenedor:
 
 ```bash
 $ echo "<h1>Adios</h1>" > web/index.html 
@@ -50,5 +50,5 @@ $ curl http://localhost:8080
 <h1>Adios</h1>
 ```
 
-Por último, indicar que si nuestra carpeta origen no existe y hacemos un bind mount con `-v`, esa carpeta se creará pero lo que tendremos en el contenedor es una carpeta vacía. sin embargo, si hacemos un bind mount con la opción `--mount` nos dará un error.
+Por último, indicar que si nuestra carpeta origen no existe y hacemos un bind mount con `-v`, esa carpeta se creará pero lo que tendremos en el contenedor es una carpeta vacía. Sin embargo, si hacemos un bind mount con la opción `--mount` nos dará un error.
 
