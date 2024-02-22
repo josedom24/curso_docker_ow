@@ -1,6 +1,6 @@
 # Redes con Docker Compose
 
-Como hemos indicado anteriormente, cuando creamos un escenario con `docker compose` **se crea una nueva red definida por el usuario donde se conectan los contenedores**, por lo tanto, obtenemos resolución por DNS que resuelve tanto el nombre del contenedor, como el nombre del servicio.
+Como hemos indicado anteriormente, cuando creamos un escenario con Docker Compose **se crea una nueva red definida por el usuario donde se conectan los contenedores**, por lo tanto, obtenemos resolución por DNS que resuelve tanto el nombre del contenedor, como el nombre del servicio.
 
 Sin embargo en el fichero `compose.yaml` podemos definir y configurar las redes que necesitemos en nuestro escenario, así como la conexión de los distintos contenedores a dichas redes.
 
@@ -42,12 +42,11 @@ networks:
                 gateway: 192.168.20.1
 ```
 
-
 ## Definición de redes en Docker Compose
 
 * En la definición de los contenedores, hemos configurado la conexión de los contenedores a las redes usando el parámetro `networks`:
     * Indicamos el nombre de la red a la que está conectada.
-    * Indicamos su dirección IP con el parámetro `ipv4_address`. Este parámetro es optativo, sino se indica se tomara una dirección IP de forma dinámica.
+    * Indicamos su dirección IP con el parámetro `ipv4_address`. Este parámetro es optativo, sino se indica se tomará una dirección IP de forma dinámica.
     * También hemos indicado el nombre del host con el parámetro `hostname`.
 * El parámetro `networks` a continuación de la definición de servicios nos permite configurar las redes que vamos a usar en el escenario:
     * Indicamos el nombre de las redes que vamos a crear.
@@ -110,7 +109,7 @@ Name:	c2
 Address: 192.168.20.20
 ```
 
-Y por últimos comprobamos que hay conectividad:
+Y por último, comprobamos que hay conectividad:
 
 ```bash
 docker compose exec c1 ping contenedor2
