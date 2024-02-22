@@ -1,7 +1,7 @@
 # Uso de la red bridge definidas por el usuario
 
 En este apartado vamos a trabajar con las dos redes que hemos creado en el apartado anterior.
-En primer lugar vamos a crear dos contenedores conectados a la primera red, para ello usaremos el parámetro `-network` en el comando `docker run`:
+En primer lugar vamos a crear dos contenedores conectados a la primera red, para ello usaremos el parámetro `--network` en el comando `docker run`:
 
 ```bash
 $ docker run -d --name servidorweb --network red1 nginx
@@ -40,7 +40,7 @@ PING servidorweb (172.18.0.2): 56 data bytes
 
 ## Conectando los contenedores a otras redes
 
-A continuación creamos un contenedor conectado la segunda red (`red2`) y comprobamos que no hay conectividad con los dos anteriores:
+A continuación, creamos un contenedor conectado a la segunda red (`red2`) y comprobamos que no hay conectividad con los dos anteriores:
 
 ```bash
 $ docker run -it --name cliente2 --network red2 alpine
@@ -63,7 +63,7 @@ default via 192.168.0.100 dev eth0
 ping: bad address 'servidorweb'
 ```
 
-Ahora podemos probar como podemos conectar un contenedor a una red. Para conectar usaremos el comando `docker network connect` y para desconectarla usaremos `docker network disconnect`. Salimos del contenedor que acabamos de crear, lo iniciamos y lo conectamos a la primera red:
+Veamos cómo podemos conectar un contenedor a una red. Para ello usaremos el comando `docker network connect` y para desconectarla usaremos `docker network disconnect`. Salimos del contenedor que acabamos de crear, lo iniciamos y lo conectamos a la primera red:
 
 ```bash
 $ docker start cliente2
@@ -102,10 +102,10 @@ $ docker network disconnect red1 cliente2
 
 Tanto al crear un contenedor con el parámetro `--network` para conectarlo a una red, como con la instrucción `docker network connect`, podemos usar algunos otros parámetros:
 
-* `--dns``: Para establecer unos servidores DNS predeterminados.
-* `--ip``: Para establecer una dirección IP fija en el contenedor.
-* `--ip6`: para establecer la dirección de red ipv6.
-* `--hostname o -h: Para establecer el nombre de host del contenedor. Si no lo establezco será el ID del mismo.
+* `--dns`: Para establecer unos servidores DNS predeterminados.
+* `--ip`: Para establecer una dirección IP fija en el contenedor.
+* `--ip6`: Para establecer la dirección de red ipv6.
+* `--hostname` o `-h`: Para establecer el nombre de host del contenedor. Si no lo establezco será el ID del mismo.
 * `--add-host`: Para añadir entradas de nuevos hosts en el fichero `/etc/hosts` (resolución estática).
 
 Veamos un ejemplo donde vamos a crear un contenedor en la `red2` que tenemos creada:
@@ -134,7 +134,7 @@ Como hemos comentado anteriormente estos parámetros también lo podemos usar al
     33: eth0@if34: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP 
     inet 192.168.0.10/24 brd 192.168.0.255 scope global eth0
     ```
-* `--add-host=testing.example.com:192.168.100.20`: Añadimos un nuevo nombre de como resolución estática. Lo comprobamos:
+* `--add-host=testing.example.com:192.168.100.20`: Añadimos un nuevo nombre de host como resolución estática. Lo comprobamos:
 
     ```bash
     # cat /etc/hosts
@@ -151,4 +151,4 @@ Como hemos comentado anteriormente estos parámetros también lo podemos usar al
     nameserver 127.0.0.11
     ...
     ```
-    Por defecto este servidor hace forward con el servidor DNS que tenga configurado el anfitrión (es decir usa el DNS del anfitrión para resolver los nombre que no conoce). Con la opción `--dns 1.1.1.1`, estamos cambiando el DNS al que hacemos forwarding, por lo tanto ese cambio no se visualizar en el fichero `/etc/resolv.conf`.
+    Por defecto este servidor hace forward con el servidor DNS que tenga configurado el anfitrión (es decir usa el DNS del anfitrión para resolver los nombre que no conoce). Con la opción `--dns 1.1.1.1`, estamos cambiando el DNS al que hacemos forwarding, por lo tanto ese cambio no se visualiza en el fichero `/etc/resolv.conf`.
