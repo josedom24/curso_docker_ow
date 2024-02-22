@@ -21,7 +21,7 @@ Como hemos comentado, podemos distribuir nuestras imágenes a través de fichero
 
 ## Distribución usando Docker Hub
 
-Necesitamos estar registrado en Docker Hub. Durante el registro indicaremos un nombre de usuario y una contraseña con las que podremos acceder al registro.
+Necesitamos estar registrados en Docker Hub. Durante el registro indicaremos un nombre de usuario y una contraseña con las que podremos acceder al registro.
 
 Los pasos para distribuir nuestra imagen usando Docker Hub, serían:
 
