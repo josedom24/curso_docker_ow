@@ -24,7 +24,7 @@ services:
       - ./default.conf:/etc/nginx/conf.d/default.conf:ro
 ```
 
-Como podemos ver en el directorio donde tenemos guardado el `compose.yaml`, tenemos los dos ficheros necesarios para la configuración: `sample.war` y `default.conf`.
+Como podemos ver en el directorio donde tenemos guardado el `compose.yaml`, tenemos los dos ficheros: por un lado la aplicación en el fichero `sample.war` y por otro, el fichero de configuración de nginx `default.conf`.
 
 Creamos el escenario:
 
@@ -40,4 +40,4 @@ $ docker compose ps
 ...
 ```
 
-Y acceder al puerto 80 de nuestra IP para ver la aplicación.
+Y acceder al puerto 80 de la dirección IP del Host Docker para acceder a la aplicación.
