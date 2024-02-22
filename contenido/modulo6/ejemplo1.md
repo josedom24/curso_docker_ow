@@ -7,7 +7,7 @@ Puedes encontrar el fichero `compose.yaml` en el [repositorio github](https://gi
 En el fichero `compose.yaml` vamos a definir el escenario. El comando `docker compose` se debe ejecutar en el directorio donde este ese fichero. 
 
 ```yaml
-version: '3.1'
+  version: '3.1'
 services:
   app:
     container_name: guestbook
