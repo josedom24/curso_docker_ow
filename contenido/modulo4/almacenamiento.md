@@ -2,7 +2,7 @@
 
 ![docker](img/almacenamiento.png)
 
-Ante la situación anteriormente descrita Docker nos proporciona varias soluciones para persistir los datos de los contenedores. En este curso nos vamos a centrar en las dos que considero que son más importantes:
+Ante la situación anteriormente descrita Docker nos proporciona varias soluciones para persistir los datos de los contenedores. Las opciones que nos ofrece docker para gestionar el almacenamiento de los contenedores son:
 
 * Los **volúmenes docker**.
 * Los **bind mount**.
@@ -13,7 +13,7 @@ Ante la situación anteriormente descrita Docker nos proporciona varias solucion
 
 * Los volúmenes son creados y gestionados por Docker.
 * Un volumen corresponde a un directorio en el host, por tanto, la información se almacena en una parte del sistema de ficheros que es gestionada por Docker.
-* Cuando se usa un volumen en un contenedor, el direcotrio correspondiente se monta en el sistema de archivo del contenedor.
+* Cuando se usa un volumen en un contenedor, el directorio correspondiente se monta en el sistema de archivo del contenedor.
 * En sistemas Linux, los volúmenes se crean en `/var/lib/docker/volumes/`.
 * Los procesos ajenos a Docker no deben modificar esta parte del sistema de archivos.
 * Un volumen dado puede ser montado en múltiples contenedores simultáneamente. 
