@@ -12,16 +12,16 @@ En este caso vamos a usar una imagen base de un sistema operativo sin ningún se
 ```Dockerfile
 # syntax=docker/dockerfile:1
 FROM debian:stable-slim
-RUN apt-get update && apt-get install -y apache2 libapache2-mod-php7.4 php7.4 && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y apache2 libapache2-mod-php php && apt-get clean && rm -rf /var/lib/apt/lists/*
 COPY app /var/www/html/
 RUN rm /var/www/html/index.html
 EXPOSE 80
 CMD apache2ctl -D FOREGROUND
 ```
 
-* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, php y las librerias necesarias. 
+* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, php y las librerías necesarias. 
 * A continuación añadiremos el contenido del directorio `app` al directorio `/var/www/html/` del contenedor. 
-* Hemos borrado el fichero `/var/www/html/index.html` para que no sea el que se muestre por defecto.
+* Hemos borrado el fichero `/var/www/html/index.html` para que no sea el fichero que se muestre por defecto.
 * Finalmente indicamos el comando que se deberá ejecutar al crear un contenedor a partir de esta imagen: iniciamos el servidor web en segundo plano.
 
 Para crear la imagen ejecutamos:
@@ -48,7 +48,7 @@ Y acceder con el navegador a nuestra página:
 
 ![ejemplo2](img/ejemplo2.png)
 
-La aplicación tiene un fichero `info.php` que me da información sobre PHP, en este caso observamos que estamos usando la versión 7.3:
+La aplicación tiene un fichero `info.php` que me da información sobre PHP, en este caso observamos que estamos usando la versión 8.2:
 
 ![ejemplo2](img/ejemplo2_phpinfo.png)
 

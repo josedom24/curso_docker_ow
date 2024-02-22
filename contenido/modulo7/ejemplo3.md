@@ -1,6 +1,6 @@
 # Ejemplo 3: Construcción de imágenes con una una aplicación Python
 
-En este ejemplo vamos a construir una imagen Docker para servir una aplicación escrita en Python utilizando el framework flask. La aplicación será servida en el puerto 3000/tcp. 
+En este ejemplo vamos a construir una imagen Docker para servir una aplicación escrita en Python utilizando el framework Flask. La aplicación será servida en el puerto 3000/tcp. 
 
 Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
@@ -44,7 +44,7 @@ josedom24/ejemplo3     v1                  8c3275799063        1 minute ago     
 Y podemos crear un contenedor:
 
 ```bash
-$ docker run -d -p 80:3000 --name ejemplo2 josedom24/ejemplo3:v1
+$ docker run -d -p 80:3000 --name ejemplo3 josedom24/ejemplo3:v1
 ```
 
 Y acceder con el navegador a nuestra página:
@@ -53,7 +53,7 @@ Y acceder con el navegador a nuestra página:
 
 ## Versión 2: Desde una imagen con python instalado
 
-En este caso el dichero `Dockerfile` podría ser de esta manera:
+En este caso el fichero `Dockerfile` podría ser de esta manera:
 
 ```Dockerfile
 # syntax=docker/dockerfile:1
