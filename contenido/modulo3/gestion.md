@@ -1,14 +1,14 @@
 # Gestión de Imágenes
 
-Para crear un contenedor es necesario usar una imagen que tengamos descargada en nuestro registro local. Por lo tanto al ejecutar `docker run` se comprueba si tenemos la versión indicada de la imagen y si no es así, se precede a su descarga, pode defecto, desde **Docker Hub**.
+Para crear un contenedor es necesario usar una imagen que tengamos descargada en nuestro registro local. Por lo tanto al ejecutar `docker run` se comprueba si tenemos la versión indicada de la imagen y si no es así, se precede a su descarga desde **Docker Hub**.
 
-Otra manera de descargar una imagen a nuestro registro local (por ejemplo, descargar la imagen `nginx:stable`), es usando la instrucción `docker image pull` o la siguiente instrucción:
+Otra manera de descargar una imagen a nuestro registro local, es usando la instrucción `docker image pull` o la siguiente instrucción:
 
 ```bash
 $ docker pull nginx:stable
 ```
 
-Para mostrar las imágenes que tenemos en nuestro registro local podemos usar `docker iamge ls` o la siguiente instrucción:
+Para mostrar las imágenes que tenemos en nuestro registro local podemos usar `docker image ls` o la siguiente instrucción:
 
 ```bash
 $ docker images
@@ -22,7 +22,7 @@ $ docker rmi nginx:stable`
 
 **Nota**: No podemos eliminar una imagen si tenemos algún contenedor creada a partir de ella.
 
-Si queremos buscar imágenes de **Docker Hub** desde la líinea de comandos, podemos usar la instrucción:
+Si queremos buscar imágenes de **Docker Hub** desde la línea de comandos, podemos usar la instrucción:
 
 ```bash
 $ docker search nginx`
@@ -45,7 +45,7 @@ La información más destacable que podemos ver:
 * Las capas.
 * Y muchas más cosas...
 
-Podemos hacer filtros como en el caso de los contenedores. Por ejemplo para mostrar el identificador de la imagen, ejecutamos
+Podemos usar filtros, como en el caso de los contenedores. Por ejemplo, para mostrar el identificador de la imagen, ejecutamos
 
 ```bash
 $ docker inspect --format='{{.Id}}' nginx:stable
@@ -63,13 +63,13 @@ Consultar el sistema operativo y la arquitectura:
 $ docker inspect --format='{{.Os}} {{.Architecture}}' nginx:stable
 ```
 
-Consulta las variables de entorno definidas en la imagen:
+Consultar las variables de entorno definidas en la imagen:
 
 ```bash
 $ docker inspect --format='{{range .Config.Env}}{{println .}}{{end}}' nginx:stable
 ```
 
-Y por último para consultar los identificadores de las capas que forman la imagen:
+Y por último, para consultar los identificadores de las capas que forman la imagen:
 
 ```bash
 $ docker inspect --format='{{range .RootFS.Layers}}{{println .}}{{end}}' nginx:stable
