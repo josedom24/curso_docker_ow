@@ -1,6 +1,6 @@
 # Etiquetando los contenedores con Labels
 
-Las etiquetas son un mecanismo para guardar metadatos a los objetos Docker: en contenedores, imágenes, volúmenes, redes, etc. Podemos utilizar etiquetas para organizar los distintos objetos Docker que estemos utilizando.
+Las etiquetas son un mecanismo para guardar metadatos en los objetos Docker: en contenedores, imágenes, volúmenes, redes, etc. Podemos utilizar etiquetas para organizar los distintos objetos Docker que estemos utilizando.
 
 Una etiqueta es un par clave-valor, almacenado como una cadena. Puede especificar varias etiquetas para un objeto, pero cada clave debe ser única dentro de un objeto. 
 
@@ -36,13 +36,13 @@ Mostrar los contenedores que tienen la etiqueta `entorno` con el valor `producci
 $ docker ps -a --filter="label=entorno=produccion"
 ```
 
-Por último, mostrar los contenedores cuuo servicio es web en el entorno de producción:
+Por último, mostrar los contenedores cuyo servicio es web en el entorno de producción:
 
 ```bash
 $ docker ps -a --filter="label=entorno=produccion" --filter="label=servicio=web"
 ```
 
-Para terminar este apartado veamos un filtro que nos devuelve las etiqeutas usando el comando `docker inspect`, por ejemplo:
+Para terminar este apartado veamos un filtro que nos devuelve las etiquetas usando el comando `docker inspect`, por ejemplo:
 
 ```bash
 $ docker inspect --format '{{range $key, $value := .Config.Labels}}{{$key}}: {{$value}}{{"\n"}}{{end}}' prueba_web
