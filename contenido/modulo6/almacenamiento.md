@@ -86,4 +86,4 @@ $ cd data/
 aria_log.00000001  aria_log_control  ibdata1  ib_logfile0  ibtmp1  mysql
 ```
 
-Hay que tener en cuenta que si usamos bind mount el comando `docker compose down -v` no eliminará el directorio donde se guardan los datos, en este caso `./data`.
+Hay que tener en cuenta que si usamos bind mount, el comando `docker compose down -v` no eliminará el directorio donde se guardan los datos, en este caso `./data`.
