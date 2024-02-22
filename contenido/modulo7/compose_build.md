@@ -1,8 +1,8 @@
 # Creación de imágenes con Docker Compose
 
-En este ejemplo vamos a ver la configuración de Docker Compose para construir la imagen que va a utilizar en la creación del servicio. en este caso no se indica la imagen, se indica el directorio de contexto donde encontramos el fichero `Dockerfile` para la construcción de la imagen.
+En este ejemplo vamos a ver la configuración de Docker Compose para construir la imagen que va a utilizar en la creación del servicio. En este caso no se indica la imagen, se indica el directorio de contexto donde encontramos el fichero `Dockerfile` para la construcción de la imagen.
 
-Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar los ficheros necesarios para realizar este ejemplo en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 ## Ejemplo de construcción de imagen en Docker Compose
 
@@ -36,7 +36,7 @@ def hello():
 
 El programa guarda en una base de datos redis un contador que se incrementa cada vez que accedemos a la página. Es importante apuntar que el nombre que se usa para acceder al servidor de base de datos es `redis`.
 
-En el fichero `requirements.txt` tenemos las dependencias necesarias para que el programa funciones, en nuestro caso el contenido de este fichero es:
+En el fichero `requirements.txt` tenemos las dependencias necesarias para que el programa funcione, en nuestro caso el contenido de este fichero es:
 
 ```
 flask
@@ -102,7 +102,7 @@ $ docker compose up -d
  ✔ Container build-web-1    Started                         
 ```
 
-Evidentemente si se produce un cambio en la aplicación o en el fichero `Dockerfile`, la próxima vez levantemos el escenario tendremos que indicar que queremos volver a construir la imagen con el parámetro `--build`. Por ejemplo, hemos cambiado el mensaje que muestra la aplicación en la función principal de la aplicación, borramos el escenario y lo volvemos a crear indicando que queremos volver a construir la imagen del servicio `web`:
+Si se produce un cambio en la aplicación o en el fichero `Dockerfile`, la próxima vez que levantemos el escenario tendremos que indicar que queremos volver a construir la imagen con el parámetro `--build`. Por ejemplo, hemos cambiado el mensaje que muestra la aplicación en la función principal de la aplicación, borramos el escenario y lo volvemos a crear indicando que queremos volver a construir la imagen del servicio `web`:
 
 ```bash
 $ docker compose down
