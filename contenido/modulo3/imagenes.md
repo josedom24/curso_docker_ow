@@ -13,7 +13,7 @@
 * El Registro Docker es un componente donde se almacena las imágenes Docker.
 * Tenemos un **registro local** donde se almacenan las imágenes desde las que vamos a crear contenedores. 
 * Existen **registros remotos** que nos permiten distribuir las imágenes.
-* Los registros puedes **públicos o privados**. 
+* Los registros pueden ser **públicos o privados**. 
 * El registro público que nos ofrece Docker se llama [**Docker Hub**](https://hub.docker.com/). 
 
 ## Nombre de las imágenes
@@ -30,15 +30,15 @@ El nombre de una imagen suele estar formado por tres partes:
 
 Si estudiamos la [documentación](https://hub.docker.com/_/mediawiki) de la imagen `mediawiki`, podemos ver las etiquetas disponibles para la imagen que corresponden a versiones distintas de la aplicación. En enero de 2024 serían las siguientes:
 
-![Enero, 2024](img/mediawiki_versiones.png)
+![ ](img/mediawiki_versiones.png)
 
 Cada imagen está identificado por un **identificador**. Una misma imagen, puede estar etiquetada por etiquetas diferentes.
 
-Por ejemplo, en la imagen mediawiki, las etiquetas `1.41.0`, `.1.41`, `stable` y `latest` apuntan a la misma versión de la imagen.
+Por ejemplo, en la imagen `mediawiki`, las etiquetas `1.41.0`, `.1.41`, `stable` y `latest` apuntan a la misma versión de la imagen.
 
 ## La etiqueta latest
 
-Si utilizamos el nombre de una imagen sin indicar la etiqueta, se toma por defecto la etiqueta **latest** que suele corresponder a la última versión de la aplicación. En el caso concreto de mediawiki observamos que la etiqueta `latest` corresponde a la última versión la `1.41`. Es más, podemos usar las siguientes etiquetas para indicar la misma versión: `1.41.0, 1.41, stable, latest`.
+Si utilizamos el nombre de una imagen sin indicar la etiqueta, se toma por defecto la etiqueta **latest** que suele corresponder a la última versión de la aplicación. En el caso concreto de la imagen `mediawiki`, observamos que la etiqueta `latest` corresponde a la última versión la `1.41`. Es más, podemos usar las siguientes etiquetas para indicar la misma versión: `1.41.0, 1.41, stable, latest`.
 
 ## ¿Para que sirvan las etiquetas de las imágenes?
 
