@@ -1,10 +1,10 @@
 # Más opciones en la ejecución de contenedores (1ª parte)
 
-Hemos usado el comando `docker run` para crear y ejecutar contenedores. Este comando tiene muchas opciones veamos algunas de ellas:
+Hemos usado el comando `docker run` para crear y ejecutar contenedores. Este comando tiene muchas opciones, veamos algunas de ellas:
 
 ## Nombrar los contenedores
 
-A la hora de la creación del contenedor podemos ponerle un nombre (usando ela opción `--name`) y también , aunque no se suele usar podemos indicar el hostname (con al opción `-h` o `--hostname`). Veamos un ejemplo:
+A la hora de la creación del contenedor podemos ponerle un nombre (usando el parámetro `--name`) y también, aunque no se suele usar, podemos indicar el hostname (con al opción `-h` o `--hostname`). Veamos un ejemplo:
 
 ```bash
 $ docker run --name contenedor1 -h contendor_ubuntu ubuntu hostname
@@ -21,7 +21,7 @@ cea2a22ac6aa   ubuntu    "hostname"   56 seconds ago   Exited (0) 54 seconds ago
 
 ## Ejecutando un contenedor interactivo
 
-En este caso usamos la opción `-i` para abrir una sesión interactiva, `-t` nos permite crear un pseudo-terminal que nos va a permitir interaccionar con el contenedor. El comando que vamos a ejecutar es `bash` para que podamos acceder al terminal:
+En este caso usamos la opción `-i` para abrir una sesión interactiva, `-t` nos permite crear un pseudo-terminal que nos va a permitir interaccionar con el contenedor. El comando que vamos a ejecutar en el contenedor es `bash` para que podamos acceder al terminal:
 
 ```bash
 $ docker run -it --name contenedor2 -h cont1 ubuntu bash 
@@ -39,7 +39,7 @@ root@cont1:/#
 
 Con `docker attach` nos conectamos a la entrada estándar y a la salida estándar y de error de un contenedor en ejecución, conectándonos a su terminal.
 
-En realidad, todas las imágenes tienen definidas un proceso que se ejecuta, en concreto la imagen `ubuntu` ( y en general todas las imágenes que corresponden al sistemas operativo) tiene definida por defecto el proceso `bash`, por lo que podríamos haber ejecutado:
+En realidad, todas las imágenes tienen definidas un proceso que se ejecuta por defecto (si no indicamos ninguna), en concreto la imagen `ubuntu` ( y en general todas las imágenes que corresponden al sistemas operativo) tiene definida por defecto el proceso `bash`, por lo que podríamos haber ejecutado:
 
 ```bash
 $ docker run -it --name contenedor2 ubuntu
