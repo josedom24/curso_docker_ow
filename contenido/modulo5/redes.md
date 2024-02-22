@@ -11,15 +11,14 @@ Por lo tanto, los contenedores tienen la capacidad de conectarse a otros contene
     * Usamos el parámetro `-p` en `docker run` para exponer algún puerto. Se crea una regla DNAT para tener acceso al puerto.
     * Los contenedores conectados a un red **bridge** tienen acceso a internet por medio de una regla SNAT.
 
-    Además de la red por defecto **bridge** podremos crear **redes bridge definidas por el usuario**.
+    Además de la red por defecto **bridge** podremos crear **redes bridge definidas por el usuario**. Este tipo de red nos van a permitir:
 
-    Este tipo de red nos van a permitir:
-
-    * Aislar los distintos contenedores que tengo en distintas redes Docker, de tal manera que desde cada una de las sredes solo podremos acceder a los equipos de esa misma red.
+    * Aislar los distintos contenedores que tengo en distintas redes Docker, de tal manera que desde cada una de las redes solo podamos acceder a los equipos de esa misma red.
     * Aislar los contenedores del acceso exterior.
-    * Publicar servicios que tengamos en los contenedores mediante redirecciones que docker implementará con las pertinentes reglas DNAT de iptables.
+    * Publicar servicios que tengamos en los contenedores mediante redirecciones que Docker implementará con las pertinentes reglas DNAT de iptables.
+    * Que los contenedores puedan conectar a otros contenedores usando su nombre, ya que en este tipo de redes tendremos a nuestra disposición un servidor DNS.
 
-* **Red host**: Si conecto un contenedor a la red **host**, el contenedor ofrece el servicio que tiene configurado en el puerto de la red del anfitrión. No tiene dirección IP propia, sino es cómo si tuviera la dirección IP del anfitrión. Por lo tanto, los puertos son accesibles directamente desde el host.
+* **Red host**: Si conecto un contenedor a la red **host**, el contenedor ofrece el servicio que tiene configurado en el puerto de la red del Host Docker. No tiene dirección IP propia, sino es cómo si tuviera la dirección IP del Host Docker. Por lo tanto, los puertos son accesibles directamente desde el Host Docker.
 * **Red none**: La red **none** no configurará ninguna IP para el contenedor y no tiene acceso a la red externa ni a otros contenedores. Tiene la dirección loopback y se puede usar para ejecutar trabajos por lotes.
 * Existen otros tops de redes para configuraciones avanzadas: -**overlay**, **ipvlan** y **macvlan**.
 
@@ -39,17 +38,17 @@ aae71c859f9b   host      host      local
 
 Como hemos indicado tenemos que realizar una diferencia entre:
 
-* La red **bridge** creada por defecto por Docker para que de forma predeterminada loos contenedores tengan conectividad.
+* La red **bridge** creada por defecto por Docker para que de forma predeterminada los contenedores tengan conectividad.
 * Y las **redes bridge definidas por el usuario**.
 
 ## Diferencias entre la red bridge por defecto y las definidas por el usuario
 
 * Las redes que nosotros definamos proporcionan **resolución DNS** entre los contenedores, cosa que la red por defecto no hace a no ser que usemos opciones que ya se consideran obsoletas ("deprectated") (`--link`).
 * Puedo **conectar en caliente** a los contenedores redes “bridge” definidas por el usuario. Si uso la red por defecto tengo que parar previamente el contenedor.
-* Me permite **gestionar de manera más segura el aislamiento de los contenedores**, ya que si no indico una red al arrancar un contenedor éste se incluye en la red por defecto donde pueden convivir servicios que no tengan nada que ver.
+* Las redes definidas por el usuario, me permiten **gestionar de manera más segura el aislamiento de los contenedores**, ya que si no indico una red al arrancar un contenedor éste se incluye en la red por defecto donde pueden convivir servicios que no tengan nada que ver.
 * Tengo **más control sobre la configuración de las redes** si las defino yo. Los contenedores de la red por defecto comparten todos la misma configuración de red (MTU, reglas de cortafuegos, etc...).
 * Los contenedores dentro de la red **bridge** por defecto comparten todos ciertas variables de entorno lo que puede provocar ciertos conflictos.
-* Es importante que nuestro contenedores en producción se estén ejecutando sobre una red definida por el usuario.
+* Es importante que nuestros contenedores en producción se ejecuten conectados a una red definida por el usuario.
 
 ## Red bridge por defecto
 
