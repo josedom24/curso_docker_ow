@@ -1,10 +1,10 @@
 # Instalación de Docker Desktop en Linux
 
-Podemos [instalar](https://docs.docker.com/desktop/install/linux-install/) **Docker Desktop** en distintas distribuciones Linux: Debian, Fedora, Ubuntu,... En este apartado vamos a realizar la instalación la distribución [Ubuntu](https://docs.docker.com/desktop/install/ubuntu/).
+Podemos [instalar](https://docs.docker.com/desktop/install/linux-install/) **Docker Desktop** en distintas distribuciones Linux: Debian, Fedora, Ubuntu,... En este apartado vamos a realizar la instalación en la distribución [Ubuntu](https://docs.docker.com/desktop/install/ubuntu/).
 
 Los requisitos mínimos necesarios son:
 
-* CPU con arquitectura de 64 bits y soporte de viirtualización.
+* CPU con arquitectura de 64 bits y soporte de virtualización.
 * Virtualización KVM.
 * Entorno gráfico Gnome, KDE o MATE.
 * 4 Gb de RAM.
@@ -37,7 +37,7 @@ Los requisitos mínimos necesarios son:
 
     La `<version>` y el `<arch>` dependerán de qué versión y arquitectura te hayas descargado.
 
-4. Tendremos a nuestra disposición un icono que permite iniciar **Docker Desktop**. En este momento se inciará la máquina virtual donde se está ejecutando el demonio Docker.
+4. Tendremos a nuestra disposición un icono que permite iniciar **Docker Desktop**. En este momento se iniciará la máquina virtual donde se está ejecutando el demonio Docker.
 
     ![linux](img/linux2.png)
 
@@ -60,9 +60,9 @@ Los requisitos mínimos necesarios son:
 
 Desde **Docker Desktop** podemos autentificarnos en **Docker Hub** con nuestra cuenta, de esta manera podremos gestionar nuestras imágenes en el registro.
 
-En distribuciones Linux vamos a usas claves gpg para cifrar las credenciales de acceso, y estas credenciales se van almacenar usando la utilidad `pass`.
+En distribuciones Linux vamos a usas claves GPG para cifrar las credenciales de acceso, y estas credenciales se van almacenar usando la utilidad `pass`.
 
-Lo primero que tenemos que hacer es inicializar un par de claves gpg (pública y privada), para ello:
+Lo primero que tenemos que hacer es inicializar un par de claves GPG (pública y privada), para ello:
 
 ```bash
 $ gpg --generate-key
@@ -79,7 +79,7 @@ sub   rsa3072 2024-02-15 [E] [caduca: 2026-02-14]
 
 ```
 
-Durante la generación nos pedirá nuestro nombre y apellidos, nuestro correo electrónico y nos pedria una "frase de paso" para asegurar el uso de la clave privada que estamos creando.
+Durante la generación nos pedirá nuestro nombre y apellidos, nuestro correo electrónico y nos pedirá una "frase de paso" para asegurar el uso de la clave privada que estamos creando.
 
 A continuación inicializaremos la utilidad `pass` usando la clave pública que hemos creado, tenemos que indicar el campo `ID` de la clave pública:
 
@@ -91,6 +91,6 @@ Password store initialized for B4901885C051839E8CBEA0E609FFD80DB166C498
 
 En el directorio `/home/usuario/.password-store/` se guardarán las credenciales cifradas de acceso a Docker Hub.
 
-Para finalizar, desde **Docker Desktop** podemos pulsar sobre el botón **Sign In** para loguearnos en **Docker Hub**. Y podremos compromer que estamos autentificados de forma correcta:
+Para finalizar, desde **Docker Desktop** podemos pulsar sobre el botón **Sign In** para loguearnos en **Docker Hub**. Y podremos comprobar que estamos autentificados de forma correcta:
 
 ![linux](img/linux3.png)
