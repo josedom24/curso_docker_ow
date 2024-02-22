@@ -53,7 +53,7 @@ Y acceder con el navegador a nuestra página:
 
 ## Versión 2: Desde una imagen con python instalado
 
-En este caso el fichero `Dockerfile` podría ser de esta manera:
+En este caso el fichero `Dockerfile` podría tener este contenido:
 
 ```Dockerfile
 # syntax=docker/dockerfile:1
