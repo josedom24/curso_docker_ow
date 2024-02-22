@@ -4,15 +4,15 @@ Antes de usar volúmenes Docker en contenedores para hacer persistir sus datos, 
 
 ## Gestionando volúmenes
 
-Algunos comando útiles para trabajar con volúmenes docker:
+Algunos comando útiles para trabajar con volúmenes Docker, son los siguientes.
 
-Podemos crea un volumen indicando su nombre:
+Podemos crear un volumen indicando su nombre:
 
 ```bash
 $ docker volume create my-vol
 ```
 
-Para listar los volúmenes que tenemos creado:
+Para listar los volúmenes que tenemos creados:
 
 ```bash
 $ docker volume ls
@@ -52,7 +52,7 @@ $ docker volume create miweb
 miweb
 ```
 
-A continuación creamos un contenedor con el volumen asociado, usando el parámetro `--mount`. En este ejemplo vamos a montar nuestro volumen en el directorio DocumentRoot del servidor apache que nos ofrece la imagen `httpd:2.4` (en la documentación de la imagen se nos indica que el directorio DocumentRoot es `usr/local/apache2/htdocs`).
+A continuación, creamos un contenedor con el volumen asociado, usando el parámetro `--mount`. En este ejemplo vamos a montar nuestro volumen en el directorio *DocumentRoot* del servidor apache que nos ofrece la imagen `httpd:2.4` (en la documentación de la imagen se nos indica que el directorio *DocumentRoot* es `usr/local/apache2/htdocs`).
 
 ```bash
 $ docker run -d --name my-apache-app --mount type=volume,src=miweb,dst=/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
@@ -65,7 +65,7 @@ $ docker inspect --format='{{json .Mounts}}' my-apache-app
 [{"Type":"volume","Name":"miweb","Source":"/var/lib/docker/volumes/miweb/_data","Destination":"/usr/local/apache2/htdocs","Driver":"local","Mode":"z","RW":true,"Propagation":""}]
 ```
 
-A continuación creamos un fichero `index.html` en el directorio donde hemos montado el volumen, por lo tanto esta información no se perderá:
+A continuación, creamos un fichero `index.html` en el directorio donde hemos montado el volumen, por lo tanto esta información no se perderá:
 
 ```bash
 $ docker exec my-apache-app bash -c 'echo "<h1>Hola</h1>" > /usr/local/apache2/htdocs/index.html'
