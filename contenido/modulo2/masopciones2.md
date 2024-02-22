@@ -2,7 +2,7 @@
 
 ## Ejecutando un contenedor demonio
 
-En esta ocasión hemos utilizado la opción `-d` del comando `docker run`, para que la ejecución del comando en el contenedor se haga en segundo plano. DEmanera desatendida, sin estar conectada a la entrada y salida estándar.
+En esta ocasión hemos utilizado la opción `-d` del comando `docker run`, para que la ejecución del comando en el contenedor se haga en segundo plano, de manera desatendida, sin estar conectada a la entrada y salida estándar.
 
 ```bash
 $ docker run -d --name contenedor4 ubuntu bash -c "while true; do echo hello world; sleep 1; done"
@@ -19,7 +19,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        
 c6b1761c8831   ubuntu    "bash -c 'while true…"   5 seconds ago   Up 2 seconds             contenedor4
 ```
 
-Podemos comprobar lo que está ejecutando el contenedor, ejecutando el siguiente comando:
+Podemos visualizar los logs del contenedor, ejecutando el siguiente comando:
 
 ```bash
 $ docker logs contenedor4
