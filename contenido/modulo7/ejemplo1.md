@@ -1,7 +1,7 @@
 # Ejemplo 1: Construcción de imágenes con una página estática
 
 En este ejemplo vamos a crear una imagen Docker que tenga un servidor web que nos sirva una página web estática.
-Puedes encontrar los ficheros necesarios en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 ## Versión 1: Desde una imagen base
 

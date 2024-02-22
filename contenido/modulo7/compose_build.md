@@ -2,6 +2,8 @@
 
 En este ejemplo vamos a ver la configuración de Docker Compose para construir la imagen que va a utilizar en la creación del servicio. en este caso no se indica la imagen, se indica el directorio de contexto donde encontramos el fichero `Dockerfile` para la construcción de la imagen.
 
+Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+
 ## Ejemplo de construcción de imagen en Docker Compose
 
 En este ejemplo vamos a crear una imagen a a partir de una aplicación Python construida con el framework Flask. El código de la aplicación lo guardamos en el fichero `app.py` y es el siguiente:

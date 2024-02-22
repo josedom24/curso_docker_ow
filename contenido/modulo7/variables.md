@@ -2,6 +2,8 @@
 
 El uso de parámetros en la creación de ficheros `Dockerfile` es una buena forma de añadir flexibilidad a tus construcciones de imágenes Docker. El valor de estos parámetros se pueden pasar a la hora de construir la imagen con el comando `docker build` o indicados valores predeterminados si no se especifican en el momento de la construcción.
 
+Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+
 Veamos un ejemplo:
 
 ```Dockerfile
@@ -19,7 +21,7 @@ Hemos creado dos parámetros en lla definición del fichero `Dockerfile`:
 * `PHP_VERSION`: Donde vamos a indicar la etiqueta de la imagen PHP que vamos a usar en la construcción. Su valor por defecto es `8.2-apache` y como vemos, para hacer referencia a ella usamos `${PHP_VERSION}`.
 * `APP_VERSION`: Es un parámetro donde vamos a guardar la versión de la aplicación (`desarrollo`) y que posteriormente utilizaremos para darle valor a la variable de entorno `VERSION`.
 
-Si construimos la imagen si sobreescribir los valores de los parámetros se tomarán los valores por defecto:
+Si construimos la imagen si sobrescribir los valores de los parámetros se tomarán los valores por defecto:
 
 ```bash
 $ docker build  -t josedom24/app_php:v1 .

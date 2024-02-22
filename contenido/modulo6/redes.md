@@ -4,7 +4,7 @@ Como hemos indicado anteriormente, cuando creamos un escenario con `docker compo
 
 Sin embargo en el fichero `compose.yaml` podemos definir y configurar las redes que necesitemos en nuestro escenario, así como la conexión de los distintos contenedores a dichas redes.
 
-Veamos un ejemplo, puedes encontrar el fichero en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow):
+Veamos un ejemplo, puedes encontrar el fichero en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow):
 ```yaml
 version: '3.1'
 services:

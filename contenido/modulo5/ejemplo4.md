@@ -1,6 +1,6 @@
 # Ejemplo 4: Despliegue de tomcat + nginx
 
-En este ejemplo vamos a desplegar una aplicación muy sencilla escrita en Java en un servidor de aplicación Tomcat, a la que accederemos utilizando un proxy inverso nginx. En este ejercicio, además de seguir trabajando con las redes de tipo bridge definida por el usuario, vamos a usar bind mount para montar los ficheros de configuración y de despliegue en los contenedores.
+En este ejemplo vamos a desplegar una aplicación muy sencilla escrita en Java en un servidor de aplicación Tomcat, a la que accederemos utilizando un proxy inverso nginx. En este ejercicio, además de seguir trabajando con las redes de tipo bridge definidas por el usuario, vamos a usar bind mount para montar los ficheros de configuración y de despliegue en los contenedores.
 
 ## Desplegando tomcat
 
@@ -10,9 +10,9 @@ Antes de hacer el despliegue del primer contenedor, vamos a crear una red bridge
 $ docker network create red_tomcat
 ```
 
-A continuación vamos a crear un contenedor a partir de la imagen [`tomcat`](https://hub.docker.com/_/tomcat). En la documentación podemos ver que el directorio `/usr/local/tomcat/webapps/` es donde tenemos que poner el fichero de despliegue `war` (vamos a usar **bind mount** para montar el fichero war en el directorio). No vamos a mapear puerto porque no vamos a acceder a este contenedor desde el exterior, lo vamos a hacer desde un proxy inverso.
+A continuación, vamos a crear un contenedor a partir de la imagen [`tomcat`](https://hub.docker.com/_/tomcat). En la documentación podemos ver que el directorio `/usr/local/tomcat/webapps/` es donde tenemos que poner el fichero de despliegue `war` (vamos a usar **bind mount** para montar el fichero war en el directorio). No vamos a mapear puerto porque no vamos a acceder a este contenedor desde el exterior, lo vamos a hacer desde un proxy inverso.
 
-Tenemos un directorio donde tenemos el fichero war (puedes encontrar estos ficheros en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow)):
+Tenemos un directorio donde tenemos el fichero war (puedes encontrar estos ficheros en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow)):
 
 ```bash
 $ cd ejemplo4

@@ -5,6 +5,8 @@
 * Las variables tienen la forma de `clave=valor` y se guardaran en un fichero `.env`.
 * Para utilizar las variables de el fichero `compose.yaml` utilizaremos la sintaxis `${clave}`.
 
+Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+
 Por ejemplo podríamos parametrizar el despliegue de WordPress + MariaDB utilizando las siguientes variables:
 
 ```yaml

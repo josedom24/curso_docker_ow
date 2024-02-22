@@ -2,7 +2,7 @@
 
 En este ejemplo vamos a desplegar con Docker Compose la aplicación Guestbook, que estudiamos en un módulo anterior.
 
-Puedes encontrar el fichero `compose.yaml` en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar el fichero `compose.yaml` en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 En el fichero `compose.yaml` vamos a definir el escenario. El comando `docker compose` se debe ejecutar en el directorio donde este ese fichero. 
 

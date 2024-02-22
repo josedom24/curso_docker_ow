@@ -2,7 +2,7 @@
 
 En este ejemplo vamos a desplegar con Docker Compose la aplicación *Temperaturas*, que estudiamos en un módulo anterior.
 
-Puedes encontrar el fichero `compose.yaml` en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar el fichero `compose.yaml` en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 
 En este caso el fichero `compose.yaml` puede tener esta forma:
