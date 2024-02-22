@@ -5,6 +5,8 @@ Vamos a usar la instrucción `docker compose` para gestionar el ciclo de vida de
 
 ## Despliegue de Let's Chat
 
+[Let’s Chat](https://github.com/sdelements/lets-chat) es una aplicación web escrita en Node.js que utilizando una base de datos MongoDB nos posibilita la creación de salas de chats.
+
 Accedemos al directorio donde se encuentra el fichero `compose.yaml` donde hemos definido el escenario para ejecutar la aplicación Let's Chat y  ejecutamos la siguiente instrucción para crear los contenedores:
 
 ```bash
@@ -42,7 +44,7 @@ Veamos más comandos que podemos ejecutar con Docker Compose:
 * `docker compose pause`: Pausa los contenedores que previamente se han lanzado con `docker compose up`.
 * `docker compose unpause`: Reanuda los contenedores que previamente se han pausado.
 * `docker compose restart`: Reinicia los contenedores. Orden ideal para reiniciar servicios con nuevas configuraciones.
-* `docker compose logs`: Muestra los logs de todos los servicios del escenario. Con el parámetro `-f`podremos ir viendo los logs en "vivo".
+* `docker compose logs`: Muestra los logs de todos los servicios del escenario. Con el parámetro `-f` podremos ir viendo los logs en "vivo".
 * `docker compose logs servicio1`: Muestra los logs del servicio llamado `servicio1` que estaba descrito en el `compose.yaml`.
 * `docker compose exec servicio1 /bin/bash`: Ejecuta una orden, en este caso `/bin/bash` en el servicio `servicio1` que estaba descrito en el `compose.yaml`
 * `docker compose top`: Muestra  los procesos que están ejecutándose en cada uno de los contenedores de los servicios.
