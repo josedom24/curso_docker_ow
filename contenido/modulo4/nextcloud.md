@@ -18,20 +18,14 @@ Y creamos el contenedor, guardando el directorio `/var/www/html` del contenedor 
 $ docker run -d -p 80:80  -v nextcloud:/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
 ```
 
-Si utilizamos el parámetro `--mount`, sería de la siguiente manera:
-
-```bash
-$ docker run -d -p 80:80  --mount type=volume,src=nextcloud,dst=/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
-```
-
 Comprobamos que podemos acceder, terminamos de configurar la aplicación y una vez operativa subimos un ficheros a la aplicación.
 
-A continuación eliminamos el contenedor y creamos uno nuevo con el mismo volumen:
+A continuación eliminamos el contenedor y creamos uno nuevo con el mismo volumen, ahora usando el parámetro `--mount`::
 
 ```bash
 $ docker rm -f contenedor_nextcloud
 
-$ docker run -d -p 80:80  -v nextcloud:/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
+$ docker run -d -p 80:80  --mount type=volume,src=nextcloud,dst=/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
 ```
 Accediendo de nuevo a la aplicación podemos comprobar que la aplicación sigue configurada y que los ficheros subidos no se han perdido.
 
@@ -46,13 +40,13 @@ mkdir /opt/datos_nextcloud
 Y creamos el contenedor usando el parámetro `-v`:
 
 ```bash
-docker run -d -p 80:80 -v /opt/datos_nextcloud:/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
+$ docker run -d -p 80:80 -v /opt/datos_nextcloud:/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
 ```
 
 También podríamos usar el parámetro `--mount`:
 
 ```bash
-docker run -d -p 80:80 --mount type=bind,src=/opt/datos_nextcloud,dst=/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
+$ docker run -d -p 80:80 --mount type=bind,src=/opt/datos_nextcloud,dst=/var/www/html --name contenedor_nextcloud nextcloud:28.0.1
 ```
 
 Volvemos a acceder, configuramos la aplicación y subimos algún fichero.

@@ -1,14 +1,14 @@
 # Otros usos del almacenamiento en Docker
 
-En los ejemplos anteriores hemos usado los volúmenes como copia de seguridad de la información, para hacer persistente los contenedores. En este apartado vamos a ver dos ejemplos explicando otros dos usos que le podemos dar al almacenamiento en docker.
+En los ejemplos anteriores hemos usado los volúmenes como copia de seguridad de la información, para hacer persistente los contenedores. En este apartado vamos a ver dos ejemplos explicando otros dos usos que le podemos dar al almacenamiento en Docker.
 
 ## Compartir información entre contenedores
 
-En este caso vamos a usar un volumen o bind mount para compartir información entre dos contenedores. Si seguimos el principio que un contenedor tiene que ejecutar un sólo proceso, en ocasiones nos puede hacer falta que otro contenedor haga una operación auxiliar y genere una información que compartirá con el primero por medio de almacenamiento que estará montado en los dos contenedores.
+En este caso vamos a usar un volumen o bind mount para compartir información entre dos contenedores. Si seguimos el principio de que un contenedor tiene que ejecutar un sólo proceso, en ocasiones nos puede hacer falta que otro contenedor haga una operación auxiliar y genere una información que compartirá con el primero por medio de almacenamiento que estará montado en los dos contenedores.
 
 Un ejemplo podría ser un servicio web que está ofreciendo información que tiene que ir leyendo de un repositorio Git. En este caso podríamos poner un contenedor secundario que cada cierto tiempo leyera el repositorio y le pasara la información al primer contenedor por medio de almacenamiento compartido.
 
-En nuestro ejemplo vamos a hacer algo mucho más sencillo: el contenedor principal es un servidor web que ofrece un fichero `index.html` y este fichero se va actualizando por el segundo contenedor, que en el ejemplo lo único que va a hacer es escribir la fecha y la hora cada segundo. Vemos el ejemplo usando volúmenes docker:
+En nuestro ejemplo vamos a hacer algo mucho más sencillo: el contenedor principal es un servidor web que ofrece un fichero `index.html` y este fichero se va actualizando por el segundo contenedor, que en el ejemplo lo único que va a hacer es escribir la fecha y la hora cada segundo en ese fichero. Vemos el ejemplo usando volúmenes docker:
 
 Lo primero creamos el volumen:
 
@@ -16,7 +16,7 @@ Lo primero creamos el volumen:
 $ docker volume create datos_compartidos
 ```
 
-Creamos el primer contenedor con el volumen montado en el *DocumentRoot* y el tipo de acceso **solo lectura**, opción `ro`:
+Creamos el primer contenedor con el volumen montado en el *DocumentRoot* del servidor web y el tipo de acceso **solo lectura**, opción `ro`:
 
 ```bash
 $ docker run -d -p 8081:80 --name contenedor1 -v datos_compartidos:/var/www/html:ro php:7.4-apache
@@ -28,7 +28,7 @@ A continuación creamos el segundo contenedor con un proceso que va a modificar 
 $ docker run -d  --name contenedor2 --mount type=volume,src=datos_compartidos,dst=/srv debian bash -c "while true; do date >> /srv/index.html;sleep 1;done"
 ```
 
-Accedemos al puerto 8081 del anfitrión y comprueba cómo se va actualizando el fichero `index.html` que estamos viendo.
+Accedemos al puerto 8081 del Host Docker y comprobamos cómo se va actualizando el fichero `index.html`.
 
 Lo podríamos hacer también con bind mount:
 
@@ -63,7 +63,7 @@ echo "El $datos[0] es $datos[1] y la $datos[2] lo hace especial.\n";
 ?>
 ```
 
-A continuación vamos a crear dos contenedores que sirva este código usando imágenes distintas , para cada versión de PHP y usando puertos distintos para acceder a cada versión de la aplicación:
+A continuación vamos a crear dos contenedores que sirvan este código usando imágenes distintas , para cada versión de PHP y usando puertos distintos para acceder a cada versión de la aplicación:
 
 ```bash
 $ docker run -d -p 8082:80 --name php56 -v /opt/codigo:/var/www/html:ro php:5.6-apache
