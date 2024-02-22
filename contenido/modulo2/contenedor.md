@@ -1,9 +1,9 @@
 # Ejecución simple de contenedores
 
-En esta apartado vamos a crear un contenedor donde vamos a especificar el comando que debe ejecutar a partir de la imagen `ubuntu`.
-En este caso vasmo a descargar priemro la imagen del registro público Docker Hub, y a continuación crearemos el contenedor.
+En esta apartado vamos a crear un contenedor especificando el comando que debe ejecutar a partir de la imagen `ubuntu`.
+En este caso vamos a descargar primero la imagen del registro público Docker Hub, y a continuación crearemos el contenedor.
 
-Para descargar una imagen de Docker Huv, ejecutamos el comando `docker pull`:
+Para descargar una imagen de Docker Hub, ejecutamos el comando `docker pull`:
 
 ```bash
 $ docker pull ubuntu
