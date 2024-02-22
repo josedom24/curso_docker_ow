@@ -1,8 +1,8 @@
 # Uso de parámetros con Docker Compose
 
 * Nuestro fichero `compose.yaml` se puede parametrizar. Determinados datos se pueden poner con una variable a la que le damos el valor correspondiente.
-* La ventaja de parametrizar el fichero `compose.yaml` es que nos permite con un mismo fichero desplegar nuestras aplicaciones en diferentes entornos. Por ejemplo, en despliegues en el entorno de desaroolo tendremos unos valores para las variables, y en le despliegue en el entorno de producción tendremos otro conjunto de valores.
-* Las variables tienen la forma de `clave=valor` y se guardaran en un fichero `.env`.
+* La ventaja de parametrizar el fichero `compose.yaml` es que nos permite con un mismo fichero desplegar nuestras aplicaciones en diferentes entornos. Por ejemplo, en despliegues en el entorno de desarrollo tendremos unos valores para las variables, y en le despliegue en el entorno de producción tendremos otro conjunto de valores.
+* Las variables tienen la forma de `clave=valor` y se guardaran en un fichero llamado `.env`.
 * Para utilizar las variables de el fichero `compose.yaml` utilizaremos la sintaxis `${clave}`.
 
 Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
@@ -123,7 +123,6 @@ MARIADB_USER=user_server_1345
 MARIADB_PASSWORD=0sFPBmHeDvgu5DOpACFsQ5MhH1J
 MARIADB_ROOT_PASSWORD=4KUHGOa1CWciYopkAw9eBZdBtbu
 MARIADB_DATABASE=wp_server_bd
-
 ...
 ```
 
