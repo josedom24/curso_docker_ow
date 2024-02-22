@@ -24,9 +24,9 @@ EXPOSE 80
 CMD apache2ctl -D FOREGROUND
 ```
 
-* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, en este acaso apache2. 
+* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, en este caso apache2. 
 * Además de la instalación del servicio hemos borrado todos los paquetes que nos hemos bajado, con esto conseguimos que la capa que va a crear la instrucción `RUN` sea lo más pequeña posible.
-* A continuación añadiremos el contenido del directorio `public_html` al directorio `/var/www/html/` del contenedor, donde nos hemos posicionado con al instrucción `WORKDIR`. 
+* A continuación añadiremos el contenido del directorio `public_html` al directorio `/var/www/html/` del contenedor, donde nos hemos posicionado con la instrucción `WORKDIR`. 
 * Declaramos el puerto donde se va a ofrecer el servicio. Esta definición es sólo informativa.
 * Finalmente indicamos el comando que se deberá ejecutar al crear un contenedor a partir de esta imagen: iniciamos el servidor web en segundo plano.
 
@@ -80,7 +80,7 @@ COPY public_html /usr/local/apache2/htdocs/
 EXPOSE 80
 ```
 
-En este caso no necesitamos instalar nada, ya que la imagen tiene instalado el servidor web. Siguiendo la documentación de la imagen en Docker Hub sabemos que el *DocumentRoot* es `/usr/local/apache2/htdocs/`. No es necesario indicar el `CMD` ya que por defecto el contenedor creado a partir de esta imagen ejecutará el mismo proceso que la imagen base, es decir, la ejecución del servidor web.
+No necesitamos instalar nada, ya que la imagen tiene instalado el servidor web. Siguiendo la documentación de la imagen en Docker Hub sabemos que el *DocumentRoot* del servidor web es el directorio `/usr/local/apache2/htdocs/`. No es necesario indicar el `CMD` ya que por defecto el contenedor creado a partir de esta imagen ejecutará el mismo proceso que la imagen base, es decir, la ejecución del servidor web.
 
 De forma similar, crearíamos una imagen y un contenedor:
 

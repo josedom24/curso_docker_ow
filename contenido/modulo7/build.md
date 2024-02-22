@@ -45,7 +45,7 @@ $ docker run -d -p 8080:80 --name servidor_web josedom24/myapache2:v2
 Si queremos ver los distintos pasos que hemos ejecutado para construir la imagen, podemos ejecutar la siguiente instrucción:
 
 ```bash
-$ docker image history josedom24/myapache2:v2
+$ docker history josedom24/myapache2:v2
 IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
 b4836c1e7b7f   41 seconds ago   CMD ["/bin/sh" "-c" "apache2ctl -D FOREGROUN…   0B        buildkit.dockerfile.v0
 <missing>      41 seconds ago   COPY index.html . # buildkit                    22B       buildkit.dockerfile.v0
