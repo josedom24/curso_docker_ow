@@ -58,7 +58,7 @@
     * [El comando docker compose](contenido/modulo6/comando.md) 
     * [Almacenamiento con Docker Compose](contenido/modulo6/almacenamiento.md)
     * [Redes con Docker Compose](contenido/modulo6/redes.md)
-    * [Ejemplo 1: Despliegue de la aplicación guestbook](contenido/modulo6/ejemplo1.md)
+    * [Ejemplo 1: Despliegue de la aplicación Guestbook](contenido/modulo6/ejemplo1.md)
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo6/ejemplo2.md)
     * [Ejemplo 3: Despliegue de WordPress + MariaDB](contenido/modulo6/ejemplo3.md)
     * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo6/ejemplo4.md)

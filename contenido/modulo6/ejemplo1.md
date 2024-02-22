@@ -1,6 +1,6 @@
-# Ejemplo 1: Despliegue de la aplicación guestbook
+# Ejemplo 1: Despliegue de la aplicación Guestbook
 
-En este ejemplo vamos a desplegar con Docker Compose la aplicación *guestbook*, que estudiamos en un módulo anterior.
+En este ejemplo vamos a desplegar con Docker Compose la aplicación Guestbook, que estudiamos en un módulo anterior.
 
 Puedes encontrar el fichero `compose.yaml` en el [repositorio github](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
