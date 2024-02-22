@@ -1,6 +1,6 @@
 # El "Hola Mundo" de docker
 
-Vamos a crear nuestro primer contenedor, para comprobar que todo está funcionando y vamos a explicar el proceso que se va a realizar para la creación del contenedor.  
+Vamos a crear nuestro primer contenedor, para comprobar que todo está funcionando y vamos a explicar el proceso que se va a realizar en la creación del contenedor.  
 
 ```bash
 $ docker run hello-world
@@ -55,7 +55,7 @@ CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS    PORTS     NAME
 ```
 Comprobamos que este contenedor no se está ejecutando. **Un contenedor ejecuta un proceso y cuando termina la ejecución, el contenedor se para.**
 
-Para ver los contenedores que no se están ejecutando (observa que se ha asignado un nombre aleatorio al contenedor):
+Para ver los contenedores que no se están ejecutando (observa que se ha asignado un nombre aleatorio al contenedor), ejecutamos:
 
 ```bash
 $ docker ps -a
@@ -94,7 +94,7 @@ CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS    PORTS     NAME
 590ac3f01de5   hello-world   "/hello"   6 seconds ago   Created             focused_morse
 ```
 
-Podemos iniciar la ejecución de este contenedor usando `docker start -i`. La opción `-a` nos permite conectar a la salida estándar del contenedor y poder ver en nuestro terminal la salida.
+Podemos iniciar la ejecución de este contenedor usando `docker start -a`. La opción `-a` nos permite conectar a la salida estándar del contenedor y poder ver en nuestro terminal la salida.
 
 ```bash
 $ docker start -a focused_morse
