@@ -2,20 +2,20 @@
 
 **El ciclo de vida de una aplicación docker** tendría los siguientes pasos:
 
-* Paso 1: Desarrollo de nuestra aplicación
-* Paso 2: Creación de la imagen Docker
-* Paso 3: Probamos nuestra aplicación en el entorno de desarrollo o prueba
-* Paso 4: Distribuimos nuestra imagen
-* Paso 5: Implantación de la aplicación en el entorno de producción
+* Paso 1: Desarrollo de nuestra aplicación.
+* Paso 2: Creación de la imagen Docker.
+* Paso 3: Probamos nuestra aplicación en el entorno de desarrollo o prueba.
+* Paso 4: Distribuimos nuestra imagen.
+* Paso 5: Implantación de la aplicación en el entorno de producción.
 * Paso 6: Modificación de la aplicación, volviendo al paso 2.
 
-Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Puedes encontrar los ficheros necesarios para realizar este ejemplo en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
 ## Paso 1:Desarrollo de nuestra aplicación
 
 Vamos a imaginar que nuestro "equipo de desarrollo" ha creado una aplicación web. En este caso tenemos nuestra aplicación web escrita en JavaScript llamada 2048 guardada en un repositorio GitHub. La aplicación 2048 es un juego de habilidad matemática inspirado en el juego 1024 cuyo código original puedes encontrar en este [repositorio GitHub](https://github.com/gabrielecirulli/2048). 
 
-Para realizar este ejercicio he hecho un fork del repositorio en mii cuenta de GitHub, de este manera podré hacer modificaciones del mismo.
+Para realizar este ejercicio he hecho un fork del repositorio en mi cuenta de GitHub, de este manera podré hacer modificaciones del mismo.
 
 ## Paso 2: Creación de la imagen Docker
 
@@ -82,7 +82,7 @@ josedom24/2048                 0
 
 ## Paso 5: Implantación de la aplicación
 
-En el el entorno de producción, bajamos la imagen de Docker Hub y creamos el contenedor:
+En el entorno de producción, bajamos la imagen de Docker Hub y creamos el contenedor:
 
 ```bash
 $ docker pull josedom24/2048:v1
