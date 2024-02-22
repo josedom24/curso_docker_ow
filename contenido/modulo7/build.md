@@ -42,10 +42,20 @@ Veamos como podemos automatizar la creación de imágenes Docker, usando un fich
 $ docker run -d -p 8080:80 --name servidor_web josedom24/myapache2:v2 
 ```            
 
+Si queremos ver los distintos pasos que hemos ejecutado para construir la imagen, podemos ejecutar la siguiente instrucción:
 
-docker image history
+```bash
+$ docker image history josedom24/myapache2:v2
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+b4836c1e7b7f   41 seconds ago   CMD ["/bin/sh" "-c" "apache2ctl -D FOREGROUN…   0B        buildkit.dockerfile.v0
+<missing>      41 seconds ago   COPY index.html . # buildkit                    22B       buildkit.dockerfile.v0
+<missing>      42 seconds ago   WORKDIR /var/www/html                           0B        buildkit.dockerfile.v0
+<missing>      44 seconds ago   RUN /bin/sh -c apt-get update  && apt-get in…   131MB     buildkit.dockerfile.v0
+<missing>      9 days ago       /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      9 days ago       /bin/sh -c #(nop) ADD file:17e64d3a682fd256f…   74.8MB
+```
 
-
+Donde vemos de abajo a arriba los pasos que hemos ejecutado en la construcción para crear la imagen.
 
 ## Uso de la caché en la construcción de imágenes Docker
 
