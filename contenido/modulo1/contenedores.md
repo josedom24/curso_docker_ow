@@ -10,7 +10,7 @@ Esto nos permite ejecutar más de un sistema virtual, y múltiples sistemas oper
 * Laboratorio de pruebas.
 * Virtualización de arquitecturas de las que no se dispone.
 * Creación de clúster de máquinas y sistemas distribuidos.
-* Herramientas de aprendizajes
+* Herramienta de aprendizajes
 
 ## Ventajas e inconvenientes de la virtualización
 
