@@ -1,8 +1,8 @@
-# Ejemplo 4: Despliegue de tomcat + nginx
+# Ejemplo 4: Despliegue de Apache Tomcat + nginx
 
 En este ejemplo vamos a desplegar una aplicación muy sencilla escrita en Java en un servidor de aplicación Tomcat, a la que accederemos utilizando un proxy inverso nginx. En este ejercicio, además de seguir trabajando con las redes de tipo bridge definidas por el usuario, vamos a usar bind mount para montar los ficheros de configuración y de despliegue en los contenedores.
 
-## Desplegando tomcat
+## Desplegando Apache Tomcat
 
 Antes de hacer el despliegue del primer contenedor, vamos a crear una red bridge para conectar los contenedores:
 
@@ -49,7 +49,7 @@ server {
     }
 }
 ```
-Como vemos para realizar el proxy inverso usamos la directiva `proxy_pass`indicando la dirección que nos ofrece tomcat, en este caso usamos el nombre del contenedor anterior (`aplicacionjava`) que será resuelto por el servidor DNS interno, usando el puerto estándar de tomcat el 8080 y el directorio `sample` donde se ha desplegado la aplicación. Para la creación del contenedor de nginx:
+Como vemos para realizar el proxy inverso usamos la directiva `proxy_pass`indicando la dirección que nos ofrece tomcat, en este caso usamos el nombre del contenedor anterior (`aplicacionjava`) que será resuelto por el servidor DNS interno, usando el puerto estándar de Apache Tomcat, el 8080/tcp y el directorio `sample` donde se ha desplegado la aplicación. Para la creación del contenedor de nginx:
 
 ```bash
 $ docker run -d --name proxy \

@@ -1,4 +1,4 @@
-# Ejemplo 4: Despliegue de tomcat + nginx 
+# Ejemplo 4: Despliegue de Apache Tomcat + nginx 
 
 En este ejemplo vamos a desplegar con Docker Compose la aplicación Java con Tomcat y nginx como proxy inverso que vimos en un módulo anterior.
 
