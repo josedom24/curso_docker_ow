@@ -20,7 +20,7 @@ Si queremos borrar una imagen, usaremos la instrucción `docker image rm` o la s
 $ docker rmi nginx:stable`
 ```
 
-**Nota**: No podemos eliminar una imagen si tenemos algún contenedor creada a partir de ella.
+**Nota**: No podemos eliminar una imagen si tenemos algún contenedor creado a partir de ella.
 
 Si queremos buscar imágenes de **Docker Hub** desde la línea de comandos, podemos usar la instrucción:
 
