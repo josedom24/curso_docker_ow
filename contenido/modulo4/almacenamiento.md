@@ -18,7 +18,7 @@ Ante la situación anteriormente descrita, Docker nos proporciona varias solucio
 * Los procesos ajenos a Docker no deben modificar esta parte del sistema de archivos.
 * Un volumen dado puede ser montado en múltiples contenedores simultáneamente. 
 * Cuando ningún contenedor en ejecución está utilizando un volumen, el volumen sigue estando disponible para Docker y no se elimina automáticamente. 
-* Cuando montas un volumen, puede tener nombre o ser anónimo. 
+* Cuando creas un volumen, puede tener nombre o ser anónimo. 
 * A los volúmenes anónimos se les da un nombre aleatorio que se garantiza que sea único dentro de un Host Docker dado. 
 * La gestión de los volúmenes se hace con el comando `docker volume`.
 
