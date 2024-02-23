@@ -50,7 +50,7 @@
     * [Ejemplo 1: Despliegue de la aplicación Guestbook](contenido/modulo5/ejemplo1.md)
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo5/ejemplo2.md)
     * [Ejemplo 3: Despliegue de WordPress + MariaDB](contenido/modulo5/ejemplo3.md)
-    * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo5/ejemplo4.md) 
+    * [Ejemplo 4: Despliegue de Apache Tomcat + nginx](contenido/modulo5/ejemplo4.md) 
 
 6. Creando escenarios multicontenedor con Docker Compose
     * [Creando escenarios multicontenedor con Docker Compose](contenido/modulo6/compose.md) (P)
@@ -61,7 +61,7 @@
     * [Ejemplo 1: Despliegue de la aplicación Guestbook](contenido/modulo6/ejemplo1.md)
     * [Ejemplo 2: Despliegue de la aplicación Temperaturas](contenido/modulo6/ejemplo2.md)
     * [Ejemplo 3: Despliegue de WordPress + MariaDB](contenido/modulo6/ejemplo3.md)
-    * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo6/ejemplo4.md)
+    * [Ejemplo 4: Despliegue de Apache Tomcat + nginx](contenido/modulo6/ejemplo4.md)
     * [Uso de parámetros con Docker Compose](contenido/modulo6/variables.md)
     * [Ejemplos reales de despliegues usando Docker Compose](contenido/modulo6/ejemplos.md) 
 
