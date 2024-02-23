@@ -49,7 +49,7 @@ Docker utiliza una arquitectura cliente-servidor. El **cliente Docker** se comun
 
 ## Docker en la actualidad
 
-Podemos obtener docker de varias formas:
+Podemos obtener Docker de varias formas:
 * **Moby**: Proyecto de comunidad (*docker.io* de debian/ubuntu). [Más información](https://mobyproject.org/)
 * **Docker CE**: Componentes de Docker proporcionado por la empresa Docker inc.
     * Para uso personal es gratuito.
@@ -66,7 +66,7 @@ Dos opciones:
     * Sólo se puede instalar en distribuciones Linux: CentOS, Debian, Fedora, Ubuntu, ...
 * Instalar **Docker Desktop**:
     * Incluye el cliente y el demonio Docker.
-    * El demonio docker se ejecuta en una máquina virtual.
+    * El demonio Docker se ejecuta en una máquina virtual.
     * Nos ofrece una aplicación gráfica para gestionar los objetos Docker.
     * Es necesario tener entorno gráfico.
     * Incluye algunas otras funcionalidades,...

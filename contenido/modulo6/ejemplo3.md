@@ -4,7 +4,7 @@ En este ejemplo vamos a desplegar con Docker Compose la aplicación WordPress + 
 
 Puedes encontrar el fichero `compose.yaml` en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
-## Utilizando volúmenes docker
+## Utilizando volúmenes Docker
 
 Por ejemplo para la ejecución de WordPress persistente con volúmenes Docker podríamos tener un fichero `compose.yaml` con el siguiente contenido:
 

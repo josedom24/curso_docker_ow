@@ -1,6 +1,6 @@
 # Almacenamiento con Docker Compose
 
-## Definiendo volúmenes docker con Docker Compose
+## Definiendo volúmenes Docker con Docker Compose
 
 Además de definir los servicios (parámetro `services`) en el fichero `compose.yaml`, podemos definir los volúmenes que vamos a necesitar en nuestra infraestructura. Además, como hemos visto, podremos indicar que volumen va a utilizar cada contenedor.
 

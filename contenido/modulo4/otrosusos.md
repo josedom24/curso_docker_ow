@@ -8,7 +8,7 @@ En este caso vamos a usar un volumen o bind mount para compartir información en
 
 Un ejemplo podría ser un servicio web que está ofreciendo información que tiene que ir leyendo de un repositorio Git. En este caso podríamos poner un contenedor secundario que cada cierto tiempo leyera el repositorio y le pasara la información al primer contenedor por medio de almacenamiento compartido.
 
-En nuestro ejemplo vamos a hacer algo mucho más sencillo: el contenedor principal es un servidor web que ofrece un fichero `index.html` y este fichero se va actualizando por el segundo contenedor, que en el ejemplo lo único que va a hacer es escribir la fecha y la hora cada segundo en ese fichero. Vemos el ejemplo usando volúmenes docker:
+En nuestro ejemplo vamos a hacer algo mucho más sencillo: el contenedor principal es un servidor web que ofrece un fichero `index.html` y este fichero se va actualizando por el segundo contenedor, que en el ejemplo lo único que va a hacer es escribir la fecha y la hora cada segundo en ese fichero. Vemos el ejemplo usando volúmenes Docker:
 
 Lo primero creamos el volumen:
 

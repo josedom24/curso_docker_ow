@@ -4,7 +4,7 @@
 
 Ante la situación anteriormente descrita Docker nos proporciona varias soluciones para persistir los datos de los contenedores. Las opciones que nos ofrece Docker para gestionar el almacenamiento de los contenedores son:
 
-* Los **volúmenes docker**.
+* Los **volúmenes Docker**.
 * Los **bind mount**.
 * Los **tmpfs mounts**.
 
