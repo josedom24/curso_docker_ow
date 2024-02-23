@@ -83,7 +83,7 @@ Otras empresas han desarrollado software de contenedores de aplicación:
 * **CRI-O**: También desarrollado por Red Hat y parte de la CNCF, CRI-O se centra en proporcionar una implementación liviana y especializada para la ejecución de contenedores en entornos de Kubernetes. [Más información](https://cri-o.io/).
 * **pouch**: Otro sistema de contenedores creado por la empresa Alibaba como alternativa a Docker. [Más información](https://pouchcontainer.io).
 
-## El mundo de los contenedores en la actualidad
+## Limitaciones de Docker
 
 * Docker ha revolucionado el uso de los contenedores, para el despliegue de aplicaciones web.
 * Pero Docker tiene algunas limitaciones:
