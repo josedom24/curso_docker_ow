@@ -36,4 +36,4 @@ Si accedemos a la dirección IP de nuestro ordenador, al puerto 8082, podemos ob
 
 ![mediawiki](img/mediawiki1396.png)
 
-**Nota: Puedes observar que la primera imagen que se baja, descargas todas las capas, sin embargo al descargar las otras versiones de la imagen, sólo se bajan las capas que difieren de la primera imagen descargada.**
+**Nota: Puedes observar que la primera imagen que se baja, descarga todas las capas, sin embargo al descargar las otras versiones de la imagen, sólo se bajan las capas que difieren de la primera imagen descargada.**
