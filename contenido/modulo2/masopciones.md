@@ -39,7 +39,7 @@ root@cont1:/#
 
 Con `docker attach` nos conectamos a la entrada estándar y a la salida estándar y de error de un contenedor en ejecución, conectándonos a su terminal.
 
-En realidad, todas las imágenes tienen definidas un proceso que se ejecuta por defecto si no se indica de manera explicita cuando creamos el contenedor. En concreto, la imagen `ubuntu` ( y en general todas las imágenes que corresponden al sistemas operativo) tiene definida por defecto el proceso `bash`, por lo que podríamos haber ejecutado:
+En realidad, todas las imágenes tienen definidas un proceso que se ejecuta por defecto si no se indica de manera explicita cuando creamos el contenedor. En concreto, la imagen `ubuntu` ( y en general todas las imágenes que corresponden al sistemas operativos) tiene definida por defecto el proceso `bash`, por lo que podríamos haber ejecutado:
 
 ```bash
 $ docker run -it --name contenedor2 ubuntu
