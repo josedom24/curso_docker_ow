@@ -9,7 +9,7 @@ Las imágenes se construyen a partir de **capas ordenadas**.
 * Cada capa es sólo un conjunto de diferencias con respecto a la capa anterior.
 * Cada capa se guarda en un directorio diferente.
 * Cuando tomas todas las capas y las apilas, obtienes una nueva imagen que contiene todos los cambios acumulados.
-* Si tienes muchas imágenes basadas en capas similares (capas que contienen sistemas operativos similares o ficheros comunes), entonces todas éstas capas comunes serán almacenadas sólo una vez.
+* Si tienes muchas imágenes basadas en capas similares (capas que contienen sistemas operativos similares o ficheros comunes), entonces todas estas capas comunes serán almacenadas sólo una vez.
 
 ## ¿Qué ocurre cuando creamos un contenedor?
 
