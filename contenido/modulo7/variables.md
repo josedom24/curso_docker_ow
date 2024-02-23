@@ -16,12 +16,12 @@ COPY app /var/www/html/
 EXPOSE 80
 ```
 
-Hemos creado dos parámetros en lla definición del fichero `Dockerfile`:
+Para crear los parámetros usamos la instrucción `ARG` en el fichero `Dockerfile`. Hemos creado dos parámetros en la definición del fichero `Dockerfile`:
 
 * `PHP_VERSION`: Donde vamos a indicar la etiqueta de la imagen PHP que vamos a usar en la construcción. Su valor por defecto es `8.2-apache` y como vemos, para hacer referencia a ella usamos `${PHP_VERSION}`.
 * `APP_VERSION`: Es un parámetro donde vamos a guardar la versión de la aplicación (`desarrollo`) y que posteriormente utilizaremos para darle valor a la variable de entorno `VERSION`.
 
-Si construimos la imagen si sobrescribir los valores de los parámetros se tomarán los valores por defecto:
+Si construimos la imagen sin sobrescribir los valores de los parámetros se tomarán los valores por defecto:
 
 ```bash
 $ docker build  -t josedom24/app_php:v1 .
@@ -32,11 +32,11 @@ VERSION=desarrollo
 ...
 ```
 
-Como vemos se ha creado una imagen a partir de la imagen `php:8.2-apache` y se ha creado una variable de entorno `VERSION` con el valor por defecto. Si accedemos a la página con un navegador web, veremos la versión de PHP y el valor de la variable de entorno que hemos creado (también podríamos a acceder añ fichero `info.php` para ver esta información):
+Como vemos se ha creado una imagen a partir de la imagen `php:8.2-apache` y se ha creado una variable de entorno `VERSION` con el valor por defecto. Si accedemos a la página con un navegador web, veremos la versión de PHP y el valor de la variable de entorno que hemos creado (también podríamos acceder al fichero `info.php` para ver esta información):
 
 ![php](img/variables1.png)
 
-Podemos crear otra versión de la imagen sobreescribiendo los parámetros de construcción:
+Podemos crear otra versión de la imagen sobreescribiendo los parámetros de construcción, para ello usamos el parámetro `--build-arg` en el comando `docker build`:
 
 ```bash
 $ docker build --build-arg PHP_VERSION=7.4-apache --build-arg APP_VERSION=produccion -t josedom24/app_php:v2 .
