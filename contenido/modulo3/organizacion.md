@@ -15,7 +15,7 @@ Las imágenes se construyen a partir de **capas ordenadas**.
 
 ![ ](img/layers.png)
 
-* Cuando se crea un nuevo contenedor desde una imagen, su sistema de archivo será la unión de todas las capas de la imagen. 
+* Cuando se crea un nuevo contenedor desde una imagen, su sistema de archivos será la unión de todas las capas de la imagen. 
 * Las capas de la imagen son únicamente de lectura, por lo que se añade una nueva capa de lectura-escritura. 
 * Todos los cambios efectuados al contenedor específico son almacenados en esa capa.
 * Esta capa se suele llamar **Capa del Contenedor**.
