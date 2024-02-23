@@ -94,7 +94,7 @@ CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS                  
 679822aff71a   ubuntu    "/bin/bash"   25 seconds ago   Exited (0) 9 seconds ago             contenedor1   5B (virtual 77.9MB)
 ```
 
-Vemos que el tamaño real del contenedor es 5B, aunque el sistema de archivos del contenedor (tamaño virtual), es de 77,9MB, compartido con la imagen `ubuntu`, que corresponde con su tamaño.
+Vemos que el tamaño real del contenedor es 5B, aunque el sistema de archivos del contenedor (tamaño virtual) es de 77,9MB. Este tamaño es el de la imagen `ubuntu` cuyo sistema de ficheros se comparte con el contenedor.
 
 Si a continuación volvemos a acceder al contenedor y creamos un fichero:
 
