@@ -51,7 +51,7 @@ Docker utiliza una arquitectura cliente-servidor. El **cliente Docker** se comun
 
 Podemos obtener docker de varias formas:
 * **Moby**: Proyecto de comunidad (*docker.io* de debian/ubuntu). [Más información](https://mobyproject.org/)
-* **docker CE**: Componentes de Docker proporcionado por la empresa Docker inc.
+* **Docker CE**: Componentes de Docker proporcionado por la empresa Docker inc.
     * Para uso personal es gratuito.
     * Para uso profesional, ofrecen distintos tipos de suscripciones con diferentes precios:
         * Pro, Team, Business
