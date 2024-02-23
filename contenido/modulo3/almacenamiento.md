@@ -86,7 +86,7 @@ Si creamos un contenedor interactivo:
 $ docker run -it --name contenedor1 ubuntu
 ```
 
-Nos salimos, y a continuación visualizamos el tamaño ocupado por los contenedores con la opción `-s` (size):
+Nos salimos, y a continuación visualizamos el tamaño ocupado por el contenedor con la opción `-s` (size) del comando `docker run`:
 
 ```bash
 $ docker ps -a -s
