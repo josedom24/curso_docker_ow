@@ -35,7 +35,7 @@ For more examples and ideas, visit:
 Pero, ¿qué es lo que está sucediendo al ejecutar esa orden?:
 
 1. El cliente Docker se conecta al demonio Docker y le indica que debe crear un contenedor (`docker run`).
-2. Al ser la primera vez que ejecuto un contenedor basado en la imagen `hello-word`, se descarga del registro público llamado Docker Hub y se guarda en nuestro registro local.
+2. Al ser la primera vez que se ejecuta un contenedor basado en la imagen `hello-word`, se descarga del registro público llamado Docker Hub y se guarda en nuestro registro local.
 3. Se crea el contenedor que ejecuta un comando que muestra el mensaje que hemos leído.
 4. El mensaje se envía al cliente Docker que nos lo muestra en el terminal.
 
