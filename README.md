@@ -30,7 +30,7 @@
     * [Gestión de Imágenes](contenido/modulo3/gestion.md)
     * [¿Cómo se organizan las imágenes?](contenido/modulo3/organizacion.md) (P)
     * [Demostración: Almacenamiento de imágenes y contenedores](contenido/modulo3/almacenamiento.md)
-    * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
+    * [Ejemplo: Desplegando la aplicación MediaWiki](contenido/modulo3/mediawiki.md)
 
 4. Almacenamiento en Docker
     * [Los contenedores son efímeros](contenido/modulo4/efimeros.md)
