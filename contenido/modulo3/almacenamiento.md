@@ -67,7 +67,7 @@ josedom24/servidorweb   v1        d0d75af6b8ec   3 days ago   187MB     186.8MB 
 
 De los 187 MB que tienen de tamaño las imágenes, 186,8 MB están compartido (este es el tamaño de las dos primeras capas), por lo tanto el espacio ocupado por cada una de las imágenes corresponde a la tercera capa (el fichero `index.html`) que en este caso es 25B  y 22B.
 
-Por lo tanto ¿Cuánto han ocupado en total estas dos imágenes en el disco duro? Pues sería 186,8MB + 25B + 22B.
+Por lo tanto, ¿cuánto han ocupado en total estas dos imágenes en el disco duro? Pues sería 186,8MB + 25B + 22B.
 El mecanismo de compartir capas entre imágenes hace que se ocupe el menos espacio posible en disco duro, el almacenamiento es muy eficiente.
 
 ## Ejemplo de almacenamiento de contenedores
