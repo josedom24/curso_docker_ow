@@ -24,7 +24,7 @@ Las principales ventajas que podemos indicar serían:
 
 Como desventajas podríamos señalar:
 
-* Muchos sistemas dependen de un sólo equipo físico.
+* Muchos sistemas dependen de un solo equipo físico.
 * Penalizaciones en rendimiento.
 
 ## Tipos de virtualización
