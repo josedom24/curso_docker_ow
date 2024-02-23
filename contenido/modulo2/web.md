@@ -25,7 +25,7 @@ docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}}  {{(index
 Para probarlo accedemos desde un navegador web:
 
 * Si estamos accediendo desde el Host Docker, accederemos a `http://localhost:8080`.
-* Si estamos accedeindo desde un ordenador remoto, accederemos a la dirección IP del Host Docker y al puerto, por ejemplo,si dirección IP del Host Docker es `192.168.121.54`, accederemos a `http://192.168.121.54:8080`:
+* Si estamos accediendo desde un ordenador remoto, accederemos a la dirección IP del Host Docker y al puerto, por ejemplo,si dirección IP del Host Docker es `192.168.121.54`, accederemos a `http://192.168.121.54:8080`:
 
 ![web](img/web.png)
 
