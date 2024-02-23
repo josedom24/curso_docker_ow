@@ -72,7 +72,7 @@ En este fragmento de código, estoy dividiendo el límite de memoria en bytes po
 
 ## Modificando los límites en tiempo de ejecución
 
-Evidentemente podemos limitar la memoria el número CPUs utilizadas al mismo tiempo al crear un contenedor:
+Evidentemente podemos limitar la memoria y el número de CPUs utilizadas al mismo tiempo al crear un contenedor:
 
 ```bash
 $ docker run -d --memory 512m --cpus 0.5 --name servidor_web httpd:2.4
