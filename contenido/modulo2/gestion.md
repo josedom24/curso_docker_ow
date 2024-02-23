@@ -74,7 +74,7 @@ Nos muestra mucha información en formato JSON (JavaScript Object Notation) y no
 
 * El id del contenedor.
 * Los puertos abiertos y sus redirecciones.
-* Los *bind mounts* y volúmenes usados.
+* Los bind mounts y volúmenes usados.
 * El tamaño del contenedor (si ejecutamos `docker instpect -s`).
 * La configuración de red del contenedor.
 * El comando que se esta ejecutando en el contenedor.

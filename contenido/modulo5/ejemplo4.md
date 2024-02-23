@@ -10,7 +10,7 @@ Antes de hacer el despliegue del primer contenedor, vamos a crear una red bridge
 $ docker network create red_tomcat
 ```
 
-A continuación, vamos a crear un contenedor a partir de la imagen [`tomcat`](https://hub.docker.com/_/tomcat). En la documentación podemos ver que el directorio `/usr/local/tomcat/webapps/` es donde tenemos que poner el fichero de despliegue `war` (vamos a usar **bind mount** para montar el fichero war en el directorio). No vamos a mapear puerto porque no vamos a acceder a este contenedor desde el exterior, lo vamos a hacer desde un proxy inverso.
+A continuación, vamos a crear un contenedor a partir de la imagen [`tomcat`](https://hub.docker.com/_/tomcat). En la documentación podemos ver que el directorio `/usr/local/tomcat/webapps/` es donde tenemos que poner el fichero de despliegue `war` (vamos a usar bind mount para montar el fichero war en el directorio). No vamos a mapear puerto porque no vamos a acceder a este contenedor desde el exterior, lo vamos a hacer desde un proxy inverso.
 
 Tenemos un directorio donde tenemos el fichero war (puedes encontrar estos ficheros en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow)):
 
