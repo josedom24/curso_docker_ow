@@ -2,7 +2,7 @@
 
 ## Eliminar imágenes huérfanas
 
-Cuando empezamos a construir nuestras propia imágenes Docker, nos encontramos que al listar las imágenes aparecen algunas con el nombre y la etiqueta con el valor `<none>`. Estas son imágenes intermedias que se han generado y que no forman parte de ninguna imagen, por lo tanto pueden ocupar espacio en disco que no es necesario. Estas imágenes se llaman "colgadas" (dangling).
+Cuando empezamos a construir nuestras propias imágenes Docker, nos encontramos que al listar las imágenes aparecen algunas con el nombre y la etiqueta con el valor `<none>`. Estas son imágenes intermedias que se han generado y que no forman parte de ninguna imagen, por lo tanto pueden ocupar espacio en disco que no es necesario. Estas imágenes se llaman "colgadas" (dangling).
 
 Por ejemplo:
 
@@ -21,7 +21,7 @@ WARNING! This will remove all dangling images.
 Are you sure you want to continue? [y/N]
 ```
 
-Si además añadimos el parámetro `-a` se eliminaran todas las imágners que no tienen ningún contenedor creado.
+Si además añadimos el parámetro `-a` se eliminaran todas las imágenes que no tienen ningún contenedor creado.
 
 ```bash
 $ docker image prune -a
@@ -55,7 +55,7 @@ WARNING! This will remove anonymous local volumes not used by at least one conta
 Are you sure you want to continue? [y/N] 
 ```
 
-Por último podemos borrar todos los elementos que no se están utilizando con una sóla instrucción: `docker system prune`. Para borrar los volúmenes no usados debemos usar el parámetro `--volumes`:
+Por último, podemos borrar todos los elementos que no se están utilizando con una sola instrucción: `docker system prune`. Para borrar los volúmenes no usados debemos usar el parámetro `--volumes`:
 
 ```bash
 $ docker system prune --volumes
