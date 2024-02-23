@@ -25,16 +25,16 @@
     * [Limitando los recursos utilizados por un contenedor Docker](contenido/modulo2/limite.md)
 
 3. Gestión de imágenes en Docker
-    * [Imágenes Docker](contenido/modulo3/imagenes.md)
+    * [Imágenes Docker](contenido/modulo3/imagenes.md) (P)
     * [Registro de imágenes: Docker Hub](contenido/modulo3/dockerhub.md)
     * [Gestión de Imágenes](contenido/modulo3/gestion.md)
-    * [¿Cómo se organizan las imágenes?](contenido/modulo3/organizacion.md)
+    * [¿Cómo se organizan las imágenes?](contenido/modulo3/organizacion.md) (P)
     * [Demostración: Almacenamiento de imágenes y contenedores](contenido/modulo3/almacenamiento.md)
     * [Ejemplo: Desplegando la aplicación mediawiki](contenido/modulo3/mediawiki.md)
 
 4. Almacenamiento en Docker
     * [Los contenedores son efímeros](contenido/modulo4/efimeros.md)
-    * [Almacenamiento en Docker](contenido/modulo4/almacenamiento.md)
+    * [Almacenamiento en Docker](contenido/modulo4/almacenamiento.md) (P)
     * [Asociando almacenamiento a los contenedores: volúmenes Docker](contenido/modulo4/volumen.md)
     * [Asociando almacenamiento a los contenedores: bind mount](contenido/modulo4/bindmount.md)
     * [Ejemplo 1: Contenedor NextCloud con almacenamiento persistente](contenido/modulo4/nextcloud.md)
@@ -42,7 +42,7 @@
     * [Otros usos del almacenamiento en Docker](contenido/modulo4/otrosusos.md)
 
 5. Redes en Docker
-    * [Introducción a las redes en Docker](contenido/modulo5/redes.md)
+    * [Introducción a las redes en Docker](contenido/modulo5/redes.md) (P)
     * [Uso de la red host en Docker](contenido/modulo5/host.md)
     * [Uso de la red bridge por defecto](contenido/modulo5/bridge.md)
     * [Redes bridge definidas por el usuario](contenido/modulo5/usuario.md)
@@ -53,7 +53,7 @@
     * [Ejemplo 4: Despliegue de tomcat + nginx](contenido/modulo5/ejemplo4.md) 
 
 6. Creando escenarios multicontenedor con Docker Compose
-    * [Creando escenarios multicontenedor con Docker Compose](contenido/modulo6/compose.md) 
+    * [Creando escenarios multicontenedor con Docker Compose](contenido/modulo6/compose.md) (P)
     * [El fichero compose.yaml](contenido/modulo6/docker_compose.md) 
     * [El comando docker compose](contenido/modulo6/comando.md) 
     * [Almacenamiento con Docker Compose](contenido/modulo6/almacenamiento.md)
@@ -66,9 +66,9 @@
     * [Ejemplos reales de despliegues usando Docker Compose](contenido/modulo6/ejemplos.md) 
 
 7. Creación de imágenes en Docker
-    * [Introducción a la construcción y distribución de imágenes Docker](contenido/modulo7/introduccion.md)
+    * [Introducción a la construcción y distribución de imágenes Docker](contenido/modulo7/introduccion.md) (P)
     * [Creación de imágenes a partir de un contenedor](contenido/modulo7/contenedor.md)
-    * [El fichero Dockerfile](contenido/modulo7/docker-file.md)
+    * [El fichero Dockerfile](contenido/modulo7/docker-file.md) (P)
     * [Creación de imágenes a partir de un Dockerfile](contenido/modulo7/build.md)
     * [Distribución de imágenes](contenido/modulo7/distribucion.md)
     * [Ejemplo 1: Construcción de imágenes con una página estática](contenido/modulo7/ejemplo1.md)
