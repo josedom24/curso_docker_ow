@@ -17,7 +17,7 @@ $ docker images
 Si queremos borrar una imagen, usaremos la instrucción `docker image rm` o la siguiente instrucción:
 
 ```bash
-$ docker rmi nginx:stable`
+$ docker rmi nginx:stable
 ```
 
 **Nota**: No podemos eliminar una imagen si tenemos algún contenedor creado a partir de ella.
@@ -25,13 +25,13 @@ $ docker rmi nginx:stable`
 Si queremos buscar imágenes de **Docker Hub** desde la línea de comandos, podemos usar la instrucción:
 
 ```bash
-$ docker search nginx`
+$ docker search nginx
 ```
 
 Por último es posible obtener información detallada sobre una imagen. Para ello usaremos la instrucción `docker image inspect` o de forma abreviada:
 
 ```bash
-$ docker inspect nginx:stable`
+$ docker inspect nginx:stable
 ```
 
 La información más destacable que podemos ver:
