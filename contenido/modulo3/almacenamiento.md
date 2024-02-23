@@ -22,7 +22,7 @@ Digest: sha256:5707a7005d440bf32619e27e37800419b2c52644205da3c6a9edb9d55b8c51de
 Status: Downloaded newer image for josedom24/servidorweb:v1
 docker.io/josedom24/servidorweb:v1
 ```
-Vemos como se ha descargado las 3 capas, y que finalmente tenemos una nueva imagen en nuestro registro local:
+Vemos como se han descargado las 3 capas, y que finalmente tenemos una nueva imagen en nuestro registro local:
 
 ```bash
 $ docker images
