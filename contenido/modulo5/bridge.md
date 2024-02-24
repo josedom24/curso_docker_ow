@@ -1,10 +1,11 @@
 # Uso de la red bridge por defecto
 
 Hasta ahora todos los contenedores lo hemos conectado a la red **bridge** por defecto. Como ya hemos dicho las características más importantes de este tipo de red son las siguientes:
-    * Se crea en el Host Docker un *Linux Bridge* llamado **docker0**.
-    * El direccionamiento de esta red es 172.17.0.0/16.
-    * Usamos el parámetro `-p` en `docker run` para exponer algún puerto. Se crea una regla DNAT para tener acceso al puerto.
-    * Los contenedores conectados a un red **bridge** tiene acceso a internet por medio de una regla SNAT.
+    
+* Se crea en el Host Docker un *Linux Bridge* llamado **docker0**.
+* El direccionamiento de esta red es 172.17.0.0/16.
+* Usamos el parámetro `-p` en `docker run` para exponer algún puerto. Se crea una regla DNAT para tener acceso al puerto.
+* Los contenedores conectados a un red **bridge** tiene acceso a internet por medio de una regla SNAT.
 
 ## Ejemplo de uso de la red bridge por defecto
 
