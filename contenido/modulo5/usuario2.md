@@ -22,7 +22,7 @@ Name:	servidorweb
 Address: 172.18.0.2
 ```
 
-Tenemos un servidor DNS en la dirección IP `172.0.0.11` que nos resuelve el nombre del primer servidor con su dirección IP. Podemos comprobar que ese servidor DNS es el que tiene configurado el contenedor:
+Tenemos un servidor DNS en la dirección IP `172.0.0.11` que nos resuelve el nombre del primer contenedor con su dirección IP. Podemos comprobar que ese servidor DNS es el que tiene configurado el contenedor:
 
 ```bash
 # cat /etc/resolv.conf 
