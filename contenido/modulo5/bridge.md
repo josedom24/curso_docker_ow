@@ -9,7 +9,7 @@ Hasta ahora todos los contenedores lo hemos conectado a la red **bridge** por de
 
 ## Ejemplo de uso de la red bridge por defecto
 
-Vamos a crear un contenedor conectado a la red **bridge** por defecto a partir de la imagen `alpine`, aunque no ofrece un servidor web vamos a mapear el puerto 80 para comprobar su funcionamiento:
+Vamos a crear un contenedor conectado a la red **bridge** por defecto a partir de la imagen `alpine`. Vamos a mapear el puerto 80/tcp ya que a continuación instalaremos un servidor web en el contenedor:
 
 ```bash
 docker run -it -p 8080:80 --name contenedor1 alpine ash
