@@ -102,7 +102,7 @@ $ docker network disconnect red1 cliente2
 
 Tanto al crear un contenedor con el parámetro `--network` para conectarlo a una red, como con la instrucción `docker network connect`, podemos usar algunos otros parámetros.
 
-Veamos un ejemplo donde vamos a crear un contenedor en la `red2` que tenemos creada:
+Veamos un ejemplo donde vamos a crear un contenedor en la red `red2` que tenemos creada:
 
 ```bash
 $ docker run -it --name contenedor --network red2 \
