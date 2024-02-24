@@ -100,13 +100,7 @@ $ docker network disconnect red1 cliente2
 
 ## Más opciones al trabajar con redes en docker
 
-Tanto al crear un contenedor con el parámetro `--network` para conectarlo a una red, como con la instrucción `docker network connect`, podemos usar algunos otros parámetros:
-
-* `--dns`: Para establecer unos servidores DNS predeterminados.
-* `--ip`: Para establecer una dirección IP fija en el contenedor.
-* `--ip6`: Para establecer la dirección de red ipv6.
-* `--hostname` o `-h`: Para establecer el nombre de host del contenedor. Si no lo establezco será el ID del mismo.
-* `--add-host`: Para añadir entradas de nuevos hosts en el fichero `/etc/hosts` (resolución estática).
+Tanto al crear un contenedor con el parámetro `--network` para conectarlo a una red, como con la instrucción `docker network connect`, podemos usar algunos otros parámetros.
 
 Veamos un ejemplo donde vamos a crear un contenedor en la `red2` que tenemos creada:
 
@@ -118,8 +112,6 @@ $ docker run -it --name contenedor --network red2 \
                                    --hostname servidor1 \
                                    alpine
 ```
-
-Como hemos comentado anteriormente estos parámetros también lo podemos usar al conectar un contenedor a una red con `docker network connect`. Veamos con detenimiento cada uno de los parámetros:
 
 * `--hostname servidor1`: Indicamos el nombre de la máquina. Lo comprobamos:
 
