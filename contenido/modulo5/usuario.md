@@ -10,7 +10,7 @@ Para crear una red bridge definida por el usuario, ejecutamos la siguiente instr
 $ docker network create -d bridge red1
 ```
 
-La opción `-d bridge` es optativa, si no se se indica el tipo por defecto, se creará una red de tipo bridge. Podemos visualizar las redes que tenemos creada ejecutando:
+La opción `-d bridge` es optativa, si no se se indica el tipo,  por defecto, se creará una red de tipo bridge. Podemos visualizar las redes que tenemos creadas, ejecutando:
 
 ```bash
 $ docker network ls
