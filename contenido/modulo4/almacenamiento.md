@@ -63,7 +63,7 @@ En la creación de contenedores con `docker run` puedo indicar que vamos a usar 
 
 En general, `--mount` es más explícito y detallado. La mayor diferencia es que la sintaxis `-v` combina todas las opciones en un solo campo, mientras que la sintaxis `--mount` las separa.
 
-* Si usamos `-v` se debe indicar tras campos separados por dos puntos:
+* Si usamos `-v` se debe indicar tres campos separados por dos puntos:
     * El primer campo es el nombre del volumen, debe ser único en una determinada máquina. Para volúmenes anónimos, el primer campo se omite.
     * El segundo campo es la ruta donde se montan el archivo o directorio en el contenedor.
     * El tercer campo es opcional, y es una lista de opciones separadas por comas. Por ejemplo podemos indicar `ro` para configurar el montaje sólo de lectura.
