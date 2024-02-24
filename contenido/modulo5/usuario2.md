@@ -137,7 +137,7 @@ $ docker run -it --name contenedor --network red2 \
     # ping testing.example.com
     PING testing.example.com (192.168.0.20): 56 data bytes
     ```
-* `--dns 1.1.1.1`: Hemos configurado como DNS el servidor 1.1.1.1. Veamos esto con detenimiento, como hemos visto anteriormente al conectar el contenedor a una red bridge definida por el usuario se crea un servidor DNS que nos permite la resolución por el nombre del contenedor veamos el servidor DNS:
+* `--dns 1.1.1.1`: Hemos configurado como DNS el servidor `1.1.1.1`. Veamos esto con detenimiento, como hemos visto anteriormente al conectar el contenedor a una red bridge definida por el usuario se crea un servidor DNS que nos permite la resolución por el nombre del contenedor veamos el servidor DNS:
     ```bash
     # cat /etc/resolv.conf 
     nameserver 127.0.0.11
