@@ -107,7 +107,7 @@ CMD /usr/local/bin/script.sh
 Algunas observaciones:
 
 1. Creamos la imagen desde una imagen PHP.  
-2. Instalamos el cliente de mariadb que nos hará falta para inicializar la base de datos desde nuestro contenedor de la aplicación.
+2. Instalamos el cliente de MariaDB que nos hará falta para inicializar la base de datos desde nuestro contenedor de la aplicación.
 3. Siguiendo la documentación de la [imagen oficial de PHP](https://hub.docker.com/_/php) instalamos el módulo PHP `mysqli`.
 4. Copiamos la aplicación en el servidor web.
 6. Creamos las variables de entorno y le damos valores por defecto, por si no se indican en la creación del contenedor.
