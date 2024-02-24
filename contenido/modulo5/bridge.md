@@ -79,7 +79,7 @@ $ curl http://localhost:8080
 Vamos a comprobar la configuración de cortafuegos que se ha configurado en el Host Docker. 
 
 * Para permitir que los contenedores conectados a la red **bridge** por defecto tengan conectividad al exterior tenemos que hacer una regla NAT, más concretamente SNAT. 
-* Cuando hemos mapeado el puerto 8080 del Host Docker al puerto 80 del contenedor, se ha creado una regla NAT, en concreto DNAT, que hace que todas las peticiones al puerto 8080/tcp del Host Docker se redirijan al puerto 80/tcp del contenedor. Veamos estas reglas iptables, en el Host Docker ejecutando:
+* Cuando hemos mapeado el puerto 8080/tcp del Host Docker al puerto 80/tcp del contenedor, se ha creado una regla NAT, en concreto DNAT, que hace que todas las peticiones al puerto 8080/tcp del Host Docker se redirijan al puerto 80/tcp del contenedor. Veamos estas reglas iptables, en el Host Docker ejecutando:
 
 ```bash
 $ sudo iptables -L -n  -t nat
@@ -100,9 +100,9 @@ La primera es la regla SNAT que permite a todos los contenedores de la red `172.
 
 Para terminar este punto, vamos a ver distintas opciones para mapear los puertos en las creación de un contenedor. Como sabemos usamos el parámetro `-p` o `--publish` en el comando `docker run`, veamos algunos ejemplos de las configuraciones que podemos hacer:
 
-* `-p 8080:80`: Mapea el puerto 8080 en el Host Docker al puerto 80/tcp en el contenedor.
-* `-p 192.168.1.100:8080:80`: Asigna el puerto 8080 en el Host Docker accediendo a la IP `192.168.1.100` al puerto 80/tcp en el contenedor.
-* `-p 8080:80/udp`: Asigna el puerto 8080 del Host Docker al puerto 80/udp del contenedor.
+* `-p 8080:80`: Mapea el puerto 8080/tcp en el Host Docker al puerto 80/tcp en el contenedor.
+* `-p 192.168.1.100:8080:80`: Asigna el puerto 8080/tcp en el Host Docker accediendo a la IP `192.168.1.100` al puerto 80/tcp en el contenedor.
+* `-p 8080:80/udp`: Asigna el puerto 8080/tcp del Host Docker al puerto 80/udp del contenedor.
 * `-p 8080:80/tcp -p 8080:80/udp`: Mapea el puerto 8080/tcp en el Host Docker al puerto 80/tcp en el contenedor, y mapea el puerto 8080/udp en el Host Docker al puerto 80/udp en el contenedor.
 
 Por ejemplo este contenedor sólo sería accesible desde el Host Docker:

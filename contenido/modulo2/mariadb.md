@@ -51,7 +51,7 @@ Lo primero que vamos a hacer es eliminar el contenedor anterior:
 $ docker rm -f mimariadb
 ```
 
-Y a continuación vamos a crear otro contenedor, pero en esta ocasión vamos a mapear el puerto 3306 del Host Docker con el puerto 3306 del contenedor:
+Y a continuación vamos a crear otro contenedor, pero en esta ocasión vamos a mapear el puerto 3306/tcp del Host Docker con el puerto 3306/tcp del contenedor:
 
 ```bash 
 $ docker run -d -p 3306:3306 --name mimariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:10.5

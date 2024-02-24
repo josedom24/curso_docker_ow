@@ -72,7 +72,7 @@ services:
     image: "redis:alpine"
 ```
 
-Como podemos observar, en el servicio `web` no hemos indicado la imagen. Hemos indicado el directorio de contexto, en nuestro caso un punto, en el parámetro `build:`. Al levantar el escenario con Docker Compose, si es necesario se construirá la imagen que vamos a usar para crear el contenedor. Cómo vemos usamos el puerto 8000 para acceder a la aplicación, que internamente usa el puerto estándar de Flask que es el 5000.
+Como podemos observar, en el servicio `web` no hemos indicado la imagen. Hemos indicado el directorio de contexto, en nuestro caso un punto, en el parámetro `build:`. Al levantar el escenario con Docker Compose, si es necesario se construirá la imagen que vamos a usar para crear el contenedor. Cómo vemos usamos el puerto 8000/tcp para acceder a la aplicación, que internamente usa el puerto estándar de Flask que es el 5000/tcp.
 
 Vamos a construir la aplicación:
 

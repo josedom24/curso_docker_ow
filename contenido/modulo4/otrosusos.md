@@ -28,7 +28,7 @@ A continuación creamos el segundo contenedor con un proceso que va a modificar 
 $ docker run -d  --name contenedor2 --mount type=volume,src=datos_compartidos,dst=/srv debian bash -c "while true; do date >> /srv/index.html;sleep 1;done"
 ```
 
-Accedemos al puerto 8081 del Host Docker y comprobamos cómo se va actualizando el fichero `index.html`.
+Accedemos al puerto 8081/tcp del Host Docker y comprobamos cómo se va actualizando el fichero `index.html`.
 
 Lo podríamos hacer también con bind mount:
 

@@ -40,4 +40,4 @@ $ docker compose ps
 ...
 ```
 
-Y acceder al puerto 80 de la dirección IP del Host Docker para acceder a la aplicación.
+Y acceder al puerto 80/tcp de la dirección IP del Host Docker para acceder a la aplicación.
