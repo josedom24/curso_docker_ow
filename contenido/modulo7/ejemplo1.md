@@ -24,7 +24,7 @@ EXPOSE 80
 CMD apache2ctl -D FOREGROUND
 ```
 
-* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, en este caso apache2. 
+* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, en este caso Apache. 
 * Además de la instalación del servicio hemos borrado todos los paquetes que nos hemos bajado, con esto conseguimos que la capa que va a crear la instrucción `RUN` sea lo más pequeña posible.
 * A continuación añadiremos el contenido del directorio `public_html` al directorio `/var/www/html/` del contenedor, donde nos hemos posicionado con la instrucción `WORKDIR`. 
 * Declaramos el puerto donde se va a ofrecer el servicio. Esta definición es sólo informativa.
@@ -69,7 +69,7 @@ Y acceder con el navegador a nuestra página:
 ![ejemplo1](img/ejemplo1.png)
 
 
-## Versión 2: Desde una imagen con apache2
+## Versión 2: Desde una imagen con Apache
 
 En este caso el fichero `Dockerfile` sería el siguiente:
 

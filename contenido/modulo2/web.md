@@ -1,6 +1,6 @@
 # Ejemplo: Creando un contenedor con un servidor web
 
-En este ejemplo vamos a crear un contenedor demonio que ejecuta un servidor web apache2, para ello vamos a usar la imagen `httpd:2.4` del registro **Docker Hub** (en este caso hemos indicado el nombre de la imagen y su etiqueta `2.4` que nos indica la versión del servidor web que vamos a usar):
+En este ejemplo vamos a crear un contenedor demonio que ejecuta un servidor web Apache, para ello vamos a usar la imagen `httpd:2.4` del registro **Docker Hub** (en este caso hemos indicado el nombre de la imagen y su etiqueta `2.4` que nos indica la versión del servidor web que vamos a usar):
 
 ```bash
 $ docker run -d --name my-apache-app -p 8080:80 httpd:2.4

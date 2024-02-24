@@ -7,7 +7,7 @@ Se ha creado una imagen que hemos subido a **Docker Hub** llamada `josedom24/ser
 Durante el proceso de generación de la imagen:
 
 * Se ha partido de la imagen `debian:stable-slim` (**Pimera capa**).
-* Se ha instalado el servidor web apache2 (**Segunda capa**).
+* Se ha instalado el servidor web Apache (**Segunda capa**).
 * La imagen tiene dos versiones. Las versiones están etiquetadas con las etiquetas **v1** y **v2**. Cada versión tiene un fichero `index.html` diferente. (**Tercera capa**).
 
 Vamos a descargar la primera versión de la imagen (suponemos que no tenemos descargada ninguna imagen en nuestro registro local):
