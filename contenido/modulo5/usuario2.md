@@ -92,7 +92,7 @@ PING servidorweb (172.18.0.2): 56 data bytes
 ...
 ```
 
-Finalmente podemos desconectar la red del contenedor, ejecutando los siguientes comandos:
+Finalmente podemos desconectar el contenedor de la red, ejecutando el siguiente comando:
 
 ```bash
 $ docker network disconnect red1 cliente2
