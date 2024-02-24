@@ -50,5 +50,5 @@ $ curl http://localhost:8080
 <h1>Adios</h1>
 ```
 
-Por último, indicar que si nuestro directorio origen no existe y hacemos un bind mount con `-v`, se creará pero lo que tendremos en el contenedor es una directorio vacío. Sin embargo, si hacemos un bind mount con la opción `--mount` nos dará un error.
+Por último, indicar que si nuestro directorio origen no existe y hacemos un bind mount con `-v`, se creará, pero lo que tendremos en el contenedor es una directorio vacío. Sin embargo, si hacemos un bind mount con la opción `--mount` nos dará un error.
 
