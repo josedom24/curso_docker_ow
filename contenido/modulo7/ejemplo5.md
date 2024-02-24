@@ -1,6 +1,6 @@
 # Ejemplo 5: Configuración de imágenes con una aplicación Java
 
-En este ejemplo vamos a estudiar como podemos trabajar con el Servidor de Aplicaciones Apache Tomcat. Para hacer las pruebas vamos a usar la imagen Docker `bitnami/tomcat` cuya [documentación](https://hub.docker.com/r/bitnami/tomcatJava) puedes encontrar en Docker Hub.
+En este ejemplo vamos a estudiar como podemos trabajar con el [Servidor de Aplicaciones Apache Tomcat](https://tomcat.apache.org/). Para hacer las pruebas vamos a usar la imagen Docker `bitnami/tomcat` cuya [documentación](https://hub.docker.com/r/bitnami/tomcatJava) puedes encontrar en Docker Hub.
 
 Puedes encontrar los ficheros necesarios en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
@@ -36,7 +36,7 @@ FROM bitnami/tomcat:9.0
 COPY sample.war /opt/bitnami/tomcat/webapps
 ```
 
-Creamos la nueva imagen y creamos un nuevo contenedor:
+Creamos la nueva imagen y ejecutamos un nuevo contenedor:
 
 ```bash
 $ docker build -t josedom24/app_java:v1 .
