@@ -101,7 +101,7 @@ La primera es la regla SNAT que permite a todos los contenedores de la red `172.
 Para terminar este punto, vamos a ver distintas opciones para mapear los puertos en las creación de un contenedor. Como sabemos usamos el parámetro `-p` o `--publish` en el comando `docker run`, veamos algunos ejemplos de las configuraciones que podemos hacer:
 
 * `-p 8080:80`: Mapea el puerto 8080 en el Host Docker al puerto 80/tcp en el contenedor.
-* `-p 192.168.1.100:8080:80`: Asigna el puerto 8080 en el Host Docker accediendo a la IP `192.168.1.100` al puerto TCP 80 en el contenedor.
+* `-p 192.168.1.100:8080:80`: Asigna el puerto 8080 en el Host Docker accediendo a la IP `192.168.1.100` al puerto 80/tcp en el contenedor.
 * `-p 8080:80/udp`: Asigna el puerto 8080 del Host Docker al puerto 80/udp del contenedor.
 * `-p 8080:80/tcp -p 8080:80/udp`: Mapea el puerto 8080/tcp en el Host Docker al puerto 80/tcp en el contenedor, y mapea el puerto 8080/udp en el Host Docker al puerto 80/udp en el contenedor.
 
