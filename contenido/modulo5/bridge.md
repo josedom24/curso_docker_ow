@@ -33,7 +33,7 @@ default via 172.17.0.1 dev eth0
 ...
 ```
 
-Hemos visto que su dirección IP está en la red `172.17.0.0/16` y la puerta de enlace es la `172.17.0.1` que corresponde al Host Docker. Además podemos ver que la configuración DNS que se guarda en el fichero `/etc/resolv.conf` es el mismo que el del Host Docker.
+Hemos visto que su dirección IP está en la red `172.17.0.0/16` y la puerta de enlace es la `172.17.0.1` que corresponde a la dirección IP del Host Docker en esta red. Además podemos ver que la configuración DNS, que se guarda en el fichero `/etc/resolv.conf`, es la misma que la del Host Docker.
 
 ```bash
 # cat /etc/resolv.conf
