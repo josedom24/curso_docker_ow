@@ -1,6 +1,9 @@
 # El comando docker compose
 
-Vamos a usar la instrucción `docker compose` para gestionar el ciclo de vida del escenario que tenemos definido en el fichero `compose.yaml`. Puedes encontrar el fichero en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+Vamos a usar la instrucción `docker compose` para gestionar el ciclo de vida del escenario que tenemos definido en el fichero `compose.yaml`. 
+
+Puedes encontrar el fichero en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
+
 **Es importante destacar que debemos ejecutar `docker compose` en el directorio en el que se encuentra el fichero `compose.yaml`**.
 
 ## Despliegue de Let's Chat
