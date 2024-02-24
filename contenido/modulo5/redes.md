@@ -47,7 +47,7 @@ Existen dos tipos de redes bridge:
 * Puedo **conectar en caliente** a los contenedores redes bridge definidas por el usuario. Si uso la red por defecto tengo que parar previamente el contenedor.
 * Me permiten **gestionar de manera más segura el aislamiento de los contenedores**, ya que si no indico una red al arrancar un contenedor éste se incluye en la red por defecto donde pueden convivir servicios que no tengan nada que ver.
 * Nos proporcionan **más control sobre la configuración de las redes**. Los contenedores de la red por defecto comparten todos la misma configuración de red (MTU, reglas de cortafuegos, etc...).
-* Es importante que nuestros contenedores en producción se ejecuten conectados a una red definida por el usuario.
+* Es importante que nuestros contenedores en producción se ejecuten conectados a una red bridge definida por el usuario.
 
 ![ ](img/bridge2.png)
 

@@ -1,6 +1,6 @@
 # Redes con Docker Compose
 
-Como hemos indicado anteriormente, cuando creamos un escenario con Docker Compose **se crea una nueva red definida por el usuario donde se conectan los contenedores**, por lo tanto, obtenemos resolución por DNS que resuelve tanto el nombre del contenedor, como el nombre del servicio.
+Como hemos indicado anteriormente, cuando creamos un escenario con Docker Compose **se crea una nueva red bridge definida por el usuario donde se conectan los contenedores**, por lo tanto, obtenemos resolución por DNS que resuelve tanto el nombre del contenedor, como el nombre del servicio.
 
 Sin embargo en el fichero `compose.yaml` podemos definir y configurar las redes que necesitemos en nuestro escenario, así como la conexión de los distintos contenedores a dichas redes.
 

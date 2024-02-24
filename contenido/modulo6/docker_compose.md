@@ -49,5 +49,5 @@ Como hemos comentado con el parámetro `services` se define la lista de contened
 
 ## Introducción a las redes con Docker Compose
 
-Cuando creamos un escenario con `docker compose` se crea una **nueva red definida por el usuario** donde se conectan los contenedores, por lo tanto, obtenemos resolución por DNS que resuelve tanto el nombre del contenedor (por ejemplo, `mongo`) como el nombre del servicio (por ejemplo, `db`).
+Cuando creamos un escenario con `docker compose` se crea una **nueva red bridge definida por el usuario** donde se conectan los contenedores, por lo tanto, obtenemos resolución por DNS que resuelve tanto el nombre del contenedor (por ejemplo, `mongo`) como el nombre del servicio (por ejemplo, `db`).
 

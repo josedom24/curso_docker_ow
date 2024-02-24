@@ -20,7 +20,7 @@ docker compose up -d
 
 El parámetro `-d` de la instrucción `docker compose up` nos permite ejecutar los contenedores de forma desatendida (similar al parámetro `-.d` en `docker run`). 
 
-Tenemos que tener en cuenta que si no tenemos las imágenes en nuestro registro local, se descargarán. Además podemos ver cómo se ha creado una red definida por el usuario. Esta red se crea con el nombre del proyecto (en nuestro caso el indicado con el parámetro `name`, si no indicamos este parámetro el nombre será el del directorio donde se encuentra el fichero `compose.yaml`) y el termino `default`. También observamos que se ha creado un volumen, en este caso su nombre será el del proyecto unido al nombre que hemos indicado en su definición.
+Tenemos que tener en cuenta que si no tenemos las imágenes en nuestro registro local, se descargarán. Además podemos ver cómo se ha creado una red bridge definida por el usuario. Esta red se crea con el nombre del proyecto (en nuestro caso el indicado con el parámetro `name`, si no indicamos este parámetro el nombre será el del directorio donde se encuentra el fichero `compose.yaml`) y el termino `default`. También observamos que se ha creado un volumen, en este caso su nombre será el del proyecto unido al nombre que hemos indicado en su definición.
 
 Podemos ver los contenedores que se están ejecutando:
 
