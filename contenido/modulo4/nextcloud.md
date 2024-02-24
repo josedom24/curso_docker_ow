@@ -1,6 +1,7 @@
 # Ejemplo 1: Contenedor NextCloud con almacenamiento persistente
 
 [NextCloud](https://nextcloud.com/es/) en una aplicación escrita en PHP que nos posibilita construir una nube privada para guardar nuestros archivos, además de tener otros servicios como agenda, calendario, ...
+
 Vamos a desplegar un contenedor con NextCloud, para simplificar la instalación vamos hacer uso de una base de datos SQLite. Si estudiamos la documentación de la imagen [`nextcloud`](https://hub.docker.com/_/nextcloud) en Docker Hub, la forma más sencilla de no perder la información es crear un volumen para guardar el directorio `/var/www/html` del contenedor. Vamos a realizar el ejercicio usando volúmenes Docker y bind mount.
 
 ## Ejemplo con volúmenes
