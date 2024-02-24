@@ -2,7 +2,7 @@
 
 ## Creación de contenedores con bind mount
 
-En este caso vamos a crear un directorio en el sistema de archivos del Host Docker, donde vamos a crear un fichero `index.html`:
+En este caso, vamos a crear un directorio en el sistema de archivos del Host Docker, donde vamos a crear un fichero `index.html`:
 
 ```bash
 $ mkdir web
