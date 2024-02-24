@@ -15,7 +15,7 @@ El fichero de definición del escenario también puede ser llamado `compose.yml`
 
 Como vemos en la página principal de Docker Compose, el pasado mes de julio de 2023 la versión V1 de Compose dejo de recibir actualizaciones. Por esta razón es muy conveniente usar la versión Compose V2 que viene integrada en el cliente Docker.
 
-En Compose V1 no podíamos hacer uso de Docker Compose utilizando el cliente Docker y teníamos que instalar un programa independiente, escrito en python, que se llama **docker-compose**. Sin embargo, con Compose V2 se incluye en el cliente Docker la posibilidad de trabajar con Compose usando el subcomando `docker compose`.
+En Compose V1 no podíamos hacer uso de Docker Compose utilizando el cliente Docker y teníamos que instalar un programa independiente, escrito en Python, que se llama **docker-compose**. Sin embargo, con Compose V2 se incluye en el cliente Docker la posibilidad de trabajar con Compose usando el subcomando `docker compose`.
 
 Hay algunas diferencias entre las dos versiones, pero se ha mantenido en un alto porcentaje la compatibilidad y por tanto podemos seguir usando los ficheros `docker-compose.yaml` de Compose V1 y en la versión 2.
 

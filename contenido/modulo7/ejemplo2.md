@@ -19,7 +19,7 @@ EXPOSE 80
 CMD apache2ctl -D FOREGROUND
 ```
 
-* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, php y las librerías necesarias. 
+* Al usar una imagen base `debian:stable-slim` tenemos que instalar los paquetes necesarios para tener el servidor web, PHP y las librerías necesarias. 
 * A continuación añadiremos el contenido del directorio `app` al directorio `/var/www/html/` del contenedor. 
 * Hemos borrado el fichero `/var/www/html/index.html` para que no sea el fichero que se muestre por defecto.
 * Finalmente indicamos el comando que se deberá ejecutar al crear un contenedor a partir de esta imagen: iniciamos el servidor web en segundo plano.
@@ -73,6 +73,6 @@ $ docker build -t josedom24/ejemplo2:v2 .
 $ docker run -d -p 80:80 --name ejemplo2 josedom24/ejemplo2:v2
 ```
 
-Podemos acceder al fichero `info.php` para comprobar la versión de php que estamos utilizando con esta imagen:
+Podemos acceder al fichero `info.php` para comprobar la versión de PHP que estamos utilizando con esta imagen:
 
 ![ejemplo2](img/ejemplo2_phpinfo2.png)

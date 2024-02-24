@@ -24,7 +24,7 @@ Algunas consideraciones:
 * Sólo tenemos que instalar `pip`, que utilizaremos posteriormente para instalar los paquetes Python.
 * Copiamos nuestra aplicación en cualquier directorio.
 * Con `WORKDIR` nos posicionamos en el directorio indicado. Todas las instrucciones posteriores se realizarán sobre ese directorio.
-* Instalamos los paquetes python con pip, que están listados en el fichero `requirements.txt`.
+* Instalamos los paquetes Python con pip, que están listados en el fichero `requirements.txt`.
 * El proceso que se va a ejecutar por defecto al iniciar el contenedor será `python3 app.py` que arranca un servidor web en el puerto 3000/tcp ofreciendo la aplicación.
 
 Para crear la imagen ejecutamos:
@@ -51,7 +51,7 @@ Y acceder con el navegador a nuestra página:
 
 ![ejemplo3](img/ejemplo3.png)
 
-## Versión 2: Desde una imagen con python instalado
+## Versión 2: Desde una imagen con Python instalado
 
 En este caso el fichero `Dockerfile` podría tener este contenido:
 
