@@ -70,4 +70,4 @@ $ docker run -d -p 8082:80 --name php56 -v /opt/codigo:/var/www/html:ro php:5.6-
 $ docker run -d -p 8083:80 --name php74 -v /opt/codigo:/var/www/html:ro php:7.4-apache
 ```
 
-Y ya podemos acceder a los dos puertos de nuestro anfitrión y comprobar cómo se comporta en PHP5 y en PHP7.
+Y ya podemos acceder a las dos aplicaciones que hemos desplegado y comprobar cómo se comportan según la versión de PHP que hemos usado.
