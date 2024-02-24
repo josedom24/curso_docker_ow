@@ -1,6 +1,6 @@
 # Uso de la red host en Docker
 
-Si utilizamos el tipo de red **host** en un contenedor, la pila de red de ese contenedor no está aislada del Host Docker (el contenedor comparte el espacio de nombres de red del Host Docker), y el contenedor no tiene asignada su propia dirección IP. Por ejemplo, si ejecutas un contenedor que ofrece su servicio en al puerto 80 y utilizas el modo de red del host, la aplicación del contenedor estará disponible en el puerto 80 de la dirección IP del Host Docker.
+Si utilizamos el tipo de red **host** en un contenedor, la pila de red de ese contenedor no está aislada del Host Docker (el contenedor comparte el espacio de nombres de red del Host Docker), y el contenedor no tiene asignada su propia dirección IP. Por ejemplo, si ejecutas un contenedor que ofrece su servicio en al puerto 80/tcp y utilizas el modo de red del host, la aplicación del contenedor estará disponible en el puerto 80/tcp de la dirección IP del Host Docker.
 
 ## Ventajas del uso de la red host
 
@@ -17,7 +17,7 @@ Vamos a crear un contenedor desde la imagen `nginx` que nos proporciona un servi
 ```bash
 docker run --rm -d --network host --name my_nginx nginx
 ```
-Al Listar el contenedor, comprobamos que efectivamente no hemos creado ninguna redirección de puertos:
+Al listar el contenedor, comprobamos que efectivamente no hemos creado ninguna redirección de puertos:
 
 ```bash
 $ docker ps
