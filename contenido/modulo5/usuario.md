@@ -32,7 +32,7 @@ $ docker network inspect red1
 ...
 ```
 
-Al crear la red no hemos indicado el direccionamiento, por lo que se asignado uno por defecto. Además en el Host Docker se ha creado un nuevo bridge donde se conectarán los contenedores que estén conectados a esta red:
+Al crear la red no hemos indicado el direccionamiento, por lo que se ha asignado uno por defecto. Además en el Host Docker se ha creado un nuevo bridge donde se conectarán los contenedores que estén conectados a esta red:
 
 ```bash
 $ ip a
