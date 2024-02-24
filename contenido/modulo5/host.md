@@ -1,6 +1,6 @@
 # Uso de la red host en Docker
 
-Si utilizamos el tipo de red **host** en un contenedor, la pila de red de ese contenedor no está aislada del Host Docker (el contenedor comparte el espacio de nombres de red del Host Docker), y el contenedor no tiene asignada su propia dirección IP. Por ejemplo, si ejecutas un contenedor que se enlaza al puerto 80 y utilizas el modo de red del host, la aplicación del contenedor estará disponible en el puerto 80 de la dirección IP del Host Docker.
+Si utilizamos el tipo de red **host** en un contenedor, la pila de red de ese contenedor no está aislada del Host Docker (el contenedor comparte el espacio de nombres de red del Host Docker), y el contenedor no tiene asignada su propia dirección IP. Por ejemplo, si ejecutas un contenedor que ofrece su servicio en al puerto 80 y utilizas el modo de red del host, la aplicación del contenedor estará disponible en el puerto 80 de la dirección IP del Host Docker.
 
 ## Ventajas del uso de la red host
 
