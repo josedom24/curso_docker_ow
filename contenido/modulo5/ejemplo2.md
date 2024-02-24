@@ -39,7 +39,7 @@ Si creamos un contenedor `backend` con otro nombre, por ejemplo:
 $ docker run -d --name temperaturas-api --network red_temperaturas iesgn/temperaturas_backend
 ```
 
-Tendremos que configurar la aplicación `frontend` parea que acceda al `backend` usando como nombre `temperaturas-api`, por lo tanto en la creación tendremos que definir la variable de entorno `TEMP_SERVER`, para ello ejecutamos:
+Tendremos que configurar la aplicación `frontend` para que acceda al `backend` usando como nombre `temperaturas-api`, por lo tanto en la creación tendremos que definir la variable de entorno `TEMP_SERVER`, para ello ejecutamos:
 
 ```bash
 $ docker run -d -p 80:3000 --name temperaturas-frontend -e TEMP_SERVER=temperaturas-api:5000 --network red_temperaturas iesgn/temperaturas_frontend
