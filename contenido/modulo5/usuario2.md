@@ -71,7 +71,7 @@ $ docker network connect red1 cliente2
 $ docker attach cliente2
 ```
 
-Comprobamos que se ha creado una nueva interfaz de red con el direccionamiento de `red1`:
+Comprobamos que se ha creado una nueva interfaz de red con el direccionamiento de la red `red1`:
 
 ```bash
 # ip a
