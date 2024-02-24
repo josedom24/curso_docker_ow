@@ -83,7 +83,7 @@ Comprobamos que se ha creado una nueva interfaz de red con el direccionamiento d
 ...
 ```
 
-Ahora podemos comprobar que ahora si tenemos conectividad con el contenedor `servidorweb`:
+Ahora podemos comprobar si tenemos conectividad con el contenedor `servidorweb`:
 
 ```bash
 # ping servidorweb
