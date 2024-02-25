@@ -1,4 +1,4 @@
-# Introducción a la construcción y distribución de imágenes Docker
+# Creación de imágenes a partir de un contenedor
 
 La primera forma para crear nuevas imágenes Docker es partiendo de un contenedor que hayamos modificado. Veamos un ejemplo:
 
