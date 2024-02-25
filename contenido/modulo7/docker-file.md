@@ -42,7 +42,7 @@ Para una descripción completa sobre el fichero `Dockerfile`, puedes acceder a l
 * El comando `docker build` ejecuta las instrucciones de un `Dockerfile` línea por línea y va mostrando los resultados en pantalla.
 * Tenemos que tener en cuenta que cada instrucción ejecutada crea una imagen intermedia, una vez finalizada la construcción de la imagen nos devuelve su id. 
 * Algunas imágenes intermedias se guardan en **caché**, otras se borran. 
-* Si en algún momento falla la creación de la imagen, al corregir el `Dockerfile` y volver a construir la imagen, los pasos que habían funcionado anteriormente no se repiten ya que tenemos a nuestra disposición las imágenes intermedias, y el proceso continúa por la instrucción que causó el fallo.
+* Si en algún momento falla la creación de la imagen, al corregir el `Dockerfile` y volver a construir la imagen, los pasos que habían funcionado anteriormente no se repiten ya que tenemos a nuestra disposición las imágenes intermedias guardadas en caché, y el proceso continúa por la instrucción que causó el fallo.
 
 ## Buenas prácticas al crear Dockerfile
 
