@@ -20,7 +20,7 @@ CMD apache2ctl -D FOREGROUND
 
 Las principales instrucciones que podemos usar:
 
-* **FROM**: Sirve para especificar la imagen sobre la que vamos a construir la nueva.
+* **FROM**: Sirve para especificar la imagen base sobre la que vamos a construir la nueva.
 * **RUN**: Ejecuta una orden creando una nueva capa.  Ejemplo: `RUN apt update && apt install -y git`. En este caso es muy importante que pongamos la opción `-y` porque en el proceso de construcción no puede haber interacción con el usuario.
 * **WORKDIR**: Establece el directorio de trabajo dentro de la imagen que estoy creando, las siguientes instrucciones se ejecutarán en este directorio.
 * **COPY**: Para copiar ficheros desde mi equipo a la imagen. Esos ficheros deben estar en el mismo contexto, es decir en el mismo directorio que el fichero `Dockerfile`. Su sintaxis es `COPY [--chown=<usuario>:<grupo>] src dest`. 
