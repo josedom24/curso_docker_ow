@@ -36,8 +36,8 @@ Para una descripción completa sobre el fichero `Dockerfile`, puedes acceder a l
 
 ## Construyendo imágenes con docker build
 
-* El comando `docker build` construye la nueva imagen leyendo las instrucciones del fichero `Dockerfile` y la información de un **entorno**, que para nosotros va a ser un directorio.
 * El directorio donde se encuentra el fichero `Dockerfile` lo llamamos **entorno**. En este directorio tendremos los ficheros necesarios para crear la nueva imagen.
+* El comando `docker build` construye la nueva imagen leyendo las instrucciones del fichero `Dockerfile` y los ficheros que hay en el **entorno**.
 * La creación de la imagen es ejecutada por el demonio Docker, que recibe toda la información del entorno. 
 * El comando `docker build` ejecuta las instrucciones de un `Dockerfile` línea por línea y va mostrando los resultados en pantalla.
 * Tenemos que tener en cuenta que cada instrucción ejecutada crea una imagen intermedia, una vez finalizada la construcción de la imagen nos devuelve su id. 
