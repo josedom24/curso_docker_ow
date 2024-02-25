@@ -24,7 +24,7 @@ Tenemos dos mecanismos para construir nueva imágenes:
 Por todas estas razones, el método preferido para la creación de imágenes es el uso de ficheros `Dockerfile` y el comando `docker build`. Con este método vamos a tener las siguientes ventajas:
 
 * **Podremos reproducir la imagen fácilmente** ya que en el fichero `Dockerfile` tenemos todas y cada una de las órdenes necesarias para la construcción de la imagen. Además el fichero `Dockerfile` se puede distribuir de manera muy sencilla y versionar usando un sistema de control de versiones.
-* **Podremos configurar el proceso que se ejecutará por defecto en los contenedores creados a partir de la nueva imagen**.
+* **Podremos configurar el proceso que se ejecutará por defecto** en los contenedores creados a partir de la nueva imagen.
 * De manera sencilla podemos **cambiar la imagen base** usando un fichero `Dockerfile`, únicamente tendremos que modificar la primera línea de ese fichero tal y como explicaremos posteriormente.
 
 ## Distribución de imágenes Docker
