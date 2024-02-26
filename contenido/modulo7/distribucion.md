@@ -47,4 +47,4 @@ Los pasos para distribuir nuestra imagen usando Docker Hub, serían:
     ...
     ```
 
-3. Ya cualquier persona puede bajar la imagen usando `docker pull`.
+3. Podemos bajar la imagen en otro servidor usando `docker pull`.
