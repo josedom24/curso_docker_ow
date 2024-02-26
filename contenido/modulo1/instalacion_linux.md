@@ -2,7 +2,7 @@
 
 ## Instalación de Docker Engine
 
-**Docker Engine** está disponible en varias distribuciones de Linux, macOS y Windows 10 a través de Docker Desktop y como instalación binaria estática, sólo se puede instalar en distribuciones Linux.. 
+**Docker Engine** está disponible en varias distribuciones de Linux, macOS y Windows a través de Docker Desktop y como instalación binaria estática, sólo se puede instalar en distribuciones Linux.. 
 
 En este apartado vamos a realizar la instalación binaria de Docker Engine sobre una distribución Linux Ubuntu 22.04. Puedes seguir la [documentación oficial](https://docs.docker.com/engine/install/) para aprender el método de instalación en otros sistemas.
 
