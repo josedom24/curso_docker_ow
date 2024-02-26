@@ -55,7 +55,7 @@ b4836c1e7b7f   41 seconds ago   CMD ["/bin/sh" "-c" "apache2ctl -D FOREGROUN… 
 <missing>      9 days ago       /bin/sh -c #(nop) ADD file:17e64d3a682fd256f…   74.8MB
 ```
 
-Donde vemos los pasos que hemos ejecutado en la construcción para crear la imagen.
+Donde vemos los pasos que hemos ejecutado en la construcción de la imagen.
 
 ## Uso de la caché en la construcción de imágenes Docker
 
