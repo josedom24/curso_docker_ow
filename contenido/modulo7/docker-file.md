@@ -1,4 +1,4 @@
-# El fichero Dockerfile
+j# El fichero Dockerfile
 
 * Podemos automatizar la creación de imágenes Docker, declarando las instrucciones para crear la nueva imagen en un fichero llamado **Dockerfile**. A partir de este fichero y usando el comando **docker build** podemos construir una nueva imagen.
 * En el fichero `Dockerfile` tenemos un conjunto de instrucciones que serán ejecutadas de forma secuencial para construir una nueva imagen Docker. 
@@ -46,7 +46,7 @@ Para una descripción completa sobre el fichero `Dockerfile`, puedes acceder a l
 
 ## Buenas prácticas al crear Dockerfile
 
-* **Los contenedores deber ser "efímeros"**: Cuando decimos "efímeros" queremos decir que la creación, parada, despliegue de los contenedores creados a partir de la imagen que vamos a generar con nuestro `Dockerfile` debe tener una mínima configuración.
+* **Los contenedores deben ser "efímeros"**: Cuando decimos "efímeros" queremos decir que la creación, parada, despliegue de los contenedores creados a partir de la imagen que vamos a generar con nuestro `Dockerfile` debe tener una mínima configuración.
 * **Uso de ficheros `.dockerignore`**: Como hemos indicado anteriormente, todos los ficheros del contexto se envían al demonio Docker. Para aumentar el rendimiento, y no enviar ficheros innecesarios podemos hacer uso de un fichero `.dockerignore`, para excluir ficheros y directorios.
 * **No instalar paquetes innecesarios**: Para reducir la complejidad, dependencias, tiempo de creación y tamaño de la imagen resultante, se debe evitar instalar paquetes extras o innecesarios. 
 * **Minimizar el número de capas**: Debemos encontrar el balance entre la legibilidad del fichero `Dockerfile` y minimizar el número de capas que generamos.
