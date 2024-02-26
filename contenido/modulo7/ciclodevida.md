@@ -1,6 +1,6 @@
 # Ciclo de vida de nuestras aplicaciones con docker
 
-**El ciclo de vida de una aplicación docker** tendría los siguientes pasos:
+**El ciclo de vida de una aplicación Docker** tendría los siguientes pasos:
 
 * Paso 1: Desarrollo de nuestra aplicación.
 * Paso 2: Creación de la imagen Docker.
