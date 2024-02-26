@@ -20,7 +20,7 @@ Veamos como podemos automatizar la creación de imágenes Docker, usando un fich
     CMD apache2ctl -D FOREGROUND
     ```
 
-2. Para crear la imagen uso el comando `docker build`, indicando el nombre de la nueva imagen (opción `-t`) y indicando el directorio **contexto**.
+2. Para crear la imagen uso el comando `docker build`, indicando el nombre de la nueva imagen (opción `-t`) y el directorio **contexto**.
 
     ```bash
     $ docker build -t josedom24/myapache2:v2 .
