@@ -1,4 +1,4 @@
-# Ciclo de vida de nuestras aplicaciones con docker
+# Ciclo de vida de nuestras aplicaciones con Docker
 
 **El ciclo de vida de una aplicación Docker** tendría los siguientes pasos:
 
