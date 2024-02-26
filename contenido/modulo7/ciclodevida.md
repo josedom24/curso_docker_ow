@@ -15,7 +15,7 @@ Puedes encontrar los ficheros necesarios para realizar este ejemplo en el [Repos
 
 Vamos a imaginar que nuestro "equipo de desarrollo" ha creado una aplicación web. En este caso tenemos nuestra aplicación web escrita en JavaScript llamada 2048 guardada en un repositorio GitHub. La aplicación 2048 es un juego de habilidad matemática inspirado en el juego 1024 cuyo código original puedes encontrar en este [repositorio GitHub](https://github.com/gabrielecirulli/2048). 
 
-Para realizar este ejercicio he hecho un fork del repositorio en mi cuenta de GitHub, de este manera podré hacer modificaciones del mismo.
+Para realizar este ejercicio he hecho un fork del repositorio en mi cuenta de GitHub, de esta manera podré hacer modificaciones del mismo.
 
 ## Paso 2: Creación de la imagen Docker
 
