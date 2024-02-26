@@ -78,7 +78,7 @@
     * [Ejemplo 5: Configuración de imágenes con una aplicación Java](contenido/modulo7/ejemplo5.md)
     * [Creación de imágenes con Docker Compose](contenido/modulo7/compose_build.md)
     * [Uso de ficheros Dockerfile parametrizados](contenido/modulo7/variables.md)
-    * [Ciclo de vida de las aplicaciones](contenido/modulo7/ciclodevida.md)
+    * [Ciclo de vida de nuestras aplicaciones con Docker](contenido/modulo7/ciclodevida.md)
     * [Eliminar objetos Docker no utilizados](contenido/modulo7/prune.md)
 
 8. Docker Desktop
