@@ -49,7 +49,7 @@ Algunas cosas que hay que tener en cuenta:
 
 ## Configurar nuestra aplicación con variables de entorno
 
-En los casos en que necesitamos modificar algo en la aplicación o hacer algún proceso en el momento de crear el contenedor, lo que hacemos es crear un script en bash que meteremos en la imagen y que será la instrucción que indiquemos en el `CMD`. Este script en concreto hará las siguiente operaciones:
+En los casos en que necesitamos modificar algo en la aplicación o hacer algún proceso en el momento de crear el contenedor, lo que hacemos es crear un script en bash que copiaremos en la imagen y que será la instrucción que indiquemos en el `CMD`. Este script en concreto hará las siguiente operaciones:
 
 1. Utilizando el fichero `schema.sql` (que también guardaremos en la imagen) inicializará la base de datos.
 2. Ejecutar el servidor web en segundo plano.
