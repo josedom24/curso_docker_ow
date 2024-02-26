@@ -80,7 +80,9 @@ COPY public_html /usr/local/apache2/htdocs/
 EXPOSE 80
 ```
 
-No necesitamos instalar nada, ya que la imagen tiene instalado el servidor web. Siguiendo la documentación de la imagen en Docker Hub sabemos que el *DocumentRoot* del servidor web es el directorio `/usr/local/apache2/htdocs/`. No es necesario indicar el `CMD` ya que por defecto el contenedor creado a partir de esta imagen ejecutará el mismo proceso que la imagen base, es decir, la ejecución del servidor web.
+* No necesitamos instalar nada, ya que la imagen tiene instalado el servidor web. 
+* Siguiendo la documentación de la imagen en Docker Hub sabemos que el *DocumentRoot* del servidor web es el directorio `/usr/local/apache2/htdocs/`. 
+* No es necesario indicar el `CMD` ya que por defecto el contenedor creado a partir de esta imagen ejecutará el mismo proceso que la imagen base, es decir, la ejecución del servidor web.
 
 De forma similar, crearíamos una imagen y un contenedor:
 
