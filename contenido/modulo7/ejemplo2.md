@@ -64,7 +64,8 @@ COPY app /var/www/html/
 EXPOSE 80
 ```
 
-En este caso no necesitamos instalar nada, ya que la imagen tiene instalado el servidor web y PHP. No es necesario indicar el `CMD` ya que por defecto el contenedor creado a partir de esta imagen ejecutará el mismo proceso que la imagen base, es decir, la ejecución del servidor web.
+* En este caso no necesitamos instalar nada, ya que la imagen tiene instalado el servidor web y PHP. 
+* No es necesario indicar el `CMD` ya que por defecto el contenedor creado a partir de esta imagen ejecutará el mismo proceso que la imagen base, es decir, la ejecución del servidor web.
 
 De forma similar, crearíamos una imagen y un contenedor:
 
