@@ -1,6 +1,6 @@
 # Distribución de imágenes
 
-Como hemos comentado, podemos distribuir nuestras imágenes a través de ficheros, utilizando los comandos `docker save` / `docker load`. Sin embargo, la opción más utilizada es usar un registro de imágenes, nosotros utilizaremos Docker Hub, para ello utilizamos los comandos `docker push` / `docker pull`.
+Como hemos comentado, podemos distribuir nuestras imágenes a través de ficheros, utilizando los comandos `docker save` / `docker load`. Sin embargo, la opción más usada para la distribución de imágenes es usar un registro de imágenes, nosotros utilizaremos Docker Hub, para ello utilizamos los comandos `docker push` / `docker pull`.
 
 ## Distribución a partir de un fichero
 
