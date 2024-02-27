@@ -4,7 +4,7 @@ Cuando creamos un contenedor, los procesos que se ejecuten en él pueden usar to
 
 ## Limitando el uso de CPU
 
-Lo primero que vamos a averiguar es el número de CPUs que tiene nuestro anfitrión, para ello ejecutamos el comando:
+Lo primero que podemos averiguar es el número de CPUs que tiene el Host Docker, para ello ejecutamos el comando:
 
 ```bash
 $ nproc --all
