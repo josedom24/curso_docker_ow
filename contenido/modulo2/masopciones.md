@@ -4,7 +4,7 @@ Hemos usado el comando `docker run` para crear y ejecutar contenedores. Este com
 
 ## Nombrar los contenedores
 
-A la hora de la creación del contenedor podemos ponerle un nombre (usando el parámetro `--name`) y también, aunque no se suele usar, podemos indicar el hostname (con al opción `-h` o `--hostname`). Veamos un ejemplo:
+A la hora de la creación del contenedor podemos ponerle un nombre (usando el parámetro `--name`) y también, podemos indicar el hostname (con al opción `-h` o `--hostname`). Veamos un ejemplo:
 
 ```bash
 $ docker run --name contenedor1 -h contendor_ubuntu ubuntu hostname
