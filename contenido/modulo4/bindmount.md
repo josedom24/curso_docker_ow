@@ -16,7 +16,7 @@ Y podemos montar ese directorio en un contenedor, en este caso usamos la opción
 $ docker run -d --name my-apache-app -v /home/usuario/web:/usr/local/apache2/htdocs -p 8080:80 httpd:2.4
 ```
 
-Podemos comprobar en la información del contenedor los puntos de montajes que tiene configurado:
+Podemos comprobar en la información del contenedor los puntos de montaje que tiene configurado:
 
 ```bash
 $ docker inspect --format='{{json .Mounts}}' my-apache-app 
