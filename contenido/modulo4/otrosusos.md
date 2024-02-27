@@ -42,7 +42,7 @@ Y podríamos ver el contenido del fichero `/opt/compartido/index.html`.
 
 ## Comprobar compatibilidad de código entre distintas versiones de un lenguaje de programación
 
-Otro utilidad que le podemos dar al almacenamiento, en este caso a los bind mount, es la posibilidad de comprobar la compatibilidad de un código en diferentes versiones del lenguaje de programación.
+Otro utilidad que le podemos dar al almacenamiento, en este caso a los bind mount, es la posibilidad de comprobar la compatibilidad de un código en diferentes versiones de un lenguaje de programación.
 
 Veamos un ejemplo en PHP: imaginemos que tenemos un código que es compatible y funciona bien en PHP5 y queremos comprobar como se comporta en la versión PHP7. 
 
