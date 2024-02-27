@@ -30,7 +30,7 @@ CONTAINER ID        IMAGE              COMMAND                  CREATED         
 3bbf39d0ec26        ubuntu             "echo 'Hello wo…"        31 seconds ago        Exited (0) 29 seconds ago                       wizardly_edison
 ```
 
-Aunque lo veremos en el próximo apartado, los contenedores que hemos creado se nombran de manera aleatoria. Podemos cambiar el nombre de cualquier contenedor usando el comando `docker rename`:
+Los contenedores que hemos creado se nombran de manera aleatoria. Podemos cambiar el nombre de cualquier contenedor usando el comando `docker rename`:
 
 ```bash
 $ docker rename wizardly_edison contenedor_ubuntu
