@@ -57,7 +57,7 @@ hello-world   latest    d2c94e258dcb   8 months ago   13.3kB
 
 ## ¿Qué ocurre cuando creamos un contenedor?
 
-Para terminar podemos ver las distintas etapas por las que pasa la creación de un contenedor ejecutando `docker events`. Para ello en una terminar ejecutamos el comando:
+Para terminar podemos ver las distintas etapas por las que pasa la creación de un contenedor ejecutando `docker events`. Para ello en una terminal ejecutamos el comando:
 
 ```bash
 $ docker events
