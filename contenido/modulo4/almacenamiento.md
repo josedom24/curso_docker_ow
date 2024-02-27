@@ -48,7 +48,7 @@ Ante la situación anteriormente descrita, Docker nos proporciona varias solucio
 * Compartir código fuente o artefactos de construcción entre un entorno de desarrollo en el Host Docker y un contenedor.
 * Cuando hay necesidad de que otras aplicaciones que no sean Docker tengan acceso a esos ficheros, ya sean código, ficheros etc...
 
-## Aspectos en el uso de volúmenes o bind mount
+## Aspectos a tener en cuenta en el uso de volúmenes o bind mount
 
 * Si montas un volumen vacío en un directorio del contenedor en el que existen archivos o directorios, estos archivos o directorios se propagan (copian) al volumen. 
 * Del mismo modo, si inicias un contenedor y especificas un volumen que aún no existe, se creará un volumen vacío para ti. 
