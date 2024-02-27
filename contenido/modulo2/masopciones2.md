@@ -9,7 +9,7 @@ $ docker run -d --name contenedor4 ubuntu bash -c "while true; do echo hello wor
 7b6c3b1c0d650445b35a1107ac54610b65a03eda7e4b730ae33bf240982bba08
 ```
 
-> NOTA: En la instrucción `docker run` hemos ejecutado el comando con `bash -c` que nos permite ejecutar uno o mas comandos en el contenedor de forma más compleja (por ejemplo, indicando ficheros dentro del contenedor).
+> NOTA: En la instrucción `docker run` hemos ejecutado el comando con `bash -c` que nos permite ejecutar uno o más comandos en el contenedor de forma más compleja (por ejemplo, indicando ficheros dentro del contenedor).
 
 Comprobamos que el contenedor se está ejecutando:
 
