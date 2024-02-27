@@ -25,4 +25,4 @@ $ curl http://localhost:8080
 
 Vemos como al eliminar el contenedor, la información que habíamos guardado en el fichero `index.html` se pierde, y al crear un nuevo contenedor ese fichero tendrá el contenido original.
 
-Docker nos ofrece diferentes mecanismos para hacer persistentes los contenedores y no perder los datos de nuestros contenedores.
+Docker nos ofrece diferentes mecanismos para hacer persistentes los contenedores y no perder los datos de nuestras aplicaciones.
