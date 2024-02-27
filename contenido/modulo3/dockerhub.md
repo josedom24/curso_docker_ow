@@ -8,7 +8,7 @@
 
 ## Conceptos de Docker Hub
 
-* **Repositorio**: Un repositorio nos permite guardar una imagen. De cada imágenes podemos tener distintas versiones. Las **etiquetas** nos permiten identificar cada versión.
+* **Repositorio**: Un repositorio nos permite guardar una imagen. De cada imagen podemos tener distintas versiones. Las **etiquetas** nos permiten identificar cada versión.
 * **Usuarios**: Nos podemos dar de alta en **Docker Hub** para subir y distribuir nuestras imágenes.
 * El nombre de una imagen tiene el siguiente formato: **usuario/nombre:etiqueta**.
 * Las imágenes oficiales en Docker Hub no tienen nombre de usuario.
