@@ -39,7 +39,7 @@ Podemos tener varios tipos de imágenes, según lo que nos ofrece:
 
 ![ ](img/sponsored-badge-iso.png)
 
-* **Imágenes de código abierto patrocinadas por Docker**: Estás imágenes son publicadas y mantenidas por proyectos de código abierto patrocinados por Docker.
+* **Imágenes de código abierto patrocinadas por Docker**: Estas imágenes son publicadas y mantenidas por proyectos de código abierto patrocinados por Docker.
 
 ## Introducción a la interfaz web de Docker Hub
 
