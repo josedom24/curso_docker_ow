@@ -19,7 +19,7 @@ En otra terminal vamos ejecutando los comandos que nos permiten controlar su cic
 
 ## Ejecución de comandos en contenedores
 
-Si tenemos un contenedor que se se está iniciado, podemos ejecutar comandos en él con el comando `docker exec`. En esta ocasión vamos a crear un contenedor que hace algo parecido al anterior, pero en este caso guarda la hora en un fichero cada segundo:
+Si tenemos un contenedor que está iniciado, podemos ejecutar comandos en él con `docker exec`. En esta ocasión vamos a crear un contenedor que hace algo parecido al anterior, pero en este caso guarda la hora en un fichero cada segundo:
 
 ```bash
 $ docker run -d --name hora-container2 ubuntu bash -c 'while true; do date +"%T" >> hora.txt; sleep 1; done'
