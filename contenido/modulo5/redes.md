@@ -11,7 +11,7 @@ Por lo tanto, los contenedores tienen la capacidad de conectarse a otros contene
     * Usamos el parámetro `-p` en `docker run` para exponer algún puerto. Se crea una regla DNAT para tener acceso al puerto.
 * **Red host**: Si conecto un contenedor a la red **host**, el contenedor ofrece el servicio que tiene configurado en el puerto de la red del Host Docker. No tiene dirección IP propia, sino es cómo si tuviera la dirección IP del Host Docker. Por lo tanto, los puertos son accesibles directamente desde el Host Docker.
 * **Red none**: La red **none** no configurará ninguna IP para el contenedor y no tiene acceso a la red externa ni a otros contenedores. Tiene la dirección loopback y se puede usar para ejecutar trabajos por lotes.
-* Existen otros tops de redes para configuraciones avanzadas: **overlay**, **ipvlan** y **macvlan**.
+* Existen otros tipos de redes para configuraciones avanzadas: **overlay**, **ipvlan** y **macvlan**.
 
 ## Redes definidas en la instalación de Docker
 
