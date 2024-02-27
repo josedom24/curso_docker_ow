@@ -47,7 +47,7 @@ $ docker run -it --name contenedor2 ubuntu
 
 ## Eliminación automática de un contenedor 
 
-Como hemos visto hasta ahora cuando un contenedor termina de ejecutar el comando indicado, se para. Si queremos que cuando finalice de ejecutar el comando el contenedor se borre usamos la opción `--rm`. Por ejemplo:
+Como hemos visto hasta ahora cuando un contenedor termina de ejecutar el comando indicado, se para. Si queremos que cuando finalice la ejecución del contenedor se borre, usaremos la opción `--rm`. Por ejemplo:
 
 ```bash
 docker run -it --rm --name contenedor3 ubuntu top
