@@ -1,6 +1,6 @@
 # Gestión de Imágenes
 
-Para crear un contenedor es necesario usar una imagen que tengamos descargada en nuestro registro local. Por lo tanto al ejecutar `docker run` se comprueba si tenemos la versión indicada de la imagen y si no es así, se precede a su descarga desde **Docker Hub**.
+Para crear un contenedor es necesario usar una imagen que tengamos descargada en nuestro registro local. Por lo tanto al ejecutar `docker run` se comprueba si tenemos la versión indicada de la imagen y si no es así, se procede a su descarga desde **Docker Hub**.
 
 Otra manera de descargar una imagen a nuestro registro local, es usando la instrucción `docker image pull` o la siguiente instrucción:
 
