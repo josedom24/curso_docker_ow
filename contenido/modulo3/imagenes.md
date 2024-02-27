@@ -32,7 +32,7 @@ El nombre de una imagen suele estar formado por tres partes:
 
 ![ ](img/mediawiki_versiones.png)
 
-Cada imagen está identificado por un **identificador**. Una misma imagen, puede estar etiquetada por etiquetas diferentes.
+Cada imagen está identificada por un **identificador**. Una misma imagen, puede estar etiquetada por etiquetas diferentes.
 
 Por ejemplo, en la imagen `mediawiki`, las etiquetas `1.41.0`, `.1.41`, `stable` y `latest` apuntan a la misma versión de la imagen.
 
