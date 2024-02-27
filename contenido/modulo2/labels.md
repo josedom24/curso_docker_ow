@@ -2,7 +2,7 @@
 
 Las etiquetas son un mecanismo para guardar metadatos en los objetos Docker: en contenedores, imágenes, volúmenes, redes, etc. Podemos utilizar etiquetas para organizar los distintos objetos Docker que estemos utilizando.
 
-Una etiqueta es un par clave-valor, almacenado como una cadena. Puede especificar varias etiquetas para un objeto, pero cada clave debe ser única dentro de un objeto. 
+Una etiqueta es una información del tipo clave-valor, almacenado como una cadena. Puede especificar varias etiquetas para un objeto, pero cada clave debe ser única dentro de un objeto. 
 
 Para etiquetar un contenedor en su creación utilizaremos el parámetro `-l` (`--label`). Vamos a crear varios contenedores con distintas etiquetas:
 
