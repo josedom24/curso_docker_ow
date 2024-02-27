@@ -5,7 +5,7 @@ Si estudiamos la documentación de la imagen [`mariadb`](https://hub.docker.com/
 ```bash
 $ docker run --name some-mariadb -v /opt/mariadb:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:10.5
 ```
-Es decir se va a crear un directorio `/opt/mariadb` en el host, donde se va a guardar la información de la base de datos. Si tenemos que crear de nuevo el contenedor indicaremos ese directorio como bind mount y volveremos a tener accesible la información.
+Es decir se va a crear un directorio `/opt/mariadb` en el Host Docker, donde se va a guardar la información de la base de datos. Si tenemos que crear de nuevo el contenedor indicaremos ese directorio como bind mount y volveremos a tener accesible la información.
 
 ```bash
 $ cd /opt/mariadb
