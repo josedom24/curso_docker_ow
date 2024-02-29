@@ -82,7 +82,7 @@
     * [Eliminar objetos Docker no utilizados](contenido/modulo7/prune.md)
 
 8. Docker Desktop
-    * Introducción a la interfaz de Docker Desktop
+    * [Introducción a la interfaz de Docker Desktop](contenido/modulo8/introduccion.md)
     * Gestión de contenedores
     * Gestión de imágenes
     * Gestión de volúmenes
