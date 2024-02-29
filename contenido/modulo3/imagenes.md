@@ -1,6 +1,6 @@
 # Imágenes Docker
 
-## ¿Qué una imagen Docker?
+## ¿Qué es una imagen Docker?
 
 * Una imagen es una plantilla de sólo lectura con instrucciones para crear un contenedor Docker. 
 * Contiene el sistema de fichero que tendrá el contenedor. 
