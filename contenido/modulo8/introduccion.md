@@ -16,7 +16,7 @@ Cuando abrimos la aplicación Docker Desktop, tenemos a nuestra disposición una
 * **Imágenes**:
 
     * Esta vista nos permite gestionar las imágenes.
-    * Podemos ver las imágenes que tenemos en el registro local y nuestras imágenes en docker Hub si estamos logueados.
+    * Podemos ver las imágenes que tenemos en el registro local y nuestras imágenes en Docker Hub si estamos logueados.
     * Nos permite ejecutar contenedores a partir de las imágenes.
     * Nos muestra un resumen de las vulnerabilidades de las imágenes.
 
@@ -36,8 +36,8 @@ Cuando abrimos la aplicación Docker Desktop, tenemos a nuestra disposición una
 * **Menú Solucionar problemas** para depurar y realizar operaciones de reinicio. 
 * **Recibir notificaciones** sobre nuevas versiones, actualizaciones del progreso de la instalación y mucho más en el centro de notificaciones. 
 * **Centro de aprendizaje** le permite acceder a documentación sobre Docker.
-* **Dev Environments**: Nos permiten crean entornos de desarrollo que se ejecutan en contenedores.
-* **Docker Scout**: Nos permite examinar imágenes para encontrar posibles vulnerabilidades.
+* **Dev Environments** nos permiten crean entornos de desarrollo que se ejecutan en contenedores.
+* **Docker Scout** nos permite examinar imágenes para encontrar posibles vulnerabilidades.
 
 ## Panel de búsqueda
 
@@ -48,5 +48,22 @@ Podemos buscar:
 * Volúmenes. Desde aquí puedes ver el contenedor asociado.
 * Documentación. Encuentra ayuda en la documentación oficial de Docker directamente desde Docker Desktop.
 
+## Menú Docker
+
+Docker Desktop también proporciona un icono en la barra de notificaciones, que nos permite acceder a varias funcionalidades:
+* Panel de control. Esto le lleva al Docker Dashboard.
+* Iniciar sesión/Registrarse
+* Configuración
+* Buscar actualizaciones
+* Solución de problemas
+* Dar feedback
+* Cambiar a contenedores Windows (si estás en Windows)
+* Acerca de Docker Desktop. Contiene información sobre las versiones que está ejecutando y enlaces al Contrato de Servicio de Suscripción, por ejemplo.
+* Docker Hub
+* Documentación
+* Extensiones
+* Kubernetes
+* Reiniciar
+* Salir de Docker Desktop
 
 
