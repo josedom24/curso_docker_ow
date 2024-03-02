@@ -87,4 +87,5 @@
     * Gestión de contenedores
     * Gestión de volúmenes
     * Gestión de creación de imágenes
+    * Extensiones en Docker Desktop
 
