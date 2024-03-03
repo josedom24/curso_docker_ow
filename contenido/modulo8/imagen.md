@@ -35,7 +35,19 @@ Al acceder a la vista de imágenes, podemos ver un listado de imágenes:
     * **Pull**: Nos permite bajar la imagen a nuestro registro local si ha sido modificada.
     * **Push to Hub**: Nos permite subir la imagen a Docker Hub.
     * **Delete**: Nos permite borrar la imagen del registro local.
-* En la pestaña **Hub**...
+* En la pestaña **Hub**, si estamos logueados en docker Hub podemos visualizar nuestras imágenes subidas a Docker Hub y podemos realizar las siguientes tareas:
+    * **View en Hub**: Te lleva a la página web de la imagen seleccionada en Docker Hub.
+    * **Pull**: Nos permite bajar la imagen a nuestro registro local.
 
 ![imágenes](img/imagen2.png)
+
+## Inspeccionar una imagen
+
+Si pulsamos sobre el nombre de una imagen, nos aparece una pantalla donde podemos ver distintas informaciones de la imagen:
+
+* **Image hierarchy**: Los comandos que se han ejecutado para crear la imagen. Similar al comando `docker history`.
+* **Vulnerabilidades**: Lista de vulnerabilidades encontradas en los distintos ficheros.
+* **Paquetes**: Lista de paquetes que tiene instalada la imagen.
+
+
 ![imágenes](img/imagen3.png)
