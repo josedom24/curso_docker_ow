@@ -46,7 +46,7 @@ Al acceder a la vista de imágenes, podemos ver un listado de imágenes:
 Si pulsamos sobre el nombre de una imagen, nos aparece una pantalla donde podemos ver distintas informaciones de la imagen:
 
 * **Image hierarchy**: Los comandos que se han ejecutado para crear la imagen. Similar al comando `docker history`.
-* **Vulnerabilidades**: Lista de vulnerabilidades encontradas en los distintos ficheros.
+* **Vulnerabilidades**: Lista de vulnerabilidades encontradas en los distintos paquetes instalados en la imagen.
 * **Paquetes**: Lista de paquetes que tiene instalada la imagen.
 
 
