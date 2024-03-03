@@ -84,7 +84,7 @@
 8. Docker Desktop
     * [Introducción a la interfaz de Docker Desktop](contenido/modulo8/introduccion.md)
     * [Gestión de imágenes en Docker Desktop](contenido/modulo8/imagen.md)
-    * Gestión de contenedores en Docker Desktop
+    * [Gestión de contenedores en Docker Desktop](contenido/modulo8/contenedor.md)
     * Gestión de volúmenes en Docker Desktop
     * Gestión de creación de imágenes en Docker Desktop
     * Extensiones en Docker Desktop
