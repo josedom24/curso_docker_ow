@@ -87,5 +87,5 @@
     * [Gestión de contenedores en Docker Desktop](contenido/modulo8/contenedor.md)
     * [Gestión de volúmenes en Docker Desktop](contenido/modulo8/volumen.md)
     * [Gestión de creación de imágenes en Docker Desktop](contenido/modulo8/build.md)
-    * Extensiones en Docker Desktop
+    * [Extensiones en Docker Desktop](contenido/modulo8/extensiones.md)
 
