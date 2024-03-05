@@ -42,7 +42,7 @@ Cuando abrimos la aplicación Docker Desktop, tenemos a nuestra disposición una
 ## Panel de búsqueda
 
 Podemos buscar:
-* Cualquier contenedor o aplicación Compose en tu sistema local. Puede ver un resumen de las variables de entorno asociadas o realizar acciones rápidas, como iniciar, detener o eliminar.
+* Cualquier contenedor o aplicación Compose en tu sistema local. Puedes ver un resumen de las variables de entorno asociadas o realizar acciones rápidas, como iniciar, detener o eliminar.
 * Imágenes públicas de Docker Hub, imágenes locales e imágenes de repositorios remotos (repositorios privados de organizaciones de las que formas parte en Hub). Dependiendo del tipo de imagen que selecciones, puedes extraer la imagen por etiqueta, ver la documentación, ir a Docker Hub para obtener más detalles o ejecutar un nuevo contenedor utilizando la imagen.
 * Extensiones. Desde aquí, puede obtener más información sobre la extensión e instalarla con un solo clic. O, si ya tienes una extensión instalada, puedes abrirla directamente desde los resultados de la búsqueda.
 * Volúmenes. Desde aquí puedes ver el contenedor asociado.
