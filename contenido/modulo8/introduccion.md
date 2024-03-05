@@ -10,8 +10,8 @@ Cuando abrimos la aplicación Docker Desktop, tenemos a nuestra disposición una
 * **Contenedores**:
 
     * La vista de contenedores nos permite gestionar nuestros contenedores.
-    * Podemos gestionar el ciclo de vida (inicio, parada, reinicio,...).
-    * Nos permite realizar tareas comunes sobre los contenedores: inspeccionar, acceder al terminar, ver los logs, ...
+    * Podemos gestionar el ciclo de vida de los contenedores (inicio, parada, reinicio,...).
+    * Nos permite realizar tareas comunes sobre los contenedores: inspeccionar, acceder al terminal, ver los logs, ...
 
 * **Imágenes**:
 
