@@ -34,7 +34,7 @@ Cuando abrimos la aplicación Docker Desktop, tenemos a nuestra disposición una
 
 * **Menú Configuración** para configurar los ajustes de Docker Desktop.
 * **Menú Solucionar problemas** para depurar y realizar operaciones de reinicio. 
-* **Recibir notificaciones** sobre nuevas versiones, actualizaciones del progreso de la instalación y mucho más en el centro de notificaciones. 
+* **Recibir notificaciones** sobre nuevas versiones, actualizaciones, ...
 * **Centro de aprendizaje** le permite acceder a documentación sobre Docker.
 * **Dev Environments** nos permiten crean entornos de desarrollo que se ejecutan en contenedores.
 * **Docker Scout** nos permite examinar imágenes para encontrar posibles vulnerabilidades.
