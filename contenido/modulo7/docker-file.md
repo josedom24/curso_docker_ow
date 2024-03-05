@@ -1,4 +1,4 @@
-j# El fichero Dockerfile
+# El fichero Dockerfile
 
 * Podemos automatizar la creación de imágenes Docker, declarando las instrucciones para crear la nueva imagen en un fichero llamado **Dockerfile**. A partir de este fichero y usando el comando **docker build** podemos construir una nueva imagen.
 * En el fichero `Dockerfile` tenemos un conjunto de instrucciones que serán ejecutadas de forma secuencial para construir una nueva imagen Docker. 
