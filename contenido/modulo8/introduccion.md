@@ -27,7 +27,7 @@ Cuando abrimos la aplicación Docker Desktop, tenemos a nuestra disposición una
 
 * **Builds**:
 
-    * En esta vista podemos inspeccionar tu historial de construcciones de imágenes.
+    * En esta vista podemos inspeccionar el historial de construcciones de imágenes.
     * Nos permite gestionar las construcciones en curso.
 
 ## Otras funciones
