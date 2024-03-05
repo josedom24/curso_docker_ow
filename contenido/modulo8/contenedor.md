@@ -53,7 +53,7 @@ Si pulsamos sobre el nombre de un contenedor, nos aparece una pantalla donde pod
 
 ## Docker Compose en Docker Desktop
 
-Cuando levantamos un escenario con Docker Compose, podemos visualizar el escenario que hemos levantado y los contenedores que se han creado. Los escenario, podemos iniciarlos o pararlos, y eliminarlos. Además podemos ver el detalle edl escenario, donde se nos mostrará la lista de contenedores y los logs de los mismos.
+Cuando levantamos un escenario con Docker Compose, podemos visualizar el escenario que hemos levantado y los contenedores que se han creado. Los escenarios, podemos iniciarlos o pararlos, y eliminarlos. Además podemos ver el detalle del escenario, donde se nos mostrará la lista de contenedores y los logs de los mismos.
 
 ![contenedor](img/contenedor5.png)
 
