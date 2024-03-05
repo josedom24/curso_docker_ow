@@ -14,7 +14,7 @@ Si accedemos al detalle de la construcción activa, sólo podremos acceder a los
 
 ## Inspeccionar construcción
 
-Si accedemos a la información a una construcción ya finalzada podemos obtener la siguientes información:
+Si accedemos a la información a una construcción ya finalizada podemos obtener la siguiente información:
 
 * **Info**: Nos muestra información de la construcción:
     * **Source details**:  Nos muestra información sobre el fichero `Dockerfile` por ejemplo el repositorio donde se encuentra.
