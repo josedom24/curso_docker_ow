@@ -29,6 +29,8 @@ Cuando abrimos la aplicación Docker Desktop, tenemos a nuestra disposición una
 
     * En esta vista podemos inspeccionar el historial de construcciones de imágenes.
     * Nos permite gestionar las construcciones en curso.
+* **Extensions**:
+    * Las extensiones nos permiten añadir nuevas funcionalidades a Docker Desktop.
 
 ## Otras funciones
 
