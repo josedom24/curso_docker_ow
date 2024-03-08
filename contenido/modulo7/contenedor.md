@@ -31,8 +31,6 @@ La primera forma para crear nuevas imágenes Docker es partiendo de un contenedo
 4. Ahora podemos crear un nuevo contenedor a partir de esta nueva imagen:
 
 ```bash
-$ docker run -d -p 8080:80 \
-             --name servidor_web \
-             josedom24/myapache2:v1 
+$ docker run -d -p 8080:80 --name servidor_web josedom24/myapache2:v1 
              
 ```
