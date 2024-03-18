@@ -32,7 +32,7 @@ El contenedor se para cuando salimos de él. Para volver a conectarnos a él:
 
 ```bash
 $ docker start contenedor2
-contendor1
+contendor2
 $ docker attach contenedor2
 root@cont1:/#
 ```
