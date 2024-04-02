@@ -124,7 +124,7 @@ $ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{en
 
 A continuación desde el `contenedor1`intentamos conectamos al segundo contenedor:
 
-``bash
+```bash
 $ docker attach contenedor1
 / # ping 172.17.0.3
 PING 172.17.0.3 (172.17.0.3): 56 data bytes
