@@ -78,7 +78,7 @@ Dos opciones:
 
 Otras empresas han desarrollado software de contenedores de aplicación:
 
-* **podman**: Creado por Red Hat como alternativa a docker. [Más información](https://podman.io).
+* **podman**: Creado por Red Hat como alternativa a Docker. [Más información](https://podman.io).
 * **containerd**: Inicialmente desarrollado por Docker, containerd es un componente fundamental en la arquitectura de Docker que ha sido separado como un proyecto independiente y es parte de la **Cloud Native Computing Foundation (CNCF)**. [Más información](https://containerd.io/).
 * **CRI-O**: También desarrollado por Red Hat y parte de la CNCF, CRI-O se centra en proporcionar una implementación liviana y especializada para la ejecución de contenedores en entornos de Kubernetes. [Más información](https://cri-o.io/).
 * **pouch**: Otro sistema de contenedores creado por la empresa Alibaba como alternativa a Docker. [Más información](https://pouchcontainer.io).
