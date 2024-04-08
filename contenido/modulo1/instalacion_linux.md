@@ -46,7 +46,7 @@ Debes volver a iniciar una terminal con el usuario, o ejecutar el siguiente coma
 Y finalmente, comprobamos la versión con la que vamos a trabajar:
 
     docker --version
-    Docker version 25.0.0, build ...
+    Docker version 26.0.0, build ...
 
 Si queremos más información de las versiones de los componentes con los que vamos a trabajar, ejecutamos:
 
