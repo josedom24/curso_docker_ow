@@ -101,7 +101,7 @@ Otras empresas han desarrollado software de contenedores de aplicación:
     * Actualizaciones automáticas, balanceo de carga, tolerancia a fallos, escalabilidad, . . .
 
 * Distintas alternativas:
-    * Docker swarm
+    * Docker Swarm
     * Apache Mesos
     * Hashicorp Nomad
     * Kubernetes
