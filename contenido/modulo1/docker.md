@@ -89,7 +89,7 @@ Otras empresas han desarrollado software de contenedores de aplicación:
 * Pero Docker tiene algunas limitaciones:
     * El proceso de actualización de versiones en producción.
     * ¿Cómo se balancea la carga entre contenedores iguales?
-    * ¿Cómo se conectan contenedores que se ejecutan en diferentes demonios de docker?
+    * ¿Cómo se conectan contenedores que se ejecutan en diferentes demonios de Docker?
     * ¿Se puede hacer una actualización de una aplicación sin interrupción?
     * ¿Se puede variar a demanda el número de réplicas de un determinado contenedor?
 
