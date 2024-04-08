@@ -1,4 +1,4 @@
-# El "Hola Mundo" de docker
+# El "Hola Mundo" de Docker
 
 Vamos a crear nuestro primer contenedor, para comprobar que todo está funcionando y vamos a explicar el proceso que se va a realizar en la creación del contenedor.  
 
