@@ -6,7 +6,7 @@ Sin embargo en el fichero `compose.yaml` podemos definir y configurar las redes 
 
 Veamos un ejemplo, puedes encontrar el fichero en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
-El contenido del fichro `compose.yaml` es:
+El contenido del fichero `compose.yaml` es:
 
 ```yaml
 version: '3.1'
