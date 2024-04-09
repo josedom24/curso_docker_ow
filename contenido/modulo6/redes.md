@@ -73,7 +73,7 @@ Comprobamos que los dos contenedores se están ejecutando:
 ```bash
 $ $ docker compose ps
 NAME          IMAGE     COMMAND     SERVICE   CREATED          STATUS          PORTS
-contenedor1   alpine    "/bin/sh"   c1        19 seconds ago   Up 13 seconds   
+contenedor1   alpine    "ash"   c1        19 seconds ago   Up 13 seconds   
 contenedor2   alpine    "ash"       c2        19 seconds ago   Up 14 seconds
 ```
 
