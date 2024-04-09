@@ -6,7 +6,7 @@ Además de definir los servicios (parámetro `services`) en el fichero `compose.
 
 Veamos un ejemplo, puedes encontrar el fichero en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
-El contenido del fichro `compose.yaml` es:
+El contenido del fichero `compose.yaml` es:
 
 ```yaml
 version: '3.1'
