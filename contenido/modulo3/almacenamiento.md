@@ -115,7 +115,7 @@ CONTAINER ID   IMAGE     COMMAND       CREATED         STATUS                   
 
 El tamaño del contenedor ha aumentado, en realidad la **Capa del Contenedor** de lectura y escritura ha aumentado ya que hemos creado un nuevo fichero.
 
-Por todo lo que hemos explicado, ahora se entiende  que **no podemos eliminar una imagen cuando tenemos contenedores creados a a partir de ella**.
+Por todo lo que hemos explicado, ahora se entiende  que **no podemos eliminar una imagen cuando tenemos contenedores creados a partir de ella**.
 
 ```bash
 $ docker rmi ubuntu
