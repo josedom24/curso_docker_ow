@@ -4,7 +4,7 @@ En este ejemplo vamos a desplegar con Docker Compose la aplicación Guestbook, q
 
 Puedes encontrar el fichero `compose.yaml` en el [Repositorio con el código de los ejemplos](https://github.com/josedom24/ejemplos_curso_docker_ow).
 
-El contenido del fichro `compose.yaml` es:
+El contenido del fichero `compose.yaml` es:
 
 ```yaml
   version: '3.1'
